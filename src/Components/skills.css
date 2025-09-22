@@ -336,8 +336,11 @@
 }
 
 @media (max-width: 490px) {
-
     /* Skills Container */
+    .skillsHeadings h2 {
+        font-size: 18px !important;
+    }
+
     .skillsHeadings hr {
         margin-top: 5px;
     }

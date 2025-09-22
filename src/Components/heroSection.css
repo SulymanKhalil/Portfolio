@@ -2,6 +2,13 @@
 .header {
     display: flex;
     justify-content: space-between;
+    /* padding-top: 3px; */
+    box-shadow: 0 4px 5px -5px var(--highlight-color);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 4;
 }
 
 .heading1 {
@@ -50,7 +57,7 @@
 .resume-btn {
     border-radius: 0.7rem;
     background-color: var(--bg-color);
-    font-size: .75rem;
+    font-size: .73rem;
     font-weight: 900;
     border: none;
     height: 2.5rem;
@@ -387,9 +394,9 @@
 
     .menu-container {
         position: fixed;
-        background-color: var(--navbar-bg-color);
-        backdrop-filter: blur(8px);
-        z-index: 2;
+        background-color: var(--bg-color);
+        /* backdrop-filter: blur(8px); */
+        z-index: 5;
     }
 
     .menu-container.menuIn {

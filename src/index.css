@@ -31,4 +31,17 @@ body.dark {
 
 body {
     background-color: var(--body-color);
+    margin-top: 85px;
+}
+
+@media (max-width: 720px) {
+    body {
+        margin-top: 75px;
+    }
+}
+
+@media (max-width: 430px) {
+    body {
+        margin-top: 65px;
+    }
 }
