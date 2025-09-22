@@ -1,0 +1,34 @@
+* {
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body.light {
+    --bg-color: #f5f7fa;
+    --highlight-color: #4fa3d1;
+    --special-heading-color: #1e293b;
+    --text-color: #111827;
+    --body-color: #ffffff;
+    --hero-color: #e2e8f0;
+    --navbar-bg-color: #f5f7fa8c;
+    --socialMedia-bg-color: #cae6f5;
+    --socialMedia-hover-bg-color: #addcf5;
+}
+
+body.dark {
+    --bg-color: #0f1729;
+    --highlight-color: #B8860B;
+    --special-heading-color: #f1f5f9;
+    --text-color: #ffffff;
+    --hero-color: #1e293b;
+    --body-color: #000000;
+    --navbar-bg-color: #0f17298c;
+    --socialMedia-bg-color: #f4e8c9;
+    --socialMedia-hover-bg-color: #f5e1af;
+}
+
+body {
+    background-color: var(--body-color);
+}

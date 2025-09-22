@@ -1,0 +1,1474 @@
+/* Skills Container */
+.skillsHeadings h2 {
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 650;
+}
+
+.skillsHeadings hr {
+    width: 70vw;
+    margin-inline: auto;
+    border: none;
+    border-top: 2px solid var(--highlight-color);
+    opacity: 1;
+}
+
+/* Frontend Skills */
+.frontEnd-Skills h1 {
+    color: var(--text-color);
+    margin-left: 18px;
+    font-size: 28px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    letter-spacing: 4px;
+}
+
+.frontEnd-Skills h1::after {
+    content: "●";
+    font-size: 2rem;
+    margin-left: 6px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    color: var(--highlight-color);
+}
+
+.frontEnd-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-inline: 30px;
+}
+
+.html,
+.css,
+.javascript {
+    color: var(--text-color);
+    max-width: 370px;
+    min-height: 215px;
+    background-color: var(--bg-color);
+    border-radius: 1rem;
+    box-shadow: 0 0 5px var(--highlight-color);
+    /* border-top: 2px solid var(--highlight-color); */
+    /* border-right: 2px solid var(--highlight-color); */
+    cursor: pointer;
+    animation: frontendFloat 3s ease-in-out infinite;
+    /* animation: moveAround 6s linear infinite; */
+    /* animation: floatUnique 6s ease-in-out infinite; */
+}
+
+@keyframes frontendFloat {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* @keyframes moveAround {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(20px, -20px);
+    }
+
+    50% {
+        transform: translate(0, -40px);
+    }
+
+    75% {
+        transform: translate(-20px, -20px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+} */
+
+/* @keyframes floatUnique {
+    0% {
+        transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+
+    25% {
+        transform: translate(15px, -15px) rotate(3deg) scale(1.05);
+    }
+
+    50% {
+        transform: translate(0, -30px) rotate(-3deg) scale(1);
+    }
+
+    0% {
+        transform: translate(-15px, -15px) rotate(3deg) scale(1.05);
+    }
+
+    0% {
+        transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+} */
+
+.html img,
+.css img,
+.javascript img {
+    display: block;
+    margin-inline: auto;
+    max-width: 50px;
+    margin-top: 13px;
+    margin-bottom: 7px;
+}
+
+.html img {
+    max-width: 87px;
+}
+
+.javascript img {
+    border-radius: .4rem;
+}
+
+.html .skill-title,
+.css .skill-title,
+.javascript .skill-title {
+    font-weight: bold;
+}
+
+.html .skill-text,
+.css .skill-text,
+.javascript .skill-text {
+    margin-inline: 7px;
+    margin-bottom: 8px;
+    opacity: 0.7;
+}
+
+.html .skill-body,
+.css .skill-body,
+.javascript .skill-body {
+    text-align: center;
+}
+
+.html .progress-container,
+.css .progress-container,
+.javascript .progress-container {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+
+.html .progress,
+.css .progress,
+.javascript .progress {
+    margin-left: 10px;
+    height: 4px;
+    width: 85%;
+    height: 6px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 3px;
+}
+
+.html .progress-Value,
+.css .progress-Value,
+.javascript .progress-Value {
+    font-weight: 550;
+    color: var(--text-color);
+}
+
+.html .progress-bar {
+    background-color: #E44D26;
+    animation: fill-html 2s ease-in-out forwards;
+}
+
+@keyframes fill-html {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 90%;
+    }
+}
+
+.css .progress-bar {
+    background-color: #264DE4;
+    animation: fill-css 2s ease-in-out forwards;
+}
+
+@keyframes fill-css {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 90%;
+    }
+}
+
+.javascript .progress-bar {
+    background-color: #F0DB4F;
+    animation: fill-js 2s ease-in-out forwards;
+}
+
+@keyframes fill-js {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+
+/* Medias */
+@media (max-width: 990px) {
+    .frontEnd-content {
+        margin-inline: 0;
+    }
+
+    .frontEnd-Skills h1 {
+        margin-left: 8px;
+        margin-bottom: 20px;
+        letter-spacing: 3px;
+    }
+
+    .html {
+        margin-left: 60px;
+    }
+
+    .css {
+        margin-right: 60px;
+    }
+}
+
+@media (max-width: 896px) {
+    .html {
+        margin-inline: 60px;
+    }
+
+    .css {
+        margin-inline: 60px;
+    }
+
+    .javascript {
+        margin-inline: 60px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    /* Skills Container */
+    .skillsHeadings hr {
+        margin-bottom: 0;
+    }
+
+    /* FrontEnd Skills */
+    .frontEnd-Skills h1 {
+        margin-left: 8px;
+        margin-bottom: 10px;
+        margin-top: 13px;
+        letter-spacing: 3px;
+        font-size: 24px;
+    }
+
+    .frontEnd-Skills h1::after {
+        font-size: 1.8rem;
+    }
+
+    .html,
+    .css,
+    .javascript {
+        max-width: 340px;
+        min-height: 180px;
+    }
+
+    .html img,
+    .css img,
+    .javascript img {
+        max-width: 32px;
+        margin-top: 6px;
+        margin-bottom: 3px;
+    }
+
+    .html img {
+        max-width: 60px;
+    }
+
+    .html .skill-title,
+    .css .skill-title,
+    .javascript .skill-title {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .html .skill-text,
+    .css .skill-text,
+    .javascript .skill-text {
+        margin-inline: 7px;
+        margin-bottom: 8px;
+        opacity: 0.7;
+    }
+
+    .html .skill-text {
+        margin-bottom: 4px;
+    }
+
+    .html .skill-body,
+    .css .skill-body,
+    .javascript .skill-body {
+        text-align: center;
+    }
+
+    .html .progress,
+    .css .progress,
+    .javascript .progress {
+        margin-left: 6px;
+    }
+}
+
+@media (max-width: 490px) {
+
+    /* Skills Container */
+    .skillsHeadings hr {
+        margin-top: 5px;
+    }
+
+    /* FrontEnd Skills */
+    .frontEnd-Skills h1 {
+        margin-left: 8px;
+        margin-top: 9px;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+
+    .frontEnd-Skills h1::after {
+        font-size: 1.5rem;
+    }
+
+    .html,
+    .css,
+    .javascript {
+        max-width: 310px;
+        min-height: 160px;
+    }
+
+    .html img,
+    .css img,
+    .javascript img {
+        max-width: 28px;
+        margin-top: 8px;
+        margin-bottom: 2px;
+    }
+
+    .html img {
+        max-width: 52px;
+    }
+
+    .html .skill-title,
+    .css .skill-title,
+    .javascript .skill-title {
+        font-weight: bold;
+        font-size: 14px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .html .skill-text,
+    .css .skill-text,
+    .javascript .skill-text {
+        margin-inline: 7px;
+        margin-bottom: 3px;
+        opacity: 0.7;
+        font-size: 14px;
+    }
+
+    .html .skill-body,
+    .css .skill-body,
+    .javascript .skill-body {
+        text-align: center;
+    }
+
+    .html .progress,
+    .css .progress,
+    .javascript .progress {
+        margin-left: 9px;
+        width: 82%;
+        margin-top: 3px;
+    }
+
+    .html .progress-Value,
+    .css .progress-Value,
+    .javascript .progress-Value {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 447px) {
+
+    /* Skills Container */
+    .skillsHeadings h2 {
+        font-size: 16px;
+    }
+
+    /* FrontEnd Skills */
+    .frontEnd-Skills h1 {
+        font-size: 15px;
+    }
+
+    .frontEnd-Skills h1::after {
+        font-size: 1.2rem;
+    }
+
+    .html {
+        margin-inline: 15px;
+    }
+
+    .css {
+        margin-inline: 15px;
+    }
+
+    .javascript {
+        margin-inline: 15px;
+    }
+}
+
+@media (max-width: 345px) {
+
+    .html,
+    .css,
+    .javascript {
+        max-width: 340px;
+        min-height: 147px;
+    }
+
+    .html img,
+    .css img,
+    .javascript img {
+        max-width: 25px;
+        margin-top: 8px;
+        margin-bottom: 2px;
+    }
+
+    .html img {
+        max-width: 48px;
+    }
+
+    .html .skill-title,
+    .css .skill-title,
+    .javascript .skill-title {
+        font-size: 12px;
+    }
+
+    .html .skill-text,
+    .css .skill-text,
+    .javascript .skill-text {
+        margin-inline: 9px;
+        font-size: 12px;
+    }
+
+    .html .progress,
+    .css .progress,
+    .javascript .progress {
+        margin-left: 7px;
+    }
+}
+
+/* Frontend Frameworks  */
+.frameworksLibraries h1 {
+    color: var(--text-color);
+    margin-left: 18px;
+    font-size: 28px;
+    margin-top: 33px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    letter-spacing: 4px;
+}
+
+.frameworksLibraries h1::after {
+    content: "●";
+    font-size: 2rem;
+    margin-left: 6px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    color: var(--highlight-color);
+}
+
+.frameworksLibraries-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-inline: 30px;
+}
+
+.React,
+.BootStrap,
+.tailwind-CSS {
+    color: var(--text-color);
+    max-width: 370px;
+    min-height: 215px;
+    background-color: var(--bg-color);
+    border-radius: 1rem;
+    box-shadow: 0 0 5px var(--highlight-color);
+    /* border-top: 1px solid var(--highlight-color); */
+    /* border-right: 1px solid var(--highlight-color); */
+    cursor: pointer;
+    animation: frameworksFloat 3s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes frameworksFloat {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.React img,
+.BootStrap img,
+.tailwind-CSS img {
+    display: block;
+    margin-inline: auto;
+    max-width: 55px;
+    margin-top: 13px;
+    margin-bottom: 7px;
+}
+
+.BootStrap img {
+    max-width: 62px;
+}
+
+.tailwind-CSS img {
+    max-width: 83px;
+}
+
+.React .skill-title,
+.BootStrap .skill-title,
+.tailwind-CSS .skill-title {
+    font-weight: bold;
+}
+
+.React .skill-text,
+.BootStrap .skill-text,
+.tailwind-CSS .skill-text {
+    margin-inline: 7px;
+    margin-bottom: 8px;
+    opacity: 0.7;
+}
+
+.React .skill-body,
+.BootStrap .skill-body,
+.tailwind-CSS .skill-body {
+    text-align: center;
+}
+
+.React .progress-container,
+.BootStrap .progress-container,
+.tailwind-CSS .progress-container {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+
+.React .progress,
+.BootStrap .progress,
+.tailwind-CSS .progress {
+    margin-left: 10px;
+    height: 4px;
+    width: 85%;
+    height: 6px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 3px;
+}
+
+.React .progress-Value,
+.BootStrap .progress-Value,
+.tailwind-CSS .progress-Value {
+    font-weight: 550;
+    color: var(--text-color);
+}
+
+.React .progress-bar {
+    background-color: #61dbfa;
+    animation: fill-React 2s ease-in-out forwards;
+}
+
+@keyframes fill-React {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+
+.BootStrap .progress-bar {
+    background-color: #790af7;
+    animation: fill-BootStrap 2s ease-in-out forwards;
+}
+
+@keyframes fill-BootStrap {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 95%;
+    }
+}
+
+.tailwind-CSS .progress-bar {
+    background-color: #06b7d6;
+    animation: fill-tailwindCSS 2s ease-in-out forwards;
+}
+
+@keyframes fill-tailwindCSS {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 95%;
+    }
+}
+
+/* Medias */
+@media (max-width: 990px) {
+    .frameworksLibraries-content {
+        margin-inline: 0;
+    }
+
+    .frameworksLibraries h1 {
+        margin-top: 30px;
+        margin-left: 8px;
+        margin-bottom: 20px;
+        letter-spacing: 3px;
+    }
+
+    .React {
+        margin-left: 60px;
+    }
+
+    .BootStrap {
+        margin-right: 60px;
+    }
+}
+
+@media (max-width: 896px) {
+    .React {
+        margin-inline: 60px;
+    }
+
+    .BootStrap {
+        margin-inline: 60px;
+    }
+
+    .tailwind-CSS {
+        margin-inline: 60px;
+    }
+}
+
+@media (max-width: 700px) {
+    .frameworksLibraries h1 {
+        margin-left: 8px;
+        margin-bottom: 10px;
+        margin-top: 27px;
+        letter-spacing: 3px;
+        font-size: 24px;
+    }
+
+    .frameworksLibraries h1::after {
+        font-size: 1.8rem;
+    }
+
+    .React,
+    .BootStrap,
+    .tailwind-CSS {
+        max-width: 340px;
+        min-height: 180px;
+    }
+
+    .React img,
+    .BootStrap img,
+    .tailwind-CSS img {
+        margin-top: 6px;
+        margin-bottom: 3px;
+    }
+
+    .React img {
+        max-width: 35px;
+    }
+
+    .BootStrap img {
+        max-width: 41px;
+    }
+
+    .tailwind-CSS img {
+        max-width: 50px;
+    }
+
+    .React .skill-title,
+    .BootStrap .skill-title,
+    .tailwind-CSS .skill-title {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .React .skill-text,
+    .BootStrap .skill-text,
+    .tailwind-CSS .skill-text {
+        margin-inline: 7px;
+        margin-bottom: 8px;
+        opacity: 0.7;
+    }
+
+    .React .skill-body,
+    .BootStrap .skill-body,
+    .tailwind-CSS .skill-body {
+        text-align: center;
+    }
+
+    .React .progress,
+    .BootStrap .progress,
+    .tailwind-CSS .progress {
+        margin-left: 6px;
+    }
+}
+
+@media (max-width: 490px) {
+    .frameworksLibraries h1 {
+        margin-left: 8px;
+        margin-top: 24px;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+
+    .frameworksLibraries h1::after {
+        font-size: 1.5rem;
+    }
+
+    .React,
+    .BootStrap,
+    .tailwind-CSS {
+        max-width: 310px;
+        min-height: 157px;
+    }
+
+    .React img,
+    .BootStrap img,
+    .tailwind-CSS img {
+        margin-top: 8px;
+        margin-bottom: 2px;
+    }
+
+    .React img {
+        max-width: 28px;
+    }
+
+    .BootStrap img {
+        max-width: 33px;
+    }
+
+    .tailwind-CSS img {
+        max-width: 40px;
+    }
+
+    .React .skill-title,
+    .BootStrap .skill-title,
+    .tailwind-CSS .skill-title {
+        font-weight: bold;
+        font-size: 14px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .React .skill-text,
+    .BootStrap .skill-text,
+    .tailwind-CSS .skill-text {
+        margin-inline: 7px;
+        margin-bottom: 3px;
+        opacity: 0.7;
+        font-size: 14px;
+    }
+
+    .React .skill-body,
+    .BootStrap .skill-body,
+    .tailwind-CSS .skill-body {
+        text-align: center;
+    }
+
+    .React .progress,
+    .BootStrap .progress,
+    .tailwind-CSS .progress {
+        margin-left: 9px;
+        width: 82%;
+        margin-top: 3px;
+    }
+
+    .React .progress-Value,
+    .BootStrap .progress-Value,
+    .tailwind-CSS .progress-Value {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 447px) {
+    .frameworksLibraries h1 {
+        font-size: 15px;
+    }
+
+    .frameworksLibraries h1::after {
+        font-size: 1.2rem;
+    }
+
+    .React {
+        margin-inline: 15px;
+    }
+
+    .BootStrap {
+        margin-inline: 15px;
+    }
+
+    .tailwind-CSS {
+        margin-inline: 15px;
+    }
+}
+
+@media (max-width: 345px) {
+
+    .React,
+    .BootStrap,
+    .tailwind-CSS {
+        max-width: 340px;
+        min-height: 142px;
+    }
+
+    .React img,
+    .BootStrap img,
+    .tailwind-CSS img {
+        margin-top: 8px;
+        margin-bottom: 2px;
+    }
+
+    .React img {
+        max-width: 25px;
+    }
+
+    .BootStrap img {
+        max-width: 30px;
+    }
+
+    .tailwind-CSS img {
+        max-width: 33px;
+    }
+
+    .React .skill-title,
+    .BootStrap .skill-title,
+    .tailwind-CSS .skill-title {
+        font-size: 12px;
+    }
+
+    .React .skill-text,
+    .BootStrap .skill-text,
+    .tailwind-CSS .skill-text {
+        margin-inline: 9px;
+        font-size: 12px;
+    }
+
+    .React .progress,
+    .BootStrap .progress,
+    .tailwind-CSS .progress {
+        margin-left: 7px;
+    }
+}
+
+/* Version Control */
+.versionControl h1 {
+    color: var(--text-color);
+    margin-left: 18px;
+    font-size: 28px;
+    margin-top: 33px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    letter-spacing: 4px;
+}
+
+.versionControl h1::after {
+    content: "●";
+    font-size: 2rem;
+    margin-left: 6px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    color: var(--highlight-color);
+}
+
+.versionControl-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-inline: 30px;
+}
+
+.Git,
+.Github {
+    color: var(--text-color);
+    max-width: 370px;
+    min-height: 185px;
+    background-color: var(--bg-color);
+    border-radius: 1rem;
+    box-shadow: 0 0 5px var(--highlight-color);
+    /* border-top: 1px solid var(--highlight-color); */
+    /* border-right: 1px solid var(--highlight-color); */
+    cursor: pointer;
+    animation: versionControlFloat 3s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+@keyframes versionControlFloat {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.Git img,
+.Github i {
+    display: block;
+    margin-inline: auto;
+    max-width: 55px;
+    margin-top: 13px;
+    margin-bottom: 7px;
+}
+
+.Github i {
+    margin-top: 10px;
+    font-size: 59px;
+    color: var(--text-color);
+}
+
+.Git .skill-title,
+.Github .skill-title {
+    font-weight: bold;
+}
+
+.Git .skill-text,
+.Github .skill-text {
+    margin-inline: 7px;
+    margin-bottom: 8px;
+    opacity: 0.7;
+}
+
+.Git .skill-body,
+.Github .skill-body {
+    text-align: center;
+}
+
+/* Medias */
+@media (max-width: 990px) {
+    .versionControl-content {
+        margin-inline: 0;
+    }
+
+    .versionControl h1 {
+        margin-top: 30px;
+        margin-left: 8px;
+        margin-bottom: 20px;
+        letter-spacing: 3px;
+    }
+
+    .Git {
+        margin-left: 60px;
+    }
+
+    .Github {
+        margin-right: 60px;
+    }
+}
+
+@media (max-width: 896px) {
+    .Git {
+        margin-inline: 60px;
+    }
+
+    .Github {
+        margin-inline: 60px;
+    }
+}
+
+@media (max-width: 700px) {
+    .versionControl h1 {
+        margin-left: 8px;
+        margin-bottom: 10px;
+        margin-top: 27px;
+        letter-spacing: 3px;
+        font-size: 24px;
+    }
+
+    .versionControl h1::after {
+        font-size: 1.8rem;
+    }
+
+    .Git,
+    .Github {
+        max-width: 340px;
+        min-height: 163px;
+    }
+
+    .Git img,
+    .Github i {
+        max-width: 50px;
+        margin-top: 6px;
+        margin-bottom: 3px;
+    }
+
+    .Github i {
+        font-size: 43px;
+    }
+
+    .Git .skill-title,
+    .Github .skill-title {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .Git .skill-text,
+    .Github .skill-text {
+        margin-inline: 7px;
+        margin-bottom: 8px;
+        opacity: 0.7;
+    }
+}
+
+@media (max-width: 490px) {
+    .versionControl h1 {
+        margin-left: 8px;
+        margin-top: 24px;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+
+    .versionControl h1::after {
+        font-size: 1.5rem;
+    }
+
+    .Git,
+    .Github {
+        max-width: 310px;
+        min-height: 150px;
+    }
+
+    .Git img,
+    .Github i {
+        max-width: 43px;
+        margin-top: 6px;
+        margin-bottom: 3px;
+    }
+
+    .Github i {
+        font-size: 41px;
+    }
+
+    .Git .skill-title,
+    .Github .skill-title {
+        font-weight: bold;
+        font-size: 14px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .Git .skill-text,
+    .Github .skill-text {
+        margin-inline: 7px;
+        margin-bottom: 3px;
+        opacity: 0.7;
+        font-size: 14px;
+    }
+
+    .Git .skill-body,
+    .Github .skill-body {
+        text-align: center;
+    }
+}
+
+@media (max-width: 447px) {
+    .versionControl h1 {
+        font-size: 15px;
+    }
+
+    .versionControl h1::after {
+        font-size: 1.2rem;
+    }
+
+    .Git {
+        margin-inline: 15px;
+    }
+
+    .Github {
+        margin-inline: 15px;
+    }
+}
+
+@media (max-width: 345px) {
+
+    .Git,
+    .Github {
+        max-width: 340px;
+        min-height: 135px;
+    }
+
+    .Git img,
+    .Github i {
+        max-width: 40px;
+        margin-top: 6px;
+        margin-bottom: 3px;
+    }
+
+    .Github i {
+        font-size: 39px;
+    }
+
+    .Git .skill-title,
+    .Github .skill-title {
+        font-size: 12px;
+    }
+
+    .Git .skill-text,
+    .Github .skill-text {
+        margin-inline: 9px;
+        font-size: 12px;
+    }
+}
+
+/* Others */
+.Others h1 {
+    color: var(--text-color);
+    margin-left: 18px;
+    font-size: 28px;
+    margin-top: 33px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    letter-spacing: 4px;
+}
+
+.Others h1::after {
+    content: "●";
+    font-size: 2rem;
+    margin-left: 6px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    color: var(--highlight-color);
+}
+
+.Others-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-inline: 30px;
+}
+
+.problemSolving,
+.communication,
+.teamCollaboration {
+    color: var(--text-color);
+    max-width: 370px;
+    min-height: 140px;
+    background-color: var(--bg-color);
+    border-radius: 1rem;
+    box-shadow: 0 0 5px var(--highlight-color);
+    /* border-top: 1px solid var(--highlight-color); */
+    /* border-right: 1px solid var(--highlight-color); */
+    cursor: pointer;
+    margin-bottom: 25px;
+    animation: professionalFloat 3s ease-in-out infinite;
+    animation-delay: 1.5s;
+}
+
+@keyframes professionalFloat {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.problemSolving i,
+.communication i,
+.teamCollaboration i {
+    display: block;
+    margin-inline: auto;
+    font-size: 28px;
+    margin-top: 13px;
+    margin-bottom: 7px;
+}
+
+.problemSolving i {
+    color: #3b82f6;
+}
+
+.communication i {
+    color: #10b981;
+}
+
+.teamCollaboration i {
+    color: #8b5cf6;
+}
+
+.problemSolving .skill-title,
+.communication .skill-title,
+.teamCollaboration .skill-title {
+    font-weight: bold;
+}
+
+.problemSolving .skill-text,
+.communication .skill-text,
+.teamCollaboration .skill-text {
+    margin-inline: 7px;
+    margin-bottom: 11px;
+    opacity: 0.7;
+}
+
+.problemSolving .skill-body,
+.communication .skill-body,
+.teamCollaboration .skill-body {
+    text-align: center;
+}
+
+/* Medias */
+@media (max-width: 1225px) {
+
+    .problemSolving,
+    .communication {
+        margin-bottom: 0;
+    }
+
+    .teamCollaboration {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 990px) {
+    .Others-content {
+        margin-inline: 0;
+    }
+
+    .Others h1 {
+        margin-top: 30px;
+        margin-left: 8px;
+        margin-bottom: 20px;
+        letter-spacing: 3px;
+    }
+
+    .problemSolving {
+        margin-left: 60px;
+    }
+
+    .communication {
+        margin-right: 60px;
+    }
+}
+
+@media (max-width: 896px) {
+    .problemSolving {
+        margin-inline: 60px;
+    }
+
+    .communication {
+        margin-inline: 60px;
+    }
+
+    .teamCollaboration {
+        margin-inline: 60px;
+    }
+}
+
+@media (max-width: 700px) {
+    .Others h1 {
+        margin-left: 8px;
+        margin-bottom: 10px;
+        margin-top: 27px;
+        letter-spacing: 3px;
+        font-size: 24px;
+    }
+
+    .Others h1::after {
+        font-size: 1.8rem;
+    }
+
+    .problemSolving,
+    .communication,
+    .teamCollaboration {
+        max-width: 340px;
+        min-height: 140px;
+    }
+
+    .problemSolving i,
+    .communication i,
+    .teamCollaboration i {
+        font-size: 25px;
+        margin-top: 6px;
+        margin-bottom: 3px;
+    }
+
+    .problemSolving .skill-title,
+    .communication .skill-title,
+    .teamCollaboration .skill-title {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .problemSolving .skill-text,
+    .communication .skill-text,
+    .teamCollaboration .skill-text {
+        margin-inline: 7px;
+        margin-bottom: 7px;
+        opacity: 0.7;
+    }
+
+    .problemSolving .skill-body,
+    .communication .skill-body,
+    .teamCollaboration .skill-body {
+        text-align: center;
+    }
+}
+
+@media (max-width: 490px) {
+    .Others h1 {
+        margin-left: 8px;
+        margin-top: 24px;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+
+    .Others h1::after {
+        font-size: 1.5rem;
+    }
+
+    .problemSolving,
+    .communication,
+    .teamCollaboration {
+        max-width: 310px;
+        min-height: 130px;
+    }
+
+    .problemSolving i,
+    .communication i,
+    .teamCollaboration i {
+        font-size: 21px;
+        margin-top: 6px;
+        margin-bottom: 3px;
+    }
+
+    .problemSolving .skill-title,
+    .communication .skill-title,
+    .teamCollaboration .skill-title {
+        font-weight: bold;
+        font-size: 14px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .problemSolving .skill-text,
+    .communication .skill-text,
+    .teamCollaboration .skill-text {
+        margin-inline: 7px;
+        margin-bottom: 3px;
+        opacity: 0.7;
+        font-size: 14px;
+    }
+
+    .problemSolving .skill-body,
+    .communication .skill-body,
+    .teamCollaboration .skill-body {
+        text-align: center;
+    }
+}
+
+@media (max-width: 447px) {
+    .Others h1 {
+        font-size: 15px;
+    }
+
+    .Others h1::after {
+        font-size: 1.2rem;
+    }
+
+    .problemSolving {
+        margin-inline: 15px;
+    }
+
+    .communication {
+        margin-inline: 15px;
+    }
+
+    .teamCollaboration {
+        margin-inline: 15px;
+    }
+}
+
+@media (max-width: 345px) {
+
+    .problemSolving,
+    .communication,
+    .teamCollaboration {
+        max-width: 340px;
+        min-height: 110px;
+    }
+
+    .problemSolving i,
+    .communication i,
+    .teamCollaboration i {
+        font-size: 17px;
+        margin-top: 6px;
+        margin-bottom: 3px;
+    }
+
+    .problemSolving .skill-title,
+    .communication .skill-title,
+    .teamCollaboration .skill-title {
+        font-size: 12px;
+    }
+
+    .problemSolving .skill-text,
+    .communication .skill-text,
+    .teamCollaboration .skill-text {
+        margin-inline: 9px;
+        font-size: 12px;
+    }
+}
