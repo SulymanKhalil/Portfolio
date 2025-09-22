@@ -430,7 +430,7 @@
 
     .menu-lists li {
         list-style: none;
-        padding-block: 5px;
+        padding-bottom: 15px;
         transition: transform 0.3s ease;
     }
 

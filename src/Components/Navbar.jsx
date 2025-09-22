@@ -83,10 +83,10 @@ const Navbar = () => {
                 <div className={`menu-container ${isClosing ? "menuOut" : "menuIn"}`}>
                     <i onClick={handleClsoeMenu} className="fa-solid fa-x"></i>
                     <div className="menu-lists">
-                        <li><Link to="/about">About</Link></li>
-                        <li><Link to="/skills">Skills</Link></li>
-                        <li><Link to="/projects">Projects</Link></li>
-                        <li><Link to="/contact">Contact</Link></li>
+                        <li><Link onClick={handleClsoeMenu} to="/about">About</Link></li>
+                        <li><Link onClick={handleClsoeMenu} to="/skills">Skills</Link></li>
+                        <li><Link onClick={handleClsoeMenu} to="/projects">Projects</Link></li>
+                        <li><Link onClick={handleClsoeMenu} to="/contact">Contact</Link></li>
                     </div>
                 </div>
             )}
