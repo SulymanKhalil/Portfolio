@@ -50,7 +50,7 @@ const Navbar = () => {
 
     return (
         <div className="header">
-            <Link className="text-decoration-none" to="/"><h1 className="heading1 ms-3">Sulyman<span>.dev</span></h1></Link>
+            <Link className="text-decoration-none" to="/"><h1 className="heading1 ms-3">Sulyman<span>.com</span></h1></Link>
             <nav className="navbar navbar-expand">
                 <div>
                     <ul className="nav-item-list">
@@ -72,9 +72,9 @@ const Navbar = () => {
                     </ul>
                 </div>
             </nav>
-            <div className="resume-and-btn-cont" >
+            <div className="resume-and-hireBtn-cont" >
                 <button className="resume-btn">
-                    <a href="/Docs/Sulyman-Resume.pdf" target="_blank" rel="noopener noreferrer">RESUME</a>
+                    <a href="/Docs/Sulyman-Resume.pdf" rel="noopener noreferrer" download>RESUME</a>
                 </button>
                 <i onClick={toggleTheme} className={`day-night-icon fa-solid ${darkMode ? "fa-sun" : "fa-moon"} me-4 ps-2`}></i>
                 <i onClick={() => setIsMenuOpen(!isMenuOpen)} className="fa-solid fa-bars"></i>
@@ -83,6 +83,7 @@ const Navbar = () => {
                 <div className={`menu-container ${isClosing ? "menuOut" : "menuIn"}`}>
                     <i onClick={handleClsoeMenu} className="fa-solid fa-x"></i>
                     <div className="menu-lists">
+                        <li><Link onClick={handleClsoeMenu} to="/">Home</Link></li>
                         <li><Link onClick={handleClsoeMenu} to="/about">About</Link></li>
                         <li><Link onClick={handleClsoeMenu} to="/skills">Skills</Link></li>
                         <li><Link onClick={handleClsoeMenu} to="/projects">Projects</Link></li>

@@ -41,17 +41,16 @@
     padding-inline: 16px;
 }
 
-.resume-and-btn-cont {
+.resume-and-hireBtn-cont {
     display: flex;
     align-items: center;
     margin-right: 8px;
 }
 
 .resume-btn {
-    font-family: "Altan Sans", sans-serif;
     border-radius: 0.7rem;
     background-color: var(--bg-color);
-    font-size: 0.6rem;
+    font-size: .75rem;
     font-weight: 900;
     border: none;
     height: 2.5rem;
@@ -60,6 +59,7 @@
 }
 
 .resume-btn a {
+    font-family: "Montserrat", sans-serif;
     text-decoration: none;
     color: var(--text-color) !important;
 }
@@ -99,7 +99,7 @@
 .HeroSection {
     background-color: var(--hero-color);
     color: var(--text-color);
-    height: 450px;
+    min-height: 300px;
 }
 
 .HeroSection img {
@@ -112,7 +112,6 @@
 .HeroSection-h1 {
     text-align: center;
     font-size: 1.4rem;
-    margin-top: 3px;
     color: var(--text-color);
 }
 
@@ -125,10 +124,10 @@
 
 .HeroSection-h2 {
     text-align: center;
-    padding-block: 0.3rem;
     font-weight: 700;
     font-size: 1.7rem;
     color: var(--special-heading-color);
+    padding: 5px;
 }
 
 .HeroSection-p {
@@ -149,16 +148,16 @@
     width: 5.2rem;
     font-weight: 900;
     transition: transform ease-in-out 200ms;
-    margin-bottom: 1rem;
-    font-size: 0.6rem;
-    font-family: "Altan Sans", sans-serif;
+    font-size: .75rem;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 3px;
 }
 
 .Hire-Button:hover {
     transform: scale(1.03);
 }
 
-.fa-chevron-down {
+/* .fa-chevron-down {
     display: block;
     margin: auto;
     transition: transform ease-in-out 200ms;
@@ -168,7 +167,7 @@
 
 .fa-chevron-down:hover {
     transform: translateY(3px);
-}
+} */
 
 /************* Beyond Coding **********/
 .beyond-coding h1 {
@@ -333,25 +332,25 @@
     }
 
     /************ Hero Section *********/
+    .HeroSection {
+        background-color: var(--hero-color);
+        color: var(--text-color);
+    }
+
     .HeroSection img {
         height: 180px;
-        margin-top: 3px;
-        margin-bottom: 14px;
     }
 
     .HeroSection-h1 {
         font-size: 1.2rem;
-        margin-bottom: 14px;
 
     }
 
     .h2-heading-parent {
         width: 270px;
-        margin-bottom: 14px;
     }
 
     .HeroSection-h2 {
-        padding-block: 0.2rem;
         font-weight: 600;
         font-size: 1.5rem;
     }
@@ -360,7 +359,6 @@
         font-size: 0.55rem;
         height: 2.3rem;
         width: 5rem;
-        margin-bottom: 21px;
     }
 }
 
@@ -369,10 +367,6 @@
     /*********** Hero Section ***********/
     .heading1 {
         font-size: 2rem;
-    }
-
-    .Hire-Button {
-        margin-bottom: 21px;
     }
 }
 
@@ -395,6 +389,7 @@
         position: fixed;
         background-color: var(--navbar-bg-color);
         backdrop-filter: blur(8px);
+        z-index: 2;
     }
 
     .menu-container.menuIn {
@@ -469,23 +464,21 @@
 @media (max-width: 550px) {
 
     /*********** Hero Section ***********/
+    .HeroSection {
+        background-color: var(--hero-color);
+        color: var(--text-color);
+    }
+
     .HeroSection img {
         height: 180px;
-        margin-bottom: 8px;
     }
 
     .HeroSection-h1 {
         font-size: 1.2rem;
-        margin-bottom: 8px;
     }
 
     .h2-heading-parent {
         width: 270px;
-        margin-bottom: 8px;
-    }
-
-    .Hire-Button {
-        margin-bottom: 16px;
     }
 
     /********** Beyond Coding *******/
@@ -534,20 +527,21 @@
 
     /************* Hero Section ***********/
 
+    .HeroSection {
+        background-color: var(--hero-color);
+        color: var(--text-color);
+    }
+
     .HeroSection img {
         height: 160px;
-        margin-top: 2px;
-        margin-bottom: 13px;
     }
 
     .HeroSection-h1 {
         font-size: 1.1rem;
-        margin-bottom: 20px;
     }
 
     .h2-heading-parent {
         width: 250px;
-        margin-bottom: 19px;
     }
 
     .HeroSection-h2 {
@@ -556,14 +550,12 @@
 
     .HeroSection-p {
         font-size: 14px;
-        margin-bottom: 11px;
     }
 
     .Hire-Button {
         font-size: 0.5rem;
         height: 2.2rem;
         width: 4.9rem;
-        margin-bottom: 20px;
     }
 
     /*********** Beyond Coding *********/
@@ -603,57 +595,49 @@
 @media (max-width: 360px) {
 
     /*********** Navbar **********/
-    .heading1 {
+    /* .heading1 {
         font-size: 1.3rem;
-    }
+    } */
 
     .resume-btn {
-        font-size: 0.4rem;
+        /* font-size: 0.4rem; */
         height: 2rem;
         width: 4.7rem;
     }
 
-    .day-night-icon {
+    /* .day-night-icon {
         font-size: 1rem;
     }
 
     .fa-bars {
         font-size: 17px;
-    }
+    } */
 
     /************* Hero Section ***********/
     .HeroSection img {
         height: 150px;
-        margin-top: 6px;
-        margin-bottom: 17px;
     }
 
-    .HeroSection-h1 {
+    /* .HeroSection-h1 {
         font-size: 1rem;
-        margin-bottom: 17px;
-
-    }
+    } */
 
     .h2-heading-parent {
         width: 210px;
-        margin-bottom: 17px;
-
     }
 
-    .HeroSection-h2 {
+    /* .HeroSection-h2 {
         font-size: 1.1rem;
     }
 
     .HeroSection-p {
         font-size: 12px;
-        margin-bottom: 17px;
-    }
+    } */
 
     .Hire-Button {
-        font-size: 0.4rem;
+        /* font-size: 0.4rem; */
         height: 2rem;
         width: 4.7rem;
-        margin-bottom: 30px;
     }
 
     /*********** Beyond Coding *********/
@@ -671,20 +655,20 @@
         max-width: 75px;
     }
 
-    .beyond-coding h1 {
+    /* .beyond-coding h1 {
         font-size: 1.1rem;
-    }
+    } */
 
     .beyond-coding hr {
         width: 50px;
         height: 2px;
     }
 
-    .hobby-content h3 {
+    /* .hobby-content h3 {
         font-size: 12px;
     }
 
     .hobby-content p {
         font-size: 10px;
-    }
+    } */
 }

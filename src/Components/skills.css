@@ -57,6 +57,7 @@
     animation: frontendFloat 3s ease-in-out infinite;
     /* animation: moveAround 6s linear infinite; */
     /* animation: floatUnique 6s ease-in-out infinite; */
+    padding: 5px;
 }
 
 @keyframes frontendFloat {
@@ -421,7 +422,7 @@
 
     /* FrontEnd Skills */
     .frontEnd-Skills h1 {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     .frontEnd-Skills h1::after {
@@ -462,17 +463,17 @@
         max-width: 48px;
     }
 
-    .html .skill-title,
+    /* .html .skill-title,
     .css .skill-title,
     .javascript .skill-title {
         font-size: 12px;
-    }
+    } */
 
     .html .skill-text,
     .css .skill-text,
     .javascript .skill-text {
         margin-inline: 9px;
-        font-size: 12px;
+        /* font-size: 12px; */
     }
 
     .html .progress,
@@ -524,6 +525,7 @@
     cursor: pointer;
     animation: frameworksFloat 3s ease-in-out infinite;
     animation-delay: 0.5s;
+    padding: 5px;
 }
 
 @keyframes frameworksFloat {
@@ -834,7 +836,7 @@
 
 @media (max-width: 447px) {
     .frameworksLibraries h1 {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     .frameworksLibraries h1::after {
@@ -882,17 +884,17 @@
         max-width: 33px;
     }
 
-    .React .skill-title,
+    /* .React .skill-title,
     .BootStrap .skill-title,
     .tailwind-CSS .skill-title {
         font-size: 12px;
-    }
+    } */
 
     .React .skill-text,
     .BootStrap .skill-text,
     .tailwind-CSS .skill-text {
         margin-inline: 9px;
-        font-size: 12px;
+        /* font-size: 12px; */
     }
 
     .React .progress,
@@ -908,7 +910,7 @@
     margin-left: 18px;
     font-size: 28px;
     margin-top: 33px;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
     font-weight: 600;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     letter-spacing: 4px;
@@ -943,6 +945,7 @@
     cursor: pointer;
     animation: versionControlFloat 3s ease-in-out infinite;
     animation-delay: 1s;
+    padding: 5px;
 }
 
 @keyframes versionControlFloat {
@@ -1121,7 +1124,7 @@
 
 @media (max-width: 447px) {
     .versionControl h1 {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     .versionControl h1::after {
@@ -1152,19 +1155,19 @@
         margin-bottom: 3px;
     }
 
-    .Github i {
+    /* .Github i {
         font-size: 39px;
-    }
+    } */
 
-    .Git .skill-title,
+    /* .Git .skill-title,
     .Github .skill-title {
         font-size: 12px;
-    }
+    } */
 
     .Git .skill-text,
     .Github .skill-text {
         margin-inline: 9px;
-        font-size: 12px;
+        /* font-size: 12px; */
     }
 }
 
@@ -1211,6 +1214,7 @@
     margin-bottom: 25px;
     animation: professionalFloat 3s ease-in-out infinite;
     animation-delay: 1.5s;
+    padding: 5px;
 }
 
 @keyframes professionalFloat {
@@ -1422,7 +1426,7 @@
 
 @media (max-width: 447px) {
     .Others h1 {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     .Others h1::after {
@@ -1459,16 +1463,16 @@
         margin-bottom: 3px;
     }
 
-    .problemSolving .skill-title,
+    /* .problemSolving .skill-title,
     .communication .skill-title,
     .teamCollaboration .skill-title {
         font-size: 12px;
-    }
+    } */
 
     .problemSolving .skill-text,
     .communication .skill-text,
     .teamCollaboration .skill-text {
         margin-inline: 9px;
-        font-size: 12px;
+        /* font-size: 12px; */
     }
 }

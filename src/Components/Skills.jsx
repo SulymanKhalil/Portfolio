@@ -7,7 +7,7 @@ const Skills = () => {
                 <h2>
                     <TypewriterComponent
                         options={{
-                            strings: ["Tech Stacks", "Core Expertise", "Developer Arsenal"],
+                            strings: ["Tech Stacks", "Core Expertise", "Developers' Arsenal"],
                             autoStart: true,
                             loop: true,
                             delay: 100,

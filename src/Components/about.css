@@ -8,6 +8,10 @@
     font-weight: 650;
 }
 
+.heading-container h5 {
+    margin-inline: 8px;
+}
+
 .bar {
     color: var(--highlight-color);
 }
