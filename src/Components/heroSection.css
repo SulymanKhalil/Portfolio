@@ -147,6 +147,7 @@
 
 .Hire-Button {
     display: block;
+    margin: auto;
     border: none;
     background-color: var(--highlight-color);
     color: var(--special-heading-color);
