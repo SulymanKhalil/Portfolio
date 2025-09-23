@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 const NotFound = () => {
     return (
         <div className="notFoundContainer">
-            <h1>404 — Page Not Found</h1>
-            <p>Don’t worry, it happens. Let’s get you back on track</p>
-            <a href="">Go back to Home</a>
+            <h1>404</h1>
+            <h3>Oops! You took a wrong turn 🚧</h3>
+            <Link to="/">Go back to Home</Link>
         </div>
     )
 }
