@@ -407,7 +407,7 @@
         animation: menuOut 0.6s ease-in-out forwards;
     }
 
-    .menu-container .fa-x {
+    .menu-container .fa-xmark {
         color: var(--text-color);
         margin-top: 1rem;
         margin-right: 1rem;
@@ -417,7 +417,7 @@
         transition: transform 0.3s ease-in-out;
     }
 
-    .menu-container .fa-x:hover {
+    .menu-container .fa-xmark:hover {
         transform: rotate(90deg);
     }
 

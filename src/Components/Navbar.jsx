@@ -81,7 +81,7 @@ const Navbar = () => {
                 </div>
                 {(isMenuOpen || isClosing) && (
                 <div className={`menu-container ${isClosing ? "menuOut" : "menuIn"}`}>
-                    <i onClick={handleClsoeMenu} className="fa-solid fa-x"></i>
+                    <i onClick={handleClsoeMenu} className="fa-solid fa-xmark"></i>
                     <div className="menu-lists">
                         <li><Link onClick={handleClsoeMenu} to="/">Home</Link></li>
                         <li><Link onClick={handleClsoeMenu} to="/about">About</Link></li>

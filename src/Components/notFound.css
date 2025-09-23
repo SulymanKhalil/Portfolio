@@ -9,7 +9,7 @@
     color: red;
     font-size: 120px;
     font-weight: bold;
-    animation: pulse 1.5s infinite;
+    animation: errorAnimation 1.5s infinite;
 }
 
 .notFoundContainer a {
@@ -21,8 +21,19 @@
     color: var(--highlight-color);
 }
 
-@keyframes pulse {
-    0% { transform: scale(1); text-shadow: 0 0 5px red; }
-    50% { transform: scale(1.1); text-shadow: 0 0 20px red; }
-    100% { transform: scale(1); text-shadow: 0 0 5px red; }
-  }
+@keyframes errorAnimation {
+    0% {
+        transform: scale(1);
+        text-shadow: 0 0 5px red;
+    }
+
+    50% {
+        transform: scale(1.02);
+        text-shadow: 0 0 10px red;
+    }
+
+    100% {
+        transform: scale(1);
+        text-shadow: 0 0 5px red;
+    }
+}
