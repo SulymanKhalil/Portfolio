@@ -107,6 +107,7 @@
     background-color: var(--hero-color);
     color: var(--text-color);
     min-height: 300px;
+    text-align: center;
 }
 
 .HeroSection img {
@@ -146,7 +147,6 @@
 
 .Hire-Button {
     display: block;
-    margin: auto;
     border: none;
     background-color: var(--highlight-color);
     color: var(--special-heading-color);
