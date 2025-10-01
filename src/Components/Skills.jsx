@@ -3,7 +3,7 @@ import TypewriterComponent from "typewriter-effect"
 const Skills = () => {
     return (
         <div className="skillsContainer">
-            <div className="skillsHeadings">
+            <div className="skillsHeadings" data-aos="fade-down">
                 <h2>
                     <TypewriterComponent
                         options={{
@@ -15,7 +15,7 @@ const Skills = () => {
                         }}
                     />
                 </h2>
-                <hr />
+                <hr data-aos="fade-right" />
             </div>
             <div className="skillsContent">
                 <div className="frontEnd-Skills">

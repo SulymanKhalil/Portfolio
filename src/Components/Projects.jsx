@@ -3,7 +3,7 @@ import TypewriterComponent from "typewriter-effect"
 const Projects = () => {
     return (
         <div className="projectsContainer">
-            <div className="projectsHeadings">
+            <div className="projectsHeadings" data-aos="fade-down">
                 <h2>
                     <TypewriterComponent
                         options={{
@@ -29,7 +29,7 @@ const Projects = () => {
                     </div>
                     <a href="https://column-wise.netlify.app/" target="_blank" rel="noopener noreferrer">Visit <i className="fas fa-external-link-alt"></i></a>
                 </div> */}
-                <div className="project">
+                <div className="project" data-aos="fade-up" data-aos-offset="150" data-aos-delay="100">
                     <img src="/Images/nft-insight.png" alt="NFT-Insight-Project" />
                     <h3>NFT Insight Project</h3>
                     <p className="project-desc">Clean and responsive NFT preview card designed with HTML & CSS, focusing on simplicity and visual balance.</p>
@@ -69,7 +69,7 @@ const Projects = () => {
                     </div>
                     <a href="https://eid-joy.netlify.app/" target="_blank" rel="noopener noreferrer">Visit <i className="fas fa-external-link-alt"></i></a>
                 </div> */}
-                <div className="project">
+                <div className="project" data-aos="fade-up" data-aos-offset="150" data-aos-delay="200">
                     <img src="/Images/testimonials-wall.png" alt="Testimonials-Wall" />
                     <h3>Testimonials Wall</h3>
                     <p className="project-desc">Responsive testimonials section built with HTML & CSS, leveraging CSS Grid for structured and clean layout.</p>
@@ -79,7 +79,7 @@ const Projects = () => {
                     </div>
                     <a href="https://testimonials-wall.netlify.app/" target="_blank" rel="noopener noreferrer">Visit <i className="fas fa-external-link-alt"></i></a>
                 </div>
-                <div className="project">
+                <div className="project" data-aos="fade-up" data-aos-offset="150" data-aos-delay="300">
                     <img src="/Images/techno-web.png" alt="Techno-Web" />
                     <h3>Techno Web House</h3>
                     <p className="project-desc">Responsive software company website built with HTML, CSS, and Bootstrap, featuring clean layout and modern design.</p>
@@ -90,7 +90,7 @@ const Projects = () => {
                     </div>
                     <a href="https://techno-web-house.netlify.app/" target="_blank" rel="noopener noreferrer">Visit <i className="fas fa-external-link-alt"></i></a>
                 </div>
-                <div className="project">
+                <div className="project" data-aos="fade-up" data-aos-offset="150" data-aos-delay="400">
                     <img src="/Images/digital-agency.png" alt="Digital-Agency-Project" />
                     <h3>Digital Agency Project</h3>
                     <p className="project-desc">Modern and responsive digital agency website developed with HTML, CSS, and Bootstrap, emphasizing sleek visuals and user-friendly layout.</p>
@@ -101,7 +101,7 @@ const Projects = () => {
                     </div>
                     <a href="https://digital-agencyweb.netlify.app/" target="_blank" rel="noopener noreferrer">Visit <i className="fas fa-external-link-alt"></i></a>
                 </div>
-                <div className="project">
+                <div className="project" data-aos="fade-up" data-aos-offset="150" data-aos-delay="500">
                     <img src="/Images/foodie-hamburger.png" alt="Foodie-Hamburger-Project" />
                     <h3>Foodie Hamburger</h3>
                     <p className="project-desc">Interactive hamburger menu project built with HTML, CSS, and JavaScript, showcasing responsive design and smooth animations.</p>
@@ -112,7 +112,7 @@ const Projects = () => {
                     </div>
                     <a href="https://foodi-hamburger.netlify.app/" target="_blank" rel="noopener noreferrer">Visit <i className="fas fa-external-link-alt"></i></a>
                 </div>
-                <div className="project">
+                <div className="project" data-aos="fade-up" data-aos-offset="150" data-aos-delay="600">
                     <img src="/Images/focus-on-today.png" alt="Focus-On-Today-Project" />
                     <h3>Focus On Today</h3>
                     <p className="project-desc">Responsive To-Do web app built with HTML, CSS, and JavaScript, featuring task management and clean, structured design.</p>
@@ -123,7 +123,7 @@ const Projects = () => {
                     </div>
                     <a href="https://focussly.netlify.app/" target="_blank" rel="noopener noreferrer">Visit <i className="fas fa-external-link-alt"></i></a>
                 </div>
-                <div className="project">
+                <div className="project" data-aos="fade-up" data-aos-offset="150" data-aos-delay="700">
                     <img src="/Images/spotify-like-app.png" alt="Spotify-Like-App" />
                     <h3>Spotify Like App</h3>
                     <p className="project-desc">Responsive music player app built with HTML, CSS, and JavaScript, featuring clean UI and interactive controls.</p>
@@ -134,7 +134,7 @@ const Projects = () => {
                     </div>
                     <a href="https://spotify-like-app.netlify.app/" target="_blank" rel="noopener noreferrer">Visit <i className="fas fa-external-link-alt"></i></a>
                 </div>
-                <div className="project">
+                <div className="project" data-aos="fade-up" data-aos-offset="150" data-aos-delay="800">
                     <img src="/Images/terraview.png" alt="Global-info-Hub" />
                     <h3>Global Info App</h3>
                     <p className="project-desc">World countries info app crafted with HTML, CSS, and JS, featuring API-powered dynamic data and responsive design.</p>
@@ -146,7 +146,7 @@ const Projects = () => {
                     <a href="https://terraview.netlify.app/" target="_blank" rel="noopener noreferrer">Visit <i className="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
-            <div className="viewAllProjects">
+            <div className="viewAllProjects" data-aos="fade-down">
                 <p>Looking for more than just highlights? Discover all my projects on GitHub.</p>
                 <div>
                     <a href="https://github.com/SulymanKhalil?tab=repositories" target="_blank" rel="noopener noreferrer">See all on GitHub <i className="fas fa-external-link-alt"></i></a>
