@@ -157,7 +157,7 @@ p {
     margin-block: auto;
     margin-top: 50px;
     background-color: var(--bg-color);
-    height: 300px;
+    min-height: 350px;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
@@ -178,10 +178,17 @@ p {
     opacity: 0.7;
 }
 
+.last-updated {
+    margin-top: 30px;
+    opacity: 0.4;
+    font-size: 12px;
+    font-style: italic;
+}
+
 /* Medias */
 @media (max-width: 500px) {
     .footer {
-        height: 240px;
+        min-height: 300px;
     }
 }
 

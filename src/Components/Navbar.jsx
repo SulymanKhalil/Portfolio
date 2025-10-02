@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const [darkMode, setDarkMode] = useState(false);
@@ -55,19 +56,19 @@ const Navbar = () => {
                 <div>
                     <ul className="nav-item-list" data-aos="fade-up">
                         <li className="nav-item">
-                            <Link className="nav-link" to="/">Home</Link>
+                            <NavLink className={({ isActive }) => isActive ? "nav-link activeTab" : "nav-link inActiveTab"} to="/">Home</NavLink>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/about">About</Link>
+                            <NavLink className={({ isActive }) => isActive ? "nav-link activeTab" : "nav-link inActiveTab"} to="/about">About</NavLink>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/skills">Skills</Link>
+                            <NavLink className={({ isActive }) => isActive ? "nav-link activeTab" : "nav-link inActiveTab"} to="/skills">Skills</NavLink>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/projects">Projects</Link>
+                            <NavLink className={({ isActive }) => isActive ? "nav-link activeTab" : "nav-link inActiveTab"} to="/projects">Projects</NavLink>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/contact">Contact</Link>
+                            <NavLink className={({ isActive }) => isActive ? "nav-link activeTab" : "nav-link inActiveTab"} to="/contact">Contact</NavLink>
                         </li>
                     </ul>
                 </div>
@@ -83,11 +84,11 @@ const Navbar = () => {
                 <div className={`menu-container ${isClosing ? "menuOut" : "menuIn"}`}>
                     <i onClick={handleClsoeMenu} className="fa-solid fa-xmark"></i>
                     <div className="menu-lists">
-                        <li><Link onClick={handleClsoeMenu} to="/">Home</Link></li>
-                        <li><Link onClick={handleClsoeMenu} to="/about">About</Link></li>
-                        <li><Link onClick={handleClsoeMenu} to="/skills">Skills</Link></li>
-                        <li><Link onClick={handleClsoeMenu} to="/projects">Projects</Link></li>
-                        <li><Link onClick={handleClsoeMenu} to="/contact">Contact</Link></li>
+                        <li><NavLink className={({ isActive }) => isActive ? "activeTab" : "inActiveTab"} onClick={handleClsoeMenu} to="/">Home</NavLink></li>
+                        <li><NavLink className={({ isActive }) => isActive ? "activeTab" : "inActiveTab"} onClick={handleClsoeMenu} to="/about">About</NavLink></li>
+                        <li><NavLink className={({ isActive }) => isActive ? "activeTab" : "inActiveTab"} onClick={handleClsoeMenu} to="/skills">Skills</NavLink></li>
+                        <li><NavLink className={({ isActive }) => isActive ? "activeTab" : "inActiveTab"} onClick={handleClsoeMenu} to="/projects">Projects</NavLink></li>
+                        <li><NavLink className={({ isActive }) => isActive ? "activeTab" : "inActiveTab"} onClick={handleClsoeMenu} to="/contact">Contact</NavLink></li>
                     </div>
                 </div>
             )}

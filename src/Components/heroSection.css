@@ -34,6 +34,11 @@
     z-index: 1000; */
 }
 
+.activeTab.activeTab.activeTab {
+    font-weight: 700;
+    color: var(--highlight-color) !important;
+}
+
 .navbar .nav-link {
     color: var(--text-color) !important;
     transition: transform ease-in-out 200ms;
