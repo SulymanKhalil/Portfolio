@@ -29,6 +29,10 @@ body.dark {
     --socialMedia-hover-bg-color: #f5e1af;
 }
 
+body.skills-page {
+    margin-bottom: 25px;
+}
+
 body {
     background-color: var(--body-color);
     margin-top: 85px;

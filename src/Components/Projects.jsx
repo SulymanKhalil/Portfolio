@@ -2,7 +2,7 @@ import TypewriterComponent from "typewriter-effect"
 
 const Projects = () => {
     return (
-        <div className="projectsContainer">
+        <div className="projectsContainer container mx-auto">
             <div className="projectsHeadings" data-aos="fade-down">
                 <h2>
                     <TypewriterComponent
