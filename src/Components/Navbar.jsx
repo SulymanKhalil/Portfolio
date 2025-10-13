@@ -3,35 +3,8 @@ import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-    const [darkMode, setDarkMode] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isClosing, setIsClosing] = useState(false)
-
-    useEffect(() => {
-        const savedTheme = localStorage.getItem("theme")
-        if (savedTheme === "dark") {
-            setDarkMode(true);
-            document.body.classList.add("dark")
-        } else {
-            setDarkMode(false);
-            document.body.classList.add("light")
-        }
-    }, [])
-
-    const toggleTheme = () => {
-        const newMode = !darkMode
-        setDarkMode(newMode)
-
-        if (newMode) {
-            document.body.classList.remove("light")
-            document.body.classList.add("dark")
-            localStorage.setItem("theme", "dark")
-        } else {
-            document.body.classList.remove("dark")
-            document.body.classList.add("light")
-            localStorage.setItem("theme", "light")
-        }
-    }
 
     useEffect(() => {
         if (isMenuOpen) {
@@ -77,7 +50,6 @@ const Navbar = () => {
                 <button className="resume-btn">
                     <a href="/Docs/Sulyman-Resume.pdf" rel="noopener noreferrer" download data-aos="zoom-in-up">RESUME</a>
                 </button>
-                <i onClick={toggleTheme} className={`day-night-icon fa-solid ${darkMode ? "fa-sun" : "fa-moon"} me-4 ps-2`}></i>
                 <i onClick={() => setIsMenuOpen(!isMenuOpen)} className="fa-solid fa-bars"></i>
             </div>
             {(isMenuOpen || isClosing) && (

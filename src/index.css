@@ -5,19 +5,7 @@
     margin: 0;
 }
 
-body.light {
-    --bg-color: #f5f7fa;
-    --highlight-color: #4fa3d1;
-    --special-heading-color: #1e293b;
-    --text-color: #111827;
-    --body-color: #ffffff;
-    --hero-color: #e2e8f0;
-    --navbar-bg-color: #f5f7fa8c;
-    --socialMedia-bg-color: #cae6f5;
-    --socialMedia-hover-bg-color: #addcf5;
-}
-
-body.dark {
+body {
     --bg-color: #0f1729;
     --highlight-color: #B8860B;
     --special-heading-color: #f1f5f9;

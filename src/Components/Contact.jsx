@@ -54,7 +54,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <div className="footer" data-aos="fade-up" data-aos-offset="150">
+            <div className="footer container" data-aos="fade-up" data-aos-offset="150">
                 <h1>Sulyman Khalil</h1>
                 <p>Frontend Developer | React.js Developer</p>
                 <hr />

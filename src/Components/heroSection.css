@@ -28,10 +28,6 @@
     height: 2.7rem !important;
     background-color: var(--bg-color) !important;
     margin-top: 14px;
-    /* position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000; */
 }
 
 .activeTab.activeTab.activeTab {
@@ -74,20 +70,6 @@
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
     color: var(--text-color) !important;
-}
-
-.day-night-icon {
-    margin: 0 !important;
-    padding: 0 !important;
-    font-size: 1.3rem;
-    cursor: pointer;
-    margin-left: 7px !important;
-    color: var(--text-color);
-    transition: transform 0.3s ease-in-out;
-}
-
-.day-night-icon:hover {
-    transform: scale(1.1);
 }
 
 .navbar .nav-link:hover {
@@ -151,8 +133,6 @@
 }
 
 .Hire-Button {
-    /* display: block; */
-    /* margin: auto; */
     border: none;
     background-color: var(--highlight-color);
     color: var(--special-heading-color);
@@ -169,18 +149,6 @@
 .Hire-Button:hover {
     transform: scale(1.03);
 }
-
-/* .fa-chevron-down {
-    display: block;
-    margin: auto;
-    transition: transform ease-in-out 200ms;
-    cursor: pointer;
-    color: var(--text-color);
-}
-
-.fa-chevron-down:hover {
-    transform: translateY(3px);
-} */
 
 /************* Beyond Coding **********/
 .beyond-coding h1 {
@@ -326,11 +294,6 @@
         width: 5rem;
     }
 
-    .day-night-icon {
-        font-size: 1.15rem;
-        margin-top: 16px;
-    }
-
     .navbar {
         height: 2.4rem !important;
     }
@@ -401,7 +364,6 @@
     .menu-container {
         position: fixed;
         background-color: var(--bg-color);
-        /* backdrop-filter: blur(8px); */
         z-index: 5;
     }
 
@@ -530,10 +492,6 @@
         width: 4.9rem;
     }
 
-    .day-night-icon {
-        font-size: 1.1rem;
-    }
-
     .fa-bars {
         font-size: 19px;
     }
@@ -607,48 +565,21 @@
 
 @media (max-width: 360px) {
 
-    /*********** Navbar **********/
-    /* .heading1 {
-        font-size: 1.3rem;
-    } */
-
     .resume-btn {
-        /* font-size: 0.4rem; */
         height: 2rem;
         width: 4.7rem;
     }
-
-    /* .day-night-icon {
-        font-size: 1rem;
-    }
-
-    .fa-bars {
-        font-size: 17px;
-    } */
 
     /************* Hero Section ***********/
     .HeroSection img {
         height: 150px;
     }
 
-    /* .HeroSection-h1 {
-        font-size: 1rem;
-    } */
-
     .h2-heading-parent {
         width: 210px;
     }
 
-    /* .HeroSection-h2 {
-        font-size: 1.1rem;
-    }
-
-    .HeroSection-p {
-        font-size: 12px;
-    } */
-
     .Hire-Button {
-        /* font-size: 0.4rem; */
         height: 2rem;
         width: 4.7rem;
     }
@@ -668,20 +599,8 @@
         max-width: 75px;
     }
 
-    /* .beyond-coding h1 {
-        font-size: 1.1rem;
-    } */
-
     .beyond-coding hr {
         width: 50px;
         height: 2px;
     }
-
-    /* .hobby-content h3 {
-        font-size: 12px;
-    }
-
-    .hobby-content p {
-        font-size: 10px;
-    } */
 }
