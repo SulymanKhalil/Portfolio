@@ -19,7 +19,7 @@ const Contact = () => {
             </div>
             <div className="contactContent">
                 <div className="socialMediaLinks" data-aos="fade-right" data-aos-delay="100">
-                    <div className="mediaIcon"><i class="fab fa-whatsapp"></i></div>
+                    <div className="mediaIcon"><i className="fa-solid fa-phone"></i></div>
                     <div className="mediaContent">
                         <h4>Phone</h4>
                         <p>+92 307 6250127</p>
@@ -54,7 +54,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <div className="footer container" data-aos="fade-up" data-aos-offset="150">
+            <div className="footer" data-aos="fade-up" data-aos-offset="150">
                 <h1>Sulyman Khalil</h1>
                 <p>Frontend Developer | React.js Developer</p>
                 <hr />
