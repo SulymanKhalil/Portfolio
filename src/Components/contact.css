@@ -33,16 +33,11 @@
     width: 100%;
     min-height: 90px;
     padding: 13px;
-    box-shadow: 0 0 0 transparent;
-    transition: all 0.2s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .socialMediaLinks:hover {
     box-shadow: 0 0 5px var(--highlight-color);
-}
-
-.socialMediaLinks:hover .mediaIcon {
-    background-color: var(--socialMedia-hover-bg-color);
 }
 
 .mediaIcon {
@@ -53,7 +48,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.socialMediaLinks:hover .mediaIcon {
+    background-color: var(--socialMedia-hover-bg-color);
 }
 
 .mediaIcon i {
