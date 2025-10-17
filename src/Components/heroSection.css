@@ -90,12 +90,10 @@
 
 /************ HeroSection **********/
 .HeroSection {
-    /* background-color: var(--bg-color); */
-    background-image: url("/public/images/backgroundPic.jpg");
+    background-image: url("./public//images/backgroundPic.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* box-shadow: 0 0 4px var(--highlight-color); */
     color: var(--text-color);
     min-height: 300px;
     text-align: center;
@@ -311,11 +309,6 @@
     }
 
     /************ Hero Section *********/
-    .HeroSection {
-        background-color: var(--hero-color);
-        color: var(--text-color);
-    }
-
     .HeroSection img {
         height: 180px;
     }
