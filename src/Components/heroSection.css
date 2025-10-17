@@ -90,7 +90,7 @@
 
 /************ HeroSection **********/
 .HeroSection {
-    background-image: url("./public//images/backgroundPic.jpg");
+    background-image: url("/Images/backgroundPic.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
