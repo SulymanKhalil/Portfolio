@@ -13,9 +13,6 @@ const HeroSection = () => {
                     "I build modern, responsive, and user-friendly websites. Passionate about creating clean code and engaging user experiences"
                 </p>
                 <Link className="text-decoration-none" to="/contact" data-aos="zoom-in-up"><button className="Hire-Button">HIRE ME</button></Link>
-                {/* <i className="fa-solid fa-chevron-down" onClick={() => {
-                    window.location.href = "#beyondCoding"
-                }}></i> */}
             </div>
             <div className="m-2 beyond-coding" id="beyondCoding">
                 <h1 data-aos="fade-right">Life Outside Work</h1>

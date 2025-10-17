@@ -2,7 +2,6 @@
 .header {
     display: flex;
     justify-content: space-between;
-    /* padding-top: 3px; */
     box-shadow: 0 4px 5px -5px var(--highlight-color);
     backdrop-filter: blur(8px);
     position: fixed;
@@ -91,7 +90,12 @@
 
 /************ HeroSection **********/
 .HeroSection {
-    background-color: var(--hero-color);
+    /* background-color: var(--bg-color); */
+    background-image: url("/public/images/backgroundPic.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* box-shadow: 0 0 4px var(--highlight-color); */
     color: var(--text-color);
     min-height: 300px;
     text-align: center;
