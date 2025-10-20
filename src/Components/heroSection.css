@@ -435,11 +435,6 @@
 @media (max-width: 550px) {
 
     /*********** Hero Section ***********/
-    .HeroSection {
-        background-color: var(--hero-color);
-        color: var(--text-color);
-    }
-
     .HeroSection img {
         height: 180px;
     }
@@ -493,12 +488,6 @@
     }
 
     /************* Hero Section ***********/
-
-    .HeroSection {
-        background-color: var(--hero-color);
-        color: var(--text-color);
-    }
-
     .HeroSection img {
         height: 160px;
     }
