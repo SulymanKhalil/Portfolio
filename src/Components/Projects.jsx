@@ -63,7 +63,7 @@ const Projects = () => {
                     </div>
                     <a href="https://web-expensetracker.netlify.app/" target="_blank" rel="noopener noreferrer">Visit <i className="fas fa-external-link-alt"></i></a>
                 </div>
-                <div className="project" data-aos="fade-up" data-aos-offset="150" data-aos-delay="1000">
+                <div className="project" data-aos="fade-up" data-aos-offset="150" data-aos-delay="1100">
                     <img src="/Images/calculator.png" alt="Calclator" />
                     <h3>Calculator</h3>
                     <p className="project-desc">Calculator App built with React & CSS, featuring dynamic calculations, state management, and a user-friendly interface.</p>
@@ -73,7 +73,7 @@ const Projects = () => {
                     </div>
                     <a href="https://calculator-by-sulyman.netlify.app/" target="_blank" rel="noopener noreferrer">Visit <i className="fas fa-external-link-alt"></i></a>
                 </div>
-                <div className="project" data-aos="fade-up" data-aos-offset="150" data-aos-delay="1000">
+                <div className="project" data-aos="fade-up" data-aos-offset="150" data-aos-delay="1200">
                     <img src="/Images/recipefinder.png" alt="Recipe Finder" />
                     <h3>Recipe Finder</h3>
                     <p className="project-desc">Recipe Finder App built with React, styled with Bootstrap, featuring API-powered recipe search and detailed recipe display.</p>
@@ -83,10 +83,10 @@ const Projects = () => {
                     </div>
                     <a href="https://web-find-recipes.netlify.app/" target="_blank" rel="noopener noreferrer">Visit <i className="fas fa-external-link-alt"></i></a>
                 </div>
-                <div className="project" data-aos="fade-up" data-aos-offset="150" data-aos-delay="1000">
+                <div className="project" data-aos="fade-up" data-aos-offset="150" data-aos-delay="1300">
                     <img src="/Images/notesApp.png" alt="Notes App" />
                     <h3>Notes App</h3>
-                    <p className="project-desc">Responsive Notes App built with React, Redux, and Tailwind CSS — featuring state management, sleek UI, and smooth performance.</p>
+                    <p className="project-desc">Responsive Notes App built with React, Reduxm and Tailwind CSS — featuring state management, Local Storage, sleek UI, and smooth performance.</p>
                     <div className="languages">
                         <div><p>React JS</p></div>
                         <div><p>Redux</p></div>
