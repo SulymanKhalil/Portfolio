@@ -19,7 +19,7 @@ const Projects = () => {
                 <p className="projects-tagline">Curious? Let’s jump into the work.</p>
             </div>
             <div className="projectSection">
-                <p className="arrangeOrder-heading">Arranged Chronologically (Oldest → Newest)</p>
+                <p className="arrangeOrder-heading" data-aos="fade-up">Arranged Chronologically (Oldest → Newest)</p>
                 <div className="projectsContent">
                     <div className="project" data-aos="fade-up" data-aos-offset="150" data-aos-delay="700">
                         <img src="/Images/spotify-like-app.png" alt="Spotify Like App" />

@@ -69,7 +69,7 @@
 /* Project Content */
 .arrangeOrder-heading {
     margin-top: 12px;
-    opacity: 0.7;
+    opacity: 0.5 !important;
 }
 
 .projectsContent {
@@ -108,9 +108,9 @@
     margin-left: .5rem;
     color: var(--text-color);
     background-color: red;
-    border-radius: .2rem;
-    padding-inline: .2rem;
-    padding-block: .05rem;
+    border-radius: .6rem;
+    padding-inline: .3rem;
+    padding-block: .06rem;
 }
 
 .project-desc {
