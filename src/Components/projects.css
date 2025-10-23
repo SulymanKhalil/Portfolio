@@ -94,6 +94,20 @@
     color: var(--text-color);
 }
 
+.project-name {
+    display: inline-block;
+}
+
+.new-tag {
+    display: inline-block;
+    margin-left: .5rem;
+    color: var(--text-color);
+    background-color: red;
+    border-radius: .2rem;
+    padding-inline: .2rem;
+    padding-block: .05rem;
+}
+
 .project-desc {
     margin: 0;
     margin-top: 5px;

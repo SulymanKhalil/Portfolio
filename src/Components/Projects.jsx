@@ -85,14 +85,27 @@ const Projects = () => {
                 </div>
                 <div className="project" data-aos="fade-up" data-aos-offset="150" data-aos-delay="1300">
                     <img src="/Images/notesApp.png" alt="Notes App" />
-                    <h3>Notes App</h3>
-                    <p className="project-desc">Responsive Notes App built with React, Reduxm and Tailwind CSS — featuring state management, Local Storage, sleek UI, and smooth performance.</p>
+                    <h3 className="project-name">Notes App</h3>
+                    <p className="new-tag">NEW</p>
+                    <p className="project-desc">Responsive Notes App built with React, Redux and Tailwind CSS — featuring state management, Local Storage, and smooth performance.</p>
                     <div className="languages">
                         <div><p>React JS</p></div>
                         <div><p>Redux</p></div>
                         <div><p>Tailwind CSS</p></div>
                     </div>
                     <a href="https://notes-app-by-sulyman.netlify.app/" target="_blank" rel="noopener noreferrer">Visit <i className="fas fa-external-link-alt"></i></a>
+                </div>
+                <div className="project" data-aos="fade-up" data-aos-offset="150" data-aos-delay="1400">
+                    <img src="/Images/quotesGenerator.png" alt="Quotes Generator" />
+                    <h3 className="project-name">Quote Generator</h3>
+                    <p className="new-tag">NEW</p>
+                    <p className="project-desc">Responsive Quote Generator built with HTML, TypeScript, and CSS — generate, copy, and share quotes on X, Facebook, and WhatsApp.</p>
+                    <div className="languages">
+                        <div><p>HTML</p></div>
+                        <div><p>CSS</p></div>
+                        <div><p>TypeScript</p></div>
+                    </div>
+                    <a href="https://quote-generatorsite.netlify.app/" target="_blank" rel="noopener noreferrer">Visit <i className="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div className="viewAllProjects" data-aos="fade-down">
