@@ -111,6 +111,7 @@
     border-radius: .6rem;
     padding-inline: .3rem;
     padding-block: .06rem;
+    font-size: 12px;
 }
 
 .project-desc {

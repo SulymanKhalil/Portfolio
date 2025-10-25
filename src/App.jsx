@@ -9,13 +9,13 @@ import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import NotFound from "./Components/NotFound";
-
+import ScrollToTop from "./Components/goToTop";
 
 const App = () => {
     useEffect(() => {
         AOS.init({
             offset: 50,
-            duration: 800,
+            duration: 1000,
             once: false,
             mirror: true,
             easing: "ease-in-out",
@@ -25,6 +25,7 @@ const App = () => {
 
     return (
         <Router>
+            <ScrollToTop/>
             <div className="App">
                 <Navbar />
                 <div className="content">
