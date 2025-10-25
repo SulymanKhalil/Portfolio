@@ -3,50 +3,6 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 const Projects = () => {
-    const [newProjectNameClass_1, setNewProjectNameClass_1] = useState("project-name")
-    const [newTag_1, setNewTag_1] = useState("NEW")
-    const [newTagClass_1, setNewTagClass_1] = useState("new-tag")
-
-    const [newProjectNameClass_2, setNewProjectNameClass_2] = useState("project-name")
-    const [newTag_2, setNewTag_2] = useState("NEW")
-    const [newTagClass_2, setNewTagClass_2] = useState("new-tag")
-
-    useEffect(() => {
-        const startKey = "projectTimerStart-1"
-        const startTime = localStorage.getItem(startKey)
-
-        if (!startTime) {
-            localStorage.setItem(startKey, Date.now().toString())
-        }
-
-        const savedTime = Number(localStorage.getItem(startKey));
-        const fiveDays = 5 * 24 * 60 * 60 * 1000;
-
-        if (Date.now() - savedTime >= fiveDays) {
-            setNewProjectNameClass_1("")
-            setNewTag_1("");
-            setNewTagClass_1("")
-        }
-    }, [])
-
-    useEffect(()=>{
-        const startKey = "projectTimerStart-2"
-        const startTime = localStorage.getItem(startKey)
-
-        if (!startTime) {
-            localStorage.setItem(startKey, Date.now().toString())
-        }
-
-        const savedTime = Number(localStorage.getItem(startKey));
-        const fiveDays = 5 * 24 * 60 * 60 * 1000;
-
-        if (Date.now() - savedTime >= fiveDays) {
-            setNewProjectNameClass_2("")
-            setNewTag_2("");
-            setNewTagClass_2("")
-        }
-    }, [])
-
     return (
         <div className="projectsContainer container mx-auto">
             <div className="projectsHeadings" data-aos="fade-down">
@@ -133,8 +89,8 @@ const Projects = () => {
                     </div>
                     <div className="project" data-aos="fade-up" data-aos-offset="100" data-aos-delay="1300">
                         <img src="/Images/notesApp.png" alt="Notes App" />
-                        <h3 className={newProjectNameClass_1}>Notes App</h3>
-                        <p className={newTagClass_1}>{newTag_1}</p>
+                        <h3 className="project-name">Notes App</h3>
+                        <p className="new-tag">NEW</p>
                         <p className="project-desc">Responsive Notes App built with React, Redux and Tailwind CSS — featuring state management, Local Storage, and smooth performance.</p>
                         <div className="languages">
                             <div><p>React JS</p></div>
@@ -145,8 +101,8 @@ const Projects = () => {
                     </div>
                     <div className="project" data-aos="fade-up" data-aos-offset="100" data-aos-delay="1400">
                         <img src="/Images/quotesGenerator.png" alt="Quotes Generator" />
-                        <h3 className={newProjectNameClass_2}>Quote Generator</h3>
-                        <p className={newTagClass_2}>{newTag_2}</p>
+                        <h3 className="project-name">Quote Generator</h3>
+                        <p className="new-tag">NEW</p>
                         <p className="project-desc">Responsive Quote Generator built with HTML, TypeScript, and CSS — generate, copy, and share quotes on X, Facebook, and WhatsApp.</p>
                         <div className="languages">
                             <div><p>HTML</p></div>
