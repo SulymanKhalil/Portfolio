@@ -89,8 +89,7 @@ const Projects = () => {
                     </div>
                     <div className="project" data-aos="fade-up" data-aos-offset="100" data-aos-delay="1300">
                         <img src="/Images/notesApp.png" alt="Notes App" />
-                        <h3 className="project-name">Notes App</h3>
-                        <p className="new-tag">NEW</p>
+                        <h3>Notes App</h3>
                         <p className="project-desc">Responsive Notes App built with React, Redux and Tailwind CSS — featuring state management, Local Storage, and smooth performance.</p>
                         <div className="languages">
                             <div><p>React JS</p></div>
@@ -110,6 +109,17 @@ const Projects = () => {
                             <div><p>TypeScript</p></div>
                         </div>
                         <a href="https://quote-generatorsite.netlify.app/" target="_blank" rel="noopener noreferrer">Visit <i className="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div className="project" data-aos="fade-up" data-aos-offset="100" data-aos-delay="1500">
+                        <img src="/Images/currencyConverter.png" alt="Currnecy Converter" />
+                        <h3 className="project-name">Currency Converter</h3>
+                        <p className="new-tag">NEW</p>
+                        <p className="project-desc">Responsive Currency Converter built with React and Tailwind CSS — real-time currency conversion using live exchange rate API.</p>
+                        <div className="languages">
+                            <div><p>React JS</p></div>
+                            <div><p>Tailwind CSS</p></div>
+                        </div>
+                        <a href="https://convertcurrencyweb.netlify.app/" target="_blank" rel="noopener noreferrer">Visit <i className="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
             </div>

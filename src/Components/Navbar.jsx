@@ -48,7 +48,7 @@ const Navbar = () => {
             </nav>
             <div className="resume-and-hireBtn-cont" >
                 <button className="resume-btn">
-                    <a href="/Docs/Sulyman-Resume.pdf" rel="noopener noreferrer" download data-aos="zoom-in-up">RESUME</a>
+                    <a href="/Docs/Sulyman-Resume.pdf" download data-aos="zoom-in-up">RESUME</a>
                 </button>
                 <i onClick={() => setIsMenuOpen(!isMenuOpen)} className="fa-solid fa-bars"></i>
             </div>
