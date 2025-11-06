@@ -45,6 +45,7 @@
 .language-container {
     color: var(--text-color);
     max-width: 370px;
+    width: 100%;
     min-height: 100px;
     background-color: var(--body-color);
     border-radius: .5rem;
@@ -110,7 +111,7 @@
 
 
 .language-progress {
-    margin-left: 10px;
+    margin-left: 7px;
     height: 4px;
     width: 85%;
     height: 6px;
@@ -215,6 +216,7 @@
 .framework-container {
     color: var(--text-color);
     max-width: 370px;
+    width: 100%;
     min-height: 100px;
     background-color: var(--body-color);
     border-radius: .5rem;
@@ -256,7 +258,7 @@
 }
 
 .tailwind-CSS-img {
-    max-width: 79px !important;
+    max-width: 70px !important;
 }
 
 .framework-body {
@@ -279,9 +281,8 @@
     gap: 7px;
 }
 
-
 .framework-progress {
-    margin-left: 10px;
+    margin-left: 7px;
     height: 4px;
     width: 85%;
     height: 6px;
@@ -386,6 +387,7 @@
 .versionControl-container {
     color: var(--text-color);
     max-width: 370px;
+    width: 100%;
     min-height: 100px;
     background-color: var(--body-color);
     border-radius: .5rem;
@@ -470,6 +472,7 @@
 .othersContent-container {
     color: var(--text-color);
     max-width: 370px;
+    width: 100%;
     min-height: 100px;
     background-color: var(--body-color);
     border-radius: .5rem;
@@ -601,7 +604,6 @@
 
     .language-container {
         max-width: 340px;
-        min-height: 180px;
     }
 
     .language-container img {
@@ -648,7 +650,6 @@
 
     .framework-container {
         max-width: 340px;
-        min-height: 180px;
     }
 
     .framework-container img {
@@ -669,7 +670,7 @@
     }
 
     .tailwind-CSS-img {
-        max-width: 50px !important;
+        max-width: 41px !important;
     }
 
     .framework-title {
@@ -702,7 +703,6 @@
 
     .versionControl-container {
         max-width: 340px;
-        min-height: 163px;
     }
 
     .versionControl-icon {
@@ -741,7 +741,6 @@
 
     .othersContent-container {
         max-width: 340px;
-        min-height: 140px;
     }
 
     .othersContent-container i {
@@ -792,7 +791,6 @@
 
     .language-container {
         max-width: 310px;
-        min-height: 160px;
     }
 
     .language-container img {
@@ -844,7 +842,6 @@
 
     .framework-container {
         max-width: 310px;
-        min-height: 157px;
     }
 
     .framework-container img {
@@ -862,7 +859,7 @@
     }
 
     .tailwind-CSS-img {
-        max-width: 40px !important;
+        max-width: 31px !important;
     }
 
     .framework-title {
@@ -904,7 +901,6 @@
 
     .versionControl-container {
         max-width: 310px;
-        min-height: 150px;
     }
 
     .versionControl-icon {
@@ -951,7 +947,6 @@
 
     .othersContent-container {
         max-width: 310px;
-        min-height: 130px;
     }
 
     .othersContent-container i {
@@ -1093,7 +1088,7 @@
     }
 
     .tailwind-CSS-img {
-        max-width: 33px !important;
+        max-width: 24px !important;
     }
 
     .framework-desc {

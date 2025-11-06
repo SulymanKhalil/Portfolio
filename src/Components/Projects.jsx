@@ -100,8 +100,7 @@ const Projects = () => {
                     </div>
                     <div className="project" data-aos="fade-up" data-aos-offset="100" data-aos-delay="1400">
                         <img src="/Images/quotesGenerator.png" alt="Quotes Generator" />
-                        <h3 className="project-name">Quote Generator</h3>
-                        <p className="new-tag">NEW</p>
+                        <h3>Quote Generator</h3>
                         <p className="project-desc">Responsive Quote Generator built with HTML, TypeScript, and CSS — generate, copy, and share quotes on X, Facebook, and WhatsApp.</p>
                         <div className="languages">
                             <div><p>HTML</p></div>
@@ -112,8 +111,7 @@ const Projects = () => {
                     </div>
                     <div className="project" data-aos="fade-up" data-aos-offset="100" data-aos-delay="1500">
                         <img src="/Images/currencyConverter.png" alt="Currnecy Converter" />
-                        <h3 className="project-name">Currency Converter</h3>
-                        <p className="new-tag">NEW</p>
+                        <h3>Currency Converter</h3>
                         <p className="project-desc">Responsive Currency Converter built with React and Tailwind CSS — real-time currency conversion using live exchange rate API.</p>
                         <div className="languages">
                             <div><p>React JS</p></div>

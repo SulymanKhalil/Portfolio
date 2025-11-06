@@ -26,7 +26,7 @@ const Skills = () => {
                             <img className="html-img" src="/Images/htmllogo.png" />
                             <div className="language-body">
                                 <h5 className="language-title">HTML5</h5>
-                                <p className="language-desc">Building clean and semantic web pages with structured layouts, forms, and modern HTML5 features</p>
+                                <p className="language-desc">Semantic Markup and Accessibility</p>
                                 <div className="language-progress-container">
                                     <div className="progress language-progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                                         <div className="progress-bar"></div>
@@ -39,7 +39,7 @@ const Skills = () => {
                             <img src="/Images/csslogo.png" />
                             <div className="language-body">
                                 <h5 className="language-title">CSS3</h5>
-                                <p className="language-desc">Designing responsive and visually appealing websites using Flexbox, Grid, animations, and modern styling techniques</p>
+                                <p className="language-desc">Responsive Design and Animations</p>
                                 <div className="language-progress-container">
                                     <div className="progress language-progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                                         <div className="progress-bar"></div>
@@ -52,7 +52,7 @@ const Skills = () => {
                             <img className="js-img" src="/Images/javascriptlogo.jpg" />
                             <div className="language-body">
                                 <h5 className="language-title">JavaScript (ES6+)</h5>
-                                <p className="language-desc">Adding interactivity and functionality to web pages with modern ES6+ features, DOM manipulation, and API integration</p>
+                                <p className="language-desc">DOM Manipulation and Async Code</p>
                                 <div className="language-progress-container">
                                     <div className="progress language-progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                                         <div className="progress-bar"></div>
@@ -65,7 +65,7 @@ const Skills = () => {
                             <img className="ts-img" src="/Images/typescript.svg" />
                             <div className="language-body">
                                 <h5 className="language-title">TypeScript</h5>
-                                <p className="language-desc">Building scalable and type-safe web applications using TypeScript with modern ES features and clean code practices</p>
+                                <p className="language-desc">Typed and Maintainable</p>
                                 <div className="language-progress-container">
                                     <div className="progress language-progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                                         <div className="progress-bar"></div>
@@ -84,7 +84,7 @@ const Skills = () => {
                             <img className="React-img" src="/Images/reactlogo.png" />
                             <div className="framework-body">
                                 <h5 className="framework-title">React JS</h5>
-                                <p className="framework-desc">Building interactive and responsive web apps using React components, hooks, virtual DOM, and modern best practices</p>
+                                <p className="framework-desc">Component-based and dynamic UIs</p>
                                 <div className="framework-progress-container">
                                     <div className="progress framework-progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                                         <div className="progress-bar"></div>
@@ -97,7 +97,7 @@ const Skills = () => {
                             <img className="Redux-img" src="/Images/reduxlogo.png" />
                             <div className="framework-body">
                                 <h5 className="framework-title">Redux</h5>
-                                <p className="framework-desc">Managing complex app state efficiently using Redux Toolkit, slices, and predictable unidirectional data flow</p>
+                                <p className="framework-desc">Centralized and predictable state</p>
                                 <div className="framework-progress-container">
                                     <div className="progress framework-progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                                         <div className="progress-bar"></div>
@@ -110,7 +110,7 @@ const Skills = () => {
                             <img className="BootStrap-img" src="/Images/bootstraplogo.png" />
                             <div className="framework-body">
                                 <h5 className="framework-title">BootStrap 5</h5>
-                                <p className="framework-desc">Designing responsive and mobile-first websites quickly using Bootstrap’s grid system, components, and utility classes</p>
+                                <p className="framework-desc">Utility-first and responsive styling</p>
                                 <div className="framework-progress-container">
                                     <div className="progress framework-progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                                         <div className="progress-bar"></div>
@@ -123,7 +123,7 @@ const Skills = () => {
                             <img className="tailwind-CSS-img" src="/Images/tailwindcsslogo.png" />
                             <div className="framework-body">
                                 <h5 className="framework-title">Tailwind CSS</h5>
-                                <p className="framework-desc">Creating modern, fully responsive UI with a utility-first approach, efficiently customizing designs using Tailwind</p>
+                                <p className="framework-desc">Grid-based and quick UI design</p>
                                 <div className="framework-progress-container">
                                     <div className="progress framework-progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                                         <div className="progress-bar"></div>
@@ -142,14 +142,14 @@ const Skills = () => {
                             <img src="/Images/gitlogo.png" className="versionControl-icon" />
                             <div className="versionControl-body">
                                 <h5 className="versionControl-title">Git</h5>
-                                <p className="versionControl-desc">Version control tool to efficiently track code changes, manage software projects, and collaborate with teams</p>
+                                <p className="versionControl-desc">Version control and efficient branching</p>
                             </div>
                         </div>
                         <div className="versionControl-container">
                             <i className="fab fa-github versionControl-icon Github-icon"></i>
                             <div className="versionControl-body">
                                 <h5 className="versionControl-title">GitHub</h5>
-                                <p className="versionControl-desc">Platform to host Git repositories, collaborate seamlessly on code, and manage projects professionally</p>
+                                <p className="versionControl-desc">Collaboration and code hosting</p>
                             </div>
                         </div>
                     </div>
@@ -162,21 +162,21 @@ const Skills = () => {
                             <i className="fas fa-lightbulb"></i>
                             <div className="othersContent-container-body">
                                 <h5 className="othersContent-container-title">Problem-Solving</h5>
-                                <p className="othersContent-container-desc">Good at analyzing simple challenges and coming up with practical and effective solutions efficiently</p>
+                                <p className="othersContent-container-desc">Analytical and solution-oriented thinking</p>
                             </div>
                         </div>
                         <div className="othersContent-container communication">
                             <i className="fas fa-comments"></i>
                             <div className="othersContent-container-body">
                                 <h5 className="skill-title">Communication</h5>
-                                <p className="othersContent-container-desc">Able to explain ideas clearly and maintain friendly, professional, and consistent conversations with team members</p>
+                                <p className="othersContent-container-desc">Cooperative and goal-focused teamwork</p>
                             </div>
                         </div>
                         <div className="othersContent-container teamCollaboration">
                             <i className="fas fa-users"></i>
                             <div className="othersContent-container-body">
                                 <h5 className="othersContent-container-title">Team Collaboration</h5>
-                                <p className="othersContent-container-desc">Comfortable working closely with others to complete tasks and achieve team goals effectively</p>
+                                <p className="othersContent-container-desc">Clear and professional interaction</p>
                             </div>
                         </div>
                     </div>
