@@ -1,6 +1,4 @@
 import TypewriterComponent from "typewriter-effect"
-import { useState } from "react";
-import { useEffect } from "react";
 
 const Projects = () => {
     return (
@@ -33,17 +31,6 @@ const Projects = () => {
                             <div><p>JavaScript</p></div>
                         </div>
                         <a href="https://spotify-like-app.netlify.app/" target="_blank" rel="noopener noreferrer">Visit <i className="fas fa-external-link-alt"></i></a>
-                    </div>
-                    <div className="project" data-aos="fade-up" data-aos-offset="100" data-aos-delay="800">
-                        <img src="/Images/terraview.png" alt="Global info Hub" />
-                        <h3>Global Info App</h3>
-                        <p className="project-desc">World countries info app crafted with HTML, CSS, and JS, featuring API-powered dynamic data and responsive design.</p>
-                        <div className="languages">
-                            <div><p>HTML</p></div>
-                            <div><p>CSS</p></div>
-                            <div><p>JavaScript</p></div>
-                        </div>
-                        <a href="https://terraview.netlify.app/" target="_blank" rel="noopener noreferrer">Visit <i className="fas fa-external-link-alt"></i></a>
                     </div>
                     <div className="project" data-aos="fade-up" data-aos-offset="100" data-aos-delay="900">
                         <img src="/Images/todoApp.png" alt="Todo App" />
