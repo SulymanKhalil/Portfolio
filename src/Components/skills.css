@@ -1,1133 +1,720 @@
 /**************************** Skills Container *************************/
 .skillsHeadings h2 {
-    color: var(--text-color);
-    text-align: center;
-    margin-top: 20px;
-    font-weight: 650;
+  color: var(--text-color);
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 650;
 }
 
 .skillsHeadings hr {
-    width: 70vw;
-    margin-inline: auto;
-    border: none;
-    border-top: 2px solid var(--highlight-color);
-    opacity: 1;
+  width: 70vw;
+  margin-inline: auto;
+  border: none;
+  border-top: 2px solid var(--highlight-color);
+  opacity: 1;
 }
 
 /***************************** Frontend Skills **************************/
 .frontEnd-Skills h1 {
-    color: var(--text-color);
-    margin-left: 18px;
-    font-size: 28px;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    font-weight: 600;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    letter-spacing: 4px;
+  color: var(--text-color);
+  margin-left: 18px;
+  font-size: 28px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  letter-spacing: 4px;
 }
 
 .frontEnd-Skills h1::after {
-    content: "●";
-    font-size: 2rem;
-    margin-left: 6px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    color: var(--highlight-color);
+  content: "●";
+  font-size: 2rem;
+  margin-left: 6px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  color: var(--highlight-color);
 }
 
 .frontEnd-content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 18px;
-    margin-inline: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-inline: 30px;
 }
 
 .language-container {
-    color: var(--text-color);
-    max-width: 370px;
-    width: 100%;
-    min-height: 100px;
-    background-color: var(--body-color);
-    border-radius: .5rem;
-    box-shadow: 0 0 5px var(--highlight-color);
-    cursor: pointer;
-    animation: frontendFloat 3s ease-in-out infinite;
-    padding: 5px;
+  color: var(--text-color);
+  max-width: 420px;
+  width: 100%;
+  min-height: 100px;
+  background-color: var(--body-color);
+  border-top-right-radius: 3rem;
+  border-top-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  box-shadow: 0 0 5px var(--highlight-color);
+  animation: frontendFloat 3s ease-in-out infinite;
+  padding: 25px;
 }
 
 @keyframes frontendFloat {
-    0% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
+  }
 
-    50% {
-        transform: translateY(15px);
-    }
+  50% {
+    transform: translateY(15px);
+  }
 
-    100% {
-        transform: translateY(0);
-    }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .language-container img {
-    display: block;
-    margin-inline: auto;
-    max-width: 50px;
-    margin-top: 10px;
-    margin-bottom: 7px;
+  display: block;
+  margin-inline: auto;
+  max-width: 50px;
+  margin-bottom: 7px;
 }
 
 .language-body {
-    text-align: center;
+  text-align: center;
 }
 
 .html-img {
-    max-width: 87px !important;
+  max-width: 87px !important;
 }
 
 .js-img {
-    border-radius: .4rem !important;
+  border-radius: 0.4rem !important;
 }
 
 .ts-img {
-    border-radius: .4rem !important;
+  border-radius: 0.4rem !important;
 }
 
 .language-title {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .language-desc {
-    margin-inline: 7px;
-    margin-bottom: 8px;
-    opacity: 0.7;
+  margin-inline: 7px;
+  margin-bottom: 8px;
+  opacity: 0.7;
 }
 
 .language-progress-container {
-    display: flex;
-    align-items: center;
-    gap: 7px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
 }
 
-
 .language-progress {
-    margin-left: 7px;
-    height: 4px;
-    width: 85%;
-    height: 6px;
-    border-radius: 4px;
-    overflow: hidden;
-    margin-top: 3px;
+  margin-left: 3px;
+  height: 12px !important;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 3px;
+  border-radius: 0.5rem !important;
 }
 
 .language-progress-value {
-    font-weight: 550;
-    color: var(--text-color);
+  font-weight: 550;
+  color: var(--text-color);
 }
 
 .html .progress-bar {
-    background-color: #E44D26;
-    animation: fill-html 2s ease-in-out forwards;
+  background-color: #e44d26;
+  animation: fill-html 2s ease-in-out forwards;
+  border-radius: 0.2rem !important;
 }
 
 @keyframes fill-html {
-    from {
-        width: 0;
-    }
+  from {
+    width: 0;
+  }
 
-    to {
-        width: 90%;
-    }
+  to {
+    width: 90%;
+  }
 }
 
 .css .progress-bar {
-    background-color: #264DE4;
-    animation: fill-css 2s ease-in-out forwards;
+  background-color: #264de4;
+  animation: fill-css 2s ease-in-out forwards;
+  border-radius: 0.2rem !important;
 }
 
 @keyframes fill-css {
-    from {
-        width: 0;
-    }
+  from {
+    width: 0;
+  }
 
-    to {
-        width: 90%;
-    }
+  to {
+    width: 90%;
+  }
 }
 
 .javascript .progress-bar {
-    background-color: #F0DB4F;
-    animation: fill-js 2s ease-in-out forwards;
+  background-color: #f0db4f;
+  animation: fill-js 2s ease-in-out forwards;
+  border-radius: 0.2rem !important;
 }
 
 @keyframes fill-js {
-    from {
-        width: 0;
-    }
+  from {
+    width: 0;
+  }
 
-    to {
-        width: 80%;
-    }
+  to {
+    width: 80%;
+  }
 }
 
 .typescript .progress-bar {
-    background-color: #007acc;
-    animation: fill-ts 2s ease-in-out forwards;
+  background-color: #007acc;
+  animation: fill-ts 2s ease-in-out forwards;
+  border-radius: 0.2rem !important;
 }
 
 @keyframes fill-ts {
-    from {
-        width: 0;
-    }
+  from {
+    width: 0;
+  }
 
-    to {
-        width: 80%;
-    }
+  to {
+    width: 80%;
+  }
 }
 
 /************************* Frontend & Frameworks *************************/
 .frameworksLibraries h1 {
-    color: var(--text-color);
-    margin-left: 18px;
-    font-size: 28px;
-    margin-top: 33px;
-    margin-bottom: 15px;
-    font-weight: 600;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    letter-spacing: 4px;
+  color: var(--text-color);
+  margin-left: 18px;
+  font-size: 28px;
+  margin-top: 33px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  letter-spacing: 4px;
 }
 
 .frameworksLibraries h1::after {
-    content: "●";
-    font-size: 2rem;
-    margin-left: 6px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    color: var(--highlight-color);
+  content: "●";
+  font-size: 2rem;
+  margin-left: 6px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  color: var(--highlight-color);
 }
 
 .frameworksLibraries-content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 18px;
-    margin-inline: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-inline: 30px;
 }
 
 .framework-container {
-    color: var(--text-color);
-    max-width: 370px;
-    width: 100%;
-    min-height: 100px;
-    background-color: var(--body-color);
-    border-radius: .5rem;
-    box-shadow: 0 0 5px var(--highlight-color);
-    cursor: pointer;
-    animation: frameworksFloat 3s ease-in-out infinite;
-    animation-delay: 0.5s;
-    padding: 5px;
+  color: var(--text-color);
+  max-width: 420px;
+  width: 100%;
+  min-height: 100px;
+  background-color: var(--body-color);
+  border-top-right-radius: 3rem;
+  border-top-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  box-shadow: 0 0 5px var(--highlight-color);
+  animation: frameworksFloat 3s ease-in-out infinite;
+  animation-delay: 0.5s;
+  padding: 25px;
 }
 
 @keyframes frameworksFloat {
-    0% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
+  }
 
-    50% {
-        transform: translateY(15px);
-    }
+  50% {
+    transform: translateY(15px);
+  }
 
-    100% {
-        transform: translateY(0);
-    }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .framework-container img {
-    display: block;
-    margin-inline: auto;
-    max-width: 55px;
-    margin-top: 10px;
-    margin-bottom: 7px;
-}
-
-.Redux-img {
-    max-width: 47px !important;
+  display: block;
+  margin-inline: auto;
+  max-width: 55px;
+  margin-bottom: 7px;
 }
 
 .BootStrap-img {
-    max-width: 62px !important;
+  max-width: 62px !important;
 }
 
 .tailwind-CSS-img {
-    max-width: 70px !important;
+  max-width: 70px !important;
 }
 
 .framework-body {
-    text-align: center;
+  text-align: center;
 }
 
 .framework-title {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .framework-desc {
-    margin-inline: 7px;
-    margin-bottom: 8px;
-    opacity: 0.7;
+  margin-inline: 7px;
+  margin-bottom: 8px;
+  opacity: 0.7;
 }
 
 .framework-progress-container {
-    display: flex;
-    align-items: center;
-    gap: 7px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
 }
 
 .framework-progress {
-    margin-left: 7px;
-    height: 4px;
-    width: 85%;
-    height: 6px;
-    border-radius: 4px;
-    overflow: hidden;
-    margin-top: 3px;
+  margin-left: 3px;
+  height: 12px !important;
+  width: 100%;
+  height: 6px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 3px;
+  border-radius: 0.5rem !important;
 }
 
 .framework-progress-value {
-    font-weight: 550;
-    color: var(--text-color);
+  font-weight: 550;
+  color: var(--text-color);
 }
 
 .React .progress-bar {
-    background-color: #61dbfa;
-    animation: fill-React 2s ease-in-out forwards;
+  background-color: #61dbfa;
+  animation: fill-React 2s ease-in-out forwards;
+  border-radius: 0.2rem !important;
 }
 
 @keyframes fill-React {
-    from {
-        width: 0;
-    }
+  from {
+    width: 0;
+  }
 
-    to {
-        width: 80%;
-    }
-}
-
-.Redux .progress-bar {
-    background-color: #7449ba;
-    animation: fill-Redux 2s ease-in-out forwards;
-}
-
-@keyframes fill-Redux {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 80%;
-    }
+  to {
+    width: 80%;
+  }
 }
 
 .BootStrap .progress-bar {
-    background-color: #790af7;
-    animation: fill-BootStrap 2s ease-in-out forwards;
+  background-color: #790af7;
+  animation: fill-BootStrap 2s ease-in-out forwards;
+  border-radius: 0.2rem !important;
 }
 
 @keyframes fill-BootStrap {
-    from {
-        width: 0;
-    }
+  from {
+    width: 0;
+  }
 
-    to {
-        width: 95%;
-    }
+  to {
+    width: 95%;
+  }
 }
 
 .tailwind-CSS .progress-bar {
-    background-color: #06b7d6;
-    animation: fill-tailwindCSS 2s ease-in-out forwards;
+  background-color: #06b7d6;
+  animation: fill-tailwindCSS 2s ease-in-out forwards;
+  border-radius: 0.2rem !important;
 }
 
 @keyframes fill-tailwindCSS {
-    from {
-        width: 0;
-    }
+  from {
+    width: 0;
+  }
 
-    to {
-        width: 95%;
-    }
+  to {
+    width: 95%;
+  }
+}
+/***************************** Additional Skills **************************/
+.additonalSkills hr {
+  margin-top: 75px;
+  margin-bottom: 10px;
+  background-color: var(--highlight-color);
+  border: none;
+  height: 4px;
+  opacity: 1;
+  width: 80px;
+  margin-inline: auto;
 }
 
-/***************************** Version Control **************************/
-.versionControl h1 {
-    color: var(--text-color);
-    margin-left: 18px;
-    font-size: 28px;
-    margin-top: 33px;
-    margin-bottom: 17px;
-    font-weight: 600;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    letter-spacing: 4px;
+.additonalSkills h1 {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
 }
 
-.versionControl h1::after {
-    content: "●";
-    font-size: 2rem;
-    margin-left: 6px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    color: var(--highlight-color);
+.additionalSkills-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin: 10px 15px 30px;
+  flex-wrap: wrap;
 }
 
-.versionControl-content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 18px;
-    margin-inline: 30px;
+.additionalSkills-content div {
+  background-color: var(--bg-color);
+  border-top-right-radius: 3rem;
+  border-top-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  transition: box-shadow 0.2s ease-in;
+  padding: 10px;
+  color: var(--text-color);
+  margin: 6px;
 }
 
-.versionControl-container {
-    color: var(--text-color);
-    max-width: 370px;
-    width: 100%;
-    min-height: 100px;
-    background-color: var(--body-color);
-    border-radius: .5rem;
-    box-shadow: 0 0 5px var(--highlight-color);
-    cursor: pointer;
-    animation: versionControlFloat 3s ease-in-out infinite;
-    animation-delay: 1s;
-    padding: 5px;
-}
-
-@keyframes versionControlFloat {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(15px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-.versionControl-icon {
-    display: block;
-    margin-inline: auto;
-    max-width: 55px;
-    margin-top: 10px;
-    margin-bottom: 7px;
-}
-
-.Github-icon {
-    margin-top: 10px;
-    font-size: 59px;
-    color: var(--text-color);
-}
-
-.versionControl-body {
-    text-align: center;
-}
-
-.versionControl-title {
-    font-weight: bold;
-}
-
-.versionControl-desc {
-    margin-inline: 7px;
-    margin-bottom: 8px;
-    opacity: 0.7;
-}
-
-/************************* Others **********************/
-.Others h1 {
-    color: var(--text-color);
-    margin-left: 18px;
-    font-size: 28px;
-    margin-top: 33px;
-    margin-bottom: 15px;
-    font-weight: 600;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    letter-spacing: 4px;
-}
-
-.Others h1::after {
-    content: "●";
-    font-size: 2rem;
-    margin-left: 6px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    color: var(--highlight-color);
-}
-
-.Others-content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 18px;
-    margin-inline: 30px;
-    margin-bottom: 30px;
-}
-
-.othersContent-container {
-    color: var(--text-color);
-    max-width: 370px;
-    width: 100%;
-    min-height: 100px;
-    background-color: var(--body-color);
-    border-radius: .5rem;
-    box-shadow: 0 0 5px var(--highlight-color);
-    cursor: pointer;
-    animation: professionalFloat 3s ease-in-out infinite;
-    animation-delay: 1.5s;
-    padding: 5px;
-}
-
-@keyframes professionalFloat {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(15px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-.othersContent-container i {
-    display: block;
-    margin-inline: auto;
-    font-size: 28px;
-    margin-top: 10px;
-    margin-bottom: 7px;
-}
-
-.problemSolving i {
-    color: #3b82f6;
-}
-
-.communication i {
-    color: #10b981;
-}
-
-.teamCollaboration i {
-    color: #8b5cf6;
-}
-
-.othersContent-container-body {
-    text-align: center;
-}
-
-.othersContent-container-title {
-    font-weight: bold;
-}
-
-.othersContent-container-desc {
-    margin-inline: 7px;
-    margin-bottom: 11px;
-    opacity: 0.7;
+.additionalSkills-content div:hover {
+  box-shadow: 0 0 2px var(--highlight-color);
 }
 
 /********************************** Medias *********************************/
 @media (max-width: 990px) {
+  /***************************** Frontend Skills **************************/
+  .frontEnd-Skills h1 {
+    margin-left: 8px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+  }
 
-    /***************************** Frontend Skills **************************/
-    .frontEnd-content {
-        margin-inline: 30px;
-    }
-
-    .frontEnd-Skills h1 {
-        margin-left: 8px;
-        margin-bottom: 20px;
-        letter-spacing: 3px;
-    }
-
-    /***************************** Frameworks & Libraries **************************/
-    .frameworksLibraries-content {
-        margin-inline: 30px;
-    }
-
-    .frameworksLibraries h1 {
-        margin-top: 30px;
-        margin-left: 8px;
-        margin-bottom: 20px;
-        letter-spacing: 3px;
-    }
-
-    /***************************** Version Control **************************/
-    .versionControl-content {
-        margin-inline: 30px;
-    }
-
-    .versionControl h1 {
-        margin-top: 30px;
-        margin-left: 8px;
-        margin-bottom: 20px;
-        letter-spacing: 3px;
-    }
-
-    /************************* Others **********************/
-    .Others-content {
-        margin-inline: 30px;
-    }
-
-    .Others h1 {
-        margin-top: 30px;
-        margin-left: 8px;
-        margin-bottom: 20px;
-        letter-spacing: 3px;
-    }
+  /***************************** Frameworks & Libraries **************************/
+  .frameworksLibraries h1 {
+    margin-top: 30px;
+    margin-left: 8px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+  }
 }
 
 @media (max-width: 700px) {
+  /***************************** Skills Container **************************/
+  .skillsHeadings hr {
+    margin-bottom: 0;
+  }
 
-    /***************************** Skills Container **************************/
-    .skillsHeadings hr {
-        margin-bottom: 0;
-    }
+  /***************************** Frontend Skills **************************/
+  .frontEnd-Skills h1 {
+    margin-left: 8px;
+    margin-bottom: 10px;
+    margin-top: 13px;
+    letter-spacing: 3px;
+    font-size: 24px;
+  }
 
-    /***************************** Frontend Skills **************************/
-    .frontEnd-Skills h1 {
-        margin-left: 8px;
-        margin-bottom: 10px;
-        margin-top: 13px;
-        letter-spacing: 3px;
-        font-size: 24px;
-    }
+  .frontEnd-Skills h1::after {
+    font-size: 1.8rem;
+  }
 
-    .frontEnd-Skills h1::after {
-        font-size: 1.8rem;
-    }
+  .language-container {
+    max-width: 340px;
+  }
 
-    .language-container {
-        max-width: 340px;
-    }
+  .language-container img {
+    max-width: 32px;
+    margin-bottom: 3px;
+  }
 
-    .language-container img {
-        max-width: 32px;
-        margin-top: 6px;
-        margin-bottom: 3px;
-    }
+  .html-img {
+    max-width: 60px !important;
+  }
 
-    .html-img {
-        max-width: 60px !important;
-    }
+  .language-title {
+    font-weight: bold;
+    font-size: 16px;
+  }
 
-    .language-title {
-        font-weight: bold;
-        font-size: 16px;
-    }
+  .language-desc {
+    margin-inline: 7px;
+    margin-bottom: 8px;
+    opacity: 0.7;
+  }
 
-    .language-desc {
-        margin-inline: 7px;
-        margin-bottom: 8px;
-        opacity: 0.7;
-    }
+  .language-progress {
+    height: 10px !important;
+  }
 
-    .html .language-desc {
-        margin-bottom: 4px !important;
-    }
+  .html .language-desc {
+    margin-bottom: 4px !important;
+  }
 
-    .language-progress {
-        margin-left: 6px;
-    }
+  /***************************** Frameworks & Libraries **************************/
+  .frameworksLibraries h1 {
+    margin-left: 8px;
+    margin-bottom: 10px;
+    margin-top: 27px;
+    letter-spacing: 3px;
+    font-size: 24px;
+  }
 
-    /***************************** Frameworks & Libraries **************************/
-    .frameworksLibraries h1 {
-        margin-left: 8px;
-        margin-bottom: 10px;
-        margin-top: 27px;
-        letter-spacing: 3px;
-        font-size: 24px;
-    }
+  .frameworksLibraries h1::after {
+    font-size: 1.8rem;
+  }
 
-    .frameworksLibraries h1::after {
-        font-size: 1.8rem;
-    }
+  .framework-container {
+    max-width: 340px;
+  }
 
-    .framework-container {
-        max-width: 340px;
-    }
+  .framework-container img {
+    margin-bottom: 3px;
+  }
 
-    .framework-container img {
-        margin-top: 6px;
-        margin-bottom: 3px;
-    }
+  .React-img {
+    max-width: 35px !important;
+  }
 
-    .React-img {
-        max-width: 35px !important;
-    }
+  .BootStrap-img {
+    max-width: 41px !important;
+  }
 
-    .Redux-img {
-        max-width: 34px !important;
-    }
+  .tailwind-CSS-img {
+    max-width: 41px !important;
+  }
 
-    .BootStrap-img {
-        max-width: 41px !important;
-    }
+  .framework-title {
+    font-weight: bold;
+    font-size: 16px;
+  }
 
-    .tailwind-CSS-img {
-        max-width: 41px !important;
-    }
+  .framework-progress {
+    height: 10 px !important;
+  }
 
-    .framework-title {
-        font-weight: bold;
-        font-size: 16px;
-    }
+  .framework-desc {
+    margin-inline: 7px;
+    margin-bottom: 8px;
+    opacity: 0.7;
+  }
 
-    .framework-desc {
-        margin-inline: 7px;
-        margin-bottom: 8px;
-        opacity: 0.7;
-    }
-
-    .framework-progress {
-        margin-left: 6px;
-    }
-
-    /***************************** Version Control **************************/
-    .versionControl h1 {
-        margin-left: 8px;
-        margin-bottom: 10px;
-        margin-top: 27px;
-        letter-spacing: 3px;
-        font-size: 24px;
-    }
-
-    .versionControl h1::after {
-        font-size: 1.8rem;
-    }
-
-    .versionControl-container {
-        max-width: 340px;
-    }
-
-    .versionControl-icon {
-        max-width: 50px;
-        margin-top: 6px;
-        margin-bottom: 3px;
-    }
-
-    .Github-icon {
-        font-size: 43px;
-    }
-
-    .versionControl-title {
-        font-weight: bold;
-        font-size: 16px;
-    }
-
-    .versionControl-desc {
-        margin-inline: 7px;
-        margin-bottom: 8px;
-        opacity: 0.7;
-    }
-
-    /************************* Others **********************/
-    .Others h1 {
-        margin-left: 8px;
-        margin-bottom: 10px;
-        margin-top: 27px;
-        letter-spacing: 3px;
-        font-size: 24px;
-    }
-
-    .Others h1::after {
-        font-size: 1.8rem;
-    }
-
-    .othersContent-container {
-        max-width: 340px;
-    }
-
-    .othersContent-container i {
-        font-size: 25px;
-        margin-top: 6px;
-        margin-bottom: 3px;
-    }
-
-    .othersContent-container-body {
-        text-align: center;
-    }
-
-    .othersContent-container-title {
-        font-weight: bold;
-        font-size: 16px;
-    }
-
-    .othersContent-container-desc {
-        margin-inline: 7px;
-        margin-bottom: 7px;
-        opacity: 0.7;
-    }
+  /********************** Additonal Skills *********************/
+  .additonalSkills h1 {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 490px) {
+  /***************************** Skills Container **************************/
+  .skillsHeadings h2 {
+    font-size: 18px !important;
+  }
 
-    /***************************** Skills Container **************************/
-    .skillsHeadings h2 {
-        font-size: 18px !important;
-    }
+  .skillsHeadings hr {
+    margin-top: 5px;
+  }
 
-    .skillsHeadings hr {
-        margin-top: 5px;
-    }
+  /***************************** Frontend Skills **************************/
+  .frontEnd-Skills h1 {
+    margin-left: 8px;
+    margin-top: 9px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
 
-    /***************************** Frontend Skills **************************/
-    .frontEnd-Skills h1 {
-        margin-left: 8px;
-        margin-top: 9px;
-        margin-bottom: 10px;
-        letter-spacing: 2px;
-        font-size: 20px;
-    }
+  .frontEnd-Skills h1::after {
+    font-size: 1.5rem;
+  }
 
-    .frontEnd-Skills h1::after {
-        font-size: 1.5rem;
-    }
+  .language-container {
+    max-width: 310px;
+    padding: 20px;
+  }
 
-    .language-container {
-        max-width: 310px;
-    }
+  .language-container img {
+    max-width: 28px;
+    margin-bottom: 2px;
+  }
 
-    .language-container img {
-        max-width: 28px;
-        margin-top: 8px;
-        margin-bottom: 2px;
-    }
+  .html-img {
+    max-width: 52px !important;
+  }
 
-    .html-img {
-        max-width: 52px !important;
-    }
+  .language-title {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 
-    .language-title {
-        font-weight: bold;
-        font-size: 14px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
+  .language-desc {
+    margin-inline: 7px;
+    margin-bottom: 3px;
+    opacity: 0.7;
+    font-size: 14px;
+  }
 
-    .language-desc {
-        margin-inline: 7px;
-        margin-bottom: 3px;
-        opacity: 0.7;
-        font-size: 14px;
-    }
+  .language-progress {
+    width: 82%;
+    margin-top: 3px;
+    height: 8px !important;
+  }
 
-    .language-progress {
-        margin-left: 9px;
-        width: 82%;
-        margin-top: 3px;
-    }
+  .language-progress-value {
+    font-size: 14px;
+  }
 
-    .language-progress-value {
-        font-size: 14px;
-    }
+  /***************************** Frameworks & Libraries **************************/
+  .frameworksLibraries h1 {
+    margin-left: 8px;
+    margin-top: 24px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
 
-    /***************************** Frameworks & Libraries **************************/
-    .frameworksLibraries h1 {
-        margin-left: 8px;
-        margin-top: 24px;
-        margin-bottom: 10px;
-        letter-spacing: 2px;
-        font-size: 20px;
-    }
+  .frameworksLibraries h1::after {
+    font-size: 1.5rem;
+  }
 
-    .frameworksLibraries h1::after {
-        font-size: 1.5rem;
-    }
+  .framework-container {
+    max-width: 310px;
+    padding: 20px;
+  }
 
-    .framework-container {
-        max-width: 310px;
-    }
+  .framework-container img {
+    margin-bottom: 2px;
+  }
 
-    .framework-container img {
-        margin-top: 8px;
-        margin-bottom: 2px;
-    }
+  .React-img {
+    max-width: 28px !important;
+  }
 
-    .React-img,
-    .Redux-img {
-        max-width: 28px !important;
-    }
+  .BootStrap-img {
+    max-width: 33px !important;
+  }
 
-    .BootStrap-img {
-        max-width: 33px !important;
-    }
+  .tailwind-CSS-img {
+    max-width: 31px !important;
+  }
 
-    .tailwind-CSS-img {
-        max-width: 31px !important;
-    }
+  .framework-title {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 
-    .framework-title {
-        font-weight: bold;
-        font-size: 14px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
+  .framework-desc {
+    margin-inline: 7px;
+    margin-bottom: 3px;
+    opacity: 0.7;
+    font-size: 14px;
+  }
 
-    .framework-desc {
-        margin-inline: 7px;
-        margin-bottom: 3px;
-        opacity: 0.7;
-        font-size: 14px;
-    }
+  .framework-progress {
+    width: 82%;
+    margin-top: 3px;
+    height: 8px !important;
+  }
 
-    .framework-progress {
-        margin-left: 9px;
-        width: 82%;
-        margin-top: 3px;
-    }
+  .framework-progress-value {
+    font-size: 14px;
+  }
 
-    .framework-progress-value {
-        font-size: 14px;
-    }
-
-    /***************************** Version Control **************************/
-    .versionControl h1 {
-        margin-left: 8px;
-        margin-top: 24px;
-        margin-bottom: 10px;
-        letter-spacing: 2px;
-        font-size: 20px;
-    }
-
-    .versionControl h1::after {
-        font-size: 1.5rem;
-    }
-
-    .versionControl-container {
-        max-width: 310px;
-    }
-
-    .versionControl-icon {
-        max-width: 43px;
-        margin-top: 6px;
-        margin-bottom: 3px;
-    }
-
-    .Github-icon {
-        font-size: 41px;
-    }
-
-
-    .versionControl-body {
-        text-align: center;
-    }
-
-    .versionControl-title {
-        font-weight: bold;
-        font-size: 14px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-    .versionControl-desc {
-        margin-inline: 7px;
-        margin-bottom: 3px;
-        opacity: 0.7;
-        font-size: 14px;
-    }
-
-    /************************* Others **********************/
-    .Others h1 {
-        margin-left: 8px;
-        margin-top: 24px;
-        margin-bottom: 10px;
-        letter-spacing: 2px;
-        font-size: 20px;
-    }
-
-    .Others h1::after {
-        font-size: 1.5rem;
-    }
-
-    .othersContent-container {
-        max-width: 310px;
-    }
-
-    .othersContent-container i {
-        font-size: 21px;
-        margin-top: 6px;
-        margin-bottom: 3px;
-    }
-
-    .othersContent-container-body {
-        text-align: center;
-    }
-
-    .othersContent-container-title {
-        font-weight: bold;
-        font-size: 14px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-    .othersContent-container-desc {
-        margin-inline: 7px;
-        margin-bottom: 3px;
-        opacity: 0.7;
-        font-size: 14px;
-    }
+  /********************** Additonal Skills *********************/
+  .additonalSkills h1 {
+    font-size: 20px;
+  }
+  
+  .additionalSkills-content div {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 447px) {
+  /***************************** Skills Container **************************/
+  .skillsHeadings h2 {
+    font-size: 16px;
+  }
 
-    /***************************** Skills Container **************************/
-    .skillsHeadings h2 {
-        font-size: 16px;
-    }
+  /***************************** Frontend Skills **************************/
+  .frontEnd-Skills h1 {
+    font-size: 17px;
+  }
 
-    /***************************** Frontend Skills **************************/
-    .frontEnd-Skills h1 {
-        font-size: 17px;
-    }
+  .frontEnd-Skills h1::after {
+    font-size: 1.2rem;
+  }
 
-    .frontEnd-Skills h1::after {
-        font-size: 1.2rem;
-    }
+  .frontEnd-content {
+    gap: 15px;
+    margin-inline: 15px;
+  }
 
-    .frontEnd-content {
-        gap: 15px;
-        margin-inline: 15px;
-    }
+  /***************************** Frameworks & Libraries **************************/
+  .frameworksLibraries h1 {
+    font-size: 17px;
+  }
 
-    /***************************** Frameworks & Libraries **************************/
-    .frameworksLibraries h1 {
-        font-size: 17px;
-    }
+  .frameworksLibraries h1::after {
+    font-size: 1.2rem;
+  }
 
-    .frameworksLibraries h1::after {
-        font-size: 1.2rem;
-    }
-
-    .frameworksLibraries-content {
-        margin-inline: 15px;
-        gap: 15px;
-    }
-
-    /***************************** Version Control **************************/
-    .versionControl h1 {
-        font-size: 17px;
-    }
-
-    .versionControl h1::after {
-        font-size: 1.2rem;
-    }
-
-    .versionControl-content {
-        margin-inline: 15px;
-        gap: 15px;
-    }
-
-    /************************* Others **********************/
-    .Others h1 {
-        font-size: 17px;
-    }
-
-    .Others h1::after {
-        font-size: 1.2rem;
-    }
-
-    .Others-content {
-        margin-inline: 15px;
-        gap: 15px;
-    }
+  .frameworksLibraries-content {
+    margin-inline: 15px;
+    gap: 15px;
+  }
 }
 
 @media (max-width: 345px) {
+  /***************************** Frontend Skills **************************/
+  .language-container {
+    max-width: 340px;
+    min-height: 147px;
+  }
 
-    /***************************** Frontend Skills **************************/
-    .language-container {
-        max-width: 340px;
-        min-height: 147px;
-    }
+  .language-container img {
+    max-width: 25px;
+    margin-bottom: 2px;
+  }
 
-    .language-container img {
-        max-width: 25px;
-        margin-top: 8px;
-        margin-bottom: 2px;
-    }
+  .html-img {
+    max-width: 48px !important;
+  }
 
-    .html-img {
-        max-width: 48px !important;
-    }
+  .language-title {
+    margin-inline: 9px;
+  }
 
-    .language-title {
-        margin-inline: 9px;
-    }
+  /***************************** Frameworks & Libraries **************************/
+  .framework-container {
+    max-width: 340px;
+    min-height: 142px;
+  }
 
-    .language-progress {
-        margin-left: 7px;
-    }
+  .framework-container img {
+    margin-bottom: 2px;
+  }
 
-    /***************************** Frameworks & Libraries **************************/
-    .framework-container {
-        max-width: 340px;
-        min-height: 142px;
-    }
+  .React-img {
+    max-width: 25px !important;
+  }
 
-    .framework-container img {
-        margin-top: 8px;
-        margin-bottom: 2px;
-    }
+  .BootStrap-img {
+    max-width: 30px !important;
+  }
 
-    .React-img {
-        max-width: 25px !important;
-    }
+  .tailwind-CSS-img {
+    max-width: 24px !important;
+  }
 
-    .Redux-img {
-        max-width: 22px;
-    }
-
-    .BootStrap-img {
-        max-width: 30px !important;
-    }
-
-    .tailwind-CSS-img {
-        max-width: 24px !important;
-    }
-
-    .framework-desc {
-        margin-inline: 9px;
-    }
-
-    .framework-progress {
-        margin-left: 7px;
-    }
-
-    /***************************** Version Control **************************/
-    .versionControl-container {
-        max-width: 340px;
-        min-height: 135px;
-    }
-
-    .Github-icon {
-        max-width: 40px;
-        margin-top: 6px;
-        margin-bottom: 3px;
-    }
-
-    .versionControl-desc {
-        margin-inline: 9px;
-    }
-
-    /************************* Others **********************/
-    .othersContent-container {
-        max-width: 340px;
-        min-height: 110px;
-    }
-
-    .othersContent-container i {
-        font-size: 17px;
-        margin-top: 6px;
-        margin-bottom: 3px;
-    }
-
-    .othersContent-container-desc {
-        margin-inline: 9px;
-    }
+  .framework-desc {
+    margin-inline: 9px;
+  }
 }
