@@ -106,6 +106,17 @@ const Projects = () => {
                         </div>
                         <a href="https://convertcurrencyweb.netlify.app/" target="_blank" rel="noopener noreferrer">Visit <i className="fas fa-external-link-alt"></i></a>
                     </div>
+                    <div className="project" data-aos="fade-up" data-aos-offset="100" data-aos-delay="1500">
+                        <img src="/Images/quizapp.jpg" alt="Quiz App" />
+                        <h3 className="project-name">Quiz App</h3>
+                        <p className="new-tag">NEW</p>
+                        <p className="project-desc">Interactive Quiz App built with React & TypeScript — featuring timer-based questions and real-time score tracking.</p>
+                        <div className="languages">
+                            <div><p>React (TypeScript)</p></div>
+                            <div><p>BootStrap</p></div>
+                        </div>
+                        <a href="https://solvequizz.netlify.app/" target="_blank" rel="noopener noreferrer">Visit <i className="fas fa-external-link-alt"></i></a>
+                    </div>
                 </div>
             </div>
             <div className="viewAllProjects" data-aos="fade-down">
