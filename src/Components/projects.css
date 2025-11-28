@@ -110,9 +110,10 @@
     color: var(--text-color);
     background-color: red;
     border-radius: .6rem;
-    padding-inline: .3rem;
-    padding-block: .06rem;
-    font-size: 12px;
+    padding-inline: .6rem;
+    padding-block: .3rem;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 .project-desc {
