@@ -20,7 +20,7 @@
 .contactContent {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 13px;
     justify-content: center;
     margin-inline: 30px;
 }
@@ -28,16 +28,18 @@
 .socialMediaLinks {
     display: flex;
     background-color: var(--bg-color);
+    box-shadow: var(--shadow);
     border-radius: .7rem;
     max-width: 400px;
     width: 100%;
     min-height: 90px;
     padding: 13px;
-    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 
 .socialMediaLinks:hover {
-    box-shadow: 0 0 5px var(--highlight-color);
+    transform: translateY(-3px);
 }
 
 .mediaIcon {
@@ -161,6 +163,7 @@ p {
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
     padding: 50px 16px;
+    box-shadow: var(--shadow);
 }
 
 .footer h1 {

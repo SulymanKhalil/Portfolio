@@ -47,12 +47,10 @@
   max-width: 420px;
   width: 100%;
   min-height: 100px;
-  background-color: var(--body-color);
-  border-top-left-radius: 2rem;
-  border-top-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
-  box-shadow: 0 0 5px var(--highlight-color);
+  background-color: var(--bg-color);
+  border-radius: 1rem;
   animation: frontendFloat 3s ease-in-out infinite;
+  box-shadow: var(--shadow);
   padding: 25px;
 }
 
@@ -221,10 +219,9 @@
   max-width: 420px;
   width: 100%;
   min-height: 100px;
-  background-color: var(--body-color);
-  border-top-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
-  box-shadow: 0 0 5px var(--highlight-color);
+  background-color: var(--bg-color);
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
   animation: frameworksFloat 3s ease-in-out infinite;
   animation-delay: 0.5s;
   padding: 25px;
@@ -343,7 +340,7 @@
   }
 }
 /***************************** Additional Skills **************************/
-.additonalSkills hr {
+.additionalSkills hr {
   margin-top: 75px;
   margin-bottom: 10px;
   background-color: var(--highlight-color);
@@ -354,7 +351,7 @@
   margin-inline: auto;
 }
 
-.additonalSkills h1 {
+.additionalSkills h1 {
   color: var(--text-color);
   text-align: center;
   font-size: 28px;
@@ -371,16 +368,17 @@
 
 .additionalSkills-content div {
   background-color: var(--bg-color);
-  border-top-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  transition: box-shadow 0.2s ease-in;
+  border-radius: 1rem;
+  transition: transform 0.2s ease-in;
+  box-shadow: var(--shadow);
   padding: 10px;
   color: var(--text-color);
   margin: 6px;
+  cursor: pointer;
 }
 
 .additionalSkills-content div:hover {
-  box-shadow: 0 0 2px var(--highlight-color);
+  transform: scale(1.06);
 }
 
 /********************************** Medias *********************************/

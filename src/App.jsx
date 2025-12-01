@@ -10,6 +10,7 @@ import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import NotFound from "./Components/NotFound";
 import ScrollToTop from "./Components/goToTop";
+import CursorEffect from "./Components/CursorEffect";
 
 const App = () => {
     useEffect(() => {
@@ -26,6 +27,7 @@ const App = () => {
     return (
         <Router>
             <ScrollToTop/>
+            <CursorEffect/>
             <div className="App">
                 <Navbar />
                 <div className="content">

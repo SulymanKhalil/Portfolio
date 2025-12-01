@@ -182,7 +182,7 @@ const Skills = () => {
           </div>
         </div>
         {/**************** Additional Skills ***************/}
-        <div className="additonalSkills">
+        <div className="additionalSkills">
           <hr />
           <h1>Additional Skills</h1>
           <div className="additionalSkills-content">

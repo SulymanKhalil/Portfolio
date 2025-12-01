@@ -1,591 +1,584 @@
 /************* Navbar ************/
 .header {
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 0 4px 5px -5px var(--highlight-color);
-    backdrop-filter: blur(8px);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 4;
+  display: flex;
+  justify-content: space-between;
+  backdrop-filter: blur(6px);
+  border-bottom: .5px solid var(--bg-color);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4;
 }
 
 .heading1 {
-    font-size: 2.5rem;
-    margin-top: 12px;
-    color: var(--text-color);
-    font-family: "Sacramento", sans-serif;
+  font-size: 2.5rem;
+  margin-top: 12px;
+  color: var(--text-color);
+  font-family: "Sacramento", sans-serif;
 }
 
 .heading1 span {
-    color: var(--highlight-color);
-    font-family: "Sacramento", sans-serif;
+  color: var(--highlight-color);
+  font-family: "Sacramento", sans-serif;
 }
 
 .navbar {
-    border-radius: 2rem;
-    height: 2.7rem !important;
-    background-color: var(--bg-color) !important;
-    margin-top: 14px;
+  border-radius: 2rem;
+  height: 2.7rem !important;
+  background-color: var(--bg-color) !important;
+  margin-top: 14px;
+  box-shadow: var(--shadow);
 }
 
 .activeTab.activeTab.activeTab {
-    font-weight: 700;
-    color: var(--highlight-color) !important;
+  font-weight: 700;
+  color: var(--highlight-color) !important;
 }
 
 .navbar .nav-link {
-    color: var(--text-color) !important;
-    transition: transform ease-in-out 200ms;
-    padding-inline: 8px;
+  color: var(--text-color) !important;
+  transition: transform ease-in-out 200ms;
+  padding-inline: 8px;
 }
 
 .nav-item-list {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    padding-inline: 16px;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-inline: 16px;
 }
 
 .resume-and-hireBtn-cont {
-    display: flex;
-    align-items: center;
-    margin-right: 8px;
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
 }
 
 .resume-btn {
-    border-radius: 0.7rem;
-    background-color: var(--bg-color);
-    font-size: .73rem;
-    font-weight: 900;
-    border: none;
-    height: 2.5rem;
-    width: 5.2rem;
-    transition: transform ease-in-out 200ms;
+  border-radius: 0.7rem;
+  background-color: var(--bg-color);
+  font-size: 0.73rem;
+  font-weight: 900;
+  border: none;
+  height: 2.5rem;
+  width: 5.2rem;
+  transition: transform ease-in-out 200ms;
+  box-shadow: var(--shadow);
 }
 
 .resume-btn a {
-    font-family: "Montserrat", sans-serif;
-    text-decoration: none;
-    color: var(--text-color) !important;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: var(--text-color) !important;
 }
 
 .navbar .nav-link:hover {
-    transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
 .resume-btn:hover {
-    transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 .fa-bars {
-    display: none;
-    font-size: 23px;
-    cursor: pointer;
-    margin-left: 7px;
-    color: var(--text-color);
-    transition: transform 0.3s ease-in-out;
+  display: none;
+  font-size: 23px;
+  cursor: pointer;
+  margin-left: 7px;
+  color: var(--text-color);
+  transition: transform 0.3s ease-in-out;
 }
 
 /************ HeroSection **********/
 .HeroSection {
-    background-image: url("/Images/backgroundPic.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: var(--text-color);
-    min-height: 300px;
-    text-align: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 300px;
+  text-align: center;
+  box-shadow: var(--shadow);
 }
 
 .HeroSection img {
-    display: block;
-    height: 200px;
-    margin: auto;
-    border: solid 5px var(--highlight-color);
+  display: block;
+  height: 200px;
+  margin: auto;
+  border: solid 5px var(--highlight-color);
 }
 
 .HeroSection-h1 {
-    text-align: center;
-    font-size: 1.4rem;
-    color: var(--text-color);
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--text-color);
 }
 
 .h2-heading-parent {
-    width: 320px;
-    background-color: var(--highlight-color);
-    border-radius: 1rem;
-    margin: auto;
+  width: 320px;
+  background-color: var(--highlight-color);
+  border-radius: 1rem;
+  margin: auto;
 }
 
 .HeroSection-h2 {
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.7rem;
-    color: var(--special-heading-color);
-    padding: 5px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: var(--special-heading-color);
+  padding: 5px;
 }
 
 .HeroSection-p {
-    text-align: center;
-    margin: auto;
-    max-width: 500px;
-    color: var(--text-color);
+  text-align: center;
+  margin: auto;
+  max-width: 500px;
+  color: var(--text-color);
 }
 
 .Hire-Button {
-    border: none;
-    background-color: var(--highlight-color);
-    color: var(--special-heading-color);
-    border-radius: 0.7rem;
-    height: 2.5rem;
-    width: 5.2rem;
-    font-weight: 900;
-    transition: transform ease-in-out 200ms;
-    font-size: .75rem;
-    font-family: "Montserrat", sans-serif;
-    margin-top: 3px;
+  color: var(--text-color);
+  border: none;
+  background-color: var(--highlight-color);
+  border-radius: 0.7rem;
+  height: 2.5rem;
+  width: 5.2rem;
+  font-weight: 900;
+  transition: transform ease-in-out 200ms;
+  font-size: 0.75rem;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 3px;
 }
 
 .Hire-Button:hover {
-    transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 /************* Beyond Coding **********/
 .beyond-coding h1 {
-    margin-top: 1.5rem;
-    font-size: 1.8rem;
-    color: var(--text-color);
-    font-weight: 600;
+  margin-top: 1.5rem;
+  font-size: 1.8rem;
+  color: var(--text-color);
+  font-weight: 600;
 }
 
 .beyond-coding hr {
-    border: none;
-    width: 100px;
-    background-color: var(--highlight-color);
-    height: 4px;
-    opacity: 1;
-    margin-top: 8px;
+  border: none;
+  width: 100px;
+  background-color: var(--highlight-color);
+  height: 4px;
+  opacity: 1;
+  margin-top: 8px;
 }
 
 .beyondCoding-content {
-    display: flex;
-    justify-content: center;
-    gap: 7px;
-    padding: 0 70px;
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  padding: 0 70px;
 }
 
 .image1-Cont,
 .image2-Cont,
 .image3-Cont {
-    margin-inline: 3px;
-    max-width: 380px;
-    min-height: 110px;
-    background-color: var(--bg-color);
-    border-radius: 1rem;
-    display: flex;
-    align-items: center;
+  margin-inline: 3px;
+  max-width: 380px;
+  min-height: 110px;
+  background-color: var(--bg-color);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  box-shadow: var(--shadow);
 }
 
 .beyond-coding img {
-    max-width: 110px;
-    border-radius: 1rem;
-    padding: 4px;
+  max-width: 110px;
+  border-radius: 1rem;
+  padding: 4px;
 }
 
 .hobby-content {
-    color: var(--text-color);
-    padding-right: 7px;
-    padding-left: 7px;
-    margin-block: 4px;
+  color: var(--text-color);
+  padding-right: 7px;
+  padding-left: 7px;
+  margin-block: 4px;
 }
 
 .hobby-content h3 {
-    font-size: 18px;
-    margin-bottom: 6px;
+  font-size: 18px;
+  margin-bottom: 6px;
 }
 
 .hobby-content p {
-    font-size: 14px;
-    margin-bottom: 0;
+  font-size: 14px;
+  margin-bottom: 0;
 }
 
 /************ Media Queries **********/
 @media (max-width: 1220px) {
+  /******** Beyond Coding ********/
+  .beyondCoding-content {
+    padding: 0 40px;
+  }
 
-    /******** Beyond Coding ********/
-    .beyondCoding-content {
-        padding: 0 40px;
-    }
+  .hobby-content h3 {
+    font-size: 15px;
+  }
 
-    .hobby-content h3 {
-        font-size: 15px;
-    }
-
-    .hobby-content p {
-        font-size: 13px;
-    }
+  .hobby-content p {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 1100px) {
-    .beyondCoding-content {
-        padding: 0 30px;
-    }
+  .beyondCoding-content {
+    padding: 0 30px;
+  }
 
-    .beyond-coding img {
-        max-width: 100px;
-    }
+  .beyond-coding img {
+    max-width: 100px;
+  }
 
-    .image1-Cont,
-    .image2-Cont,
-    .image3-Cont {
-        min-height: 100px;
-    }
+  .image1-Cont,
+  .image2-Cont,
+  .image3-Cont {
+    min-height: 100px;
+  }
 
-    .hobby-content h3 {
-        font-size: 14px;
-    }
+  .hobby-content h3 {
+    font-size: 14px;
+  }
 
-    .hobby-content p {
-        font-size: 12px;
-    }
+  .hobby-content p {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 1040px) {
-    .beyond-coding hr {
-        margin-bottom: 20px;
-    }
+  .beyond-coding hr {
+    margin-bottom: 20px;
+  }
 
-    .beyondCoding-content {
-        padding: 0 20px;
-    }
+  .beyondCoding-content {
+    padding: 0 20px;
+  }
 
-    .image1-Cont,
-    .image2-Cont,
-    .image3-Cont {
-        max-width: 500px;
-        margin-bottom: 6px;
-    }
+  .image1-Cont,
+  .image2-Cont,
+  .image3-Cont {
+    max-width: 500px;
+    margin-bottom: 6px;
+  }
 
-    .hobby-content h3 {
-        font-size: 17px;
-    }
+  .hobby-content h3 {
+    font-size: 17px;
+  }
 
-    .hobby-content p {
-        font-size: 15px;
-    }
+  .hobby-content p {
+    font-size: 15px;
+  }
 
-    .beyondCoding-content {
-        flex-direction: column;
-        align-items: center;
-    }
+  .beyondCoding-content {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-@media(max-width: 830px) {
+@media (max-width: 830px) {
+  /********* Navbar *********/
+  .heading1 {
+    font-size: 2.3rem;
+  }
 
-    /********* Navbar *********/
-    .heading1 {
-        font-size: 2.3rem;
-    }
+  .resume-btn {
+    font-size: 0.55rem;
+    height: 2.3rem;
+    width: 5rem;
+  }
 
-    .resume-btn {
-        font-size: 0.55rem;
-        height: 2.3rem;
-        width: 5rem;
-    }
+  .navbar {
+    height: 2.4rem !important;
+  }
 
-    .navbar {
-        height: 2.4rem !important;
-    }
+  .navbar .nav-link {
+    font-size: 15px;
+    padding-inline: 4px;
+  }
 
-    .navbar .nav-link {
-        font-size: 15px;
-        padding-inline: 4px;
-    }
+  .nav-item-list {
+    padding-inline: 11px;
+  }
 
-    .nav-item-list {
-        padding-inline: 11px;
-    }
+  /************ Hero Section *********/
+  .HeroSection img {
+    height: 180px;
+  }
 
-    /************ Hero Section *********/
-    .HeroSection img {
-        height: 180px;
-    }
+  .HeroSection-h1 {
+    font-size: 1.2rem;
+  }
 
-    .HeroSection-h1 {
-        font-size: 1.2rem;
+  .h2-heading-parent {
+    width: 270px;
+  }
 
-    }
+  .HeroSection-h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
 
-    .h2-heading-parent {
-        width: 270px;
-    }
-
-    .HeroSection-h2 {
-        font-weight: 600;
-        font-size: 1.5rem;
-    }
-
-    .Hire-Button {
-        font-size: 0.55rem;
-        height: 2.3rem;
-        width: 5rem;
-    }
+  .Hire-Button {
+    font-size: 0.55rem;
+    height: 2.3rem;
+    width: 5rem;
+  }
 }
 
-@media(max-width: 720px) {
-
-    /*********** Hero Section ***********/
-    .heading1 {
-        font-size: 2rem;
-    }
+@media (max-width: 720px) {
+  /*********** Hero Section ***********/
+  .heading1 {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 600px) {
+  /************* Navbar ***********/
+  .navbar {
+    display: none;
+  }
 
-    /************* Navbar ***********/
-    .navbar {
-        display: none;
+  .fa-bars {
+    display: block;
+  }
+
+  .fa-bars:hover {
+    transform: scale(1.1);
+  }
+
+  .menu-container {
+    position: fixed;
+    background-color: var(--bg-color);
+    z-index: 5;
+  }
+
+  .menu-container.menuIn {
+    animation: menuIn 0.6s ease-in-out forwards;
+  }
+
+  .menu-container.menuOut {
+    animation: menuOut 0.6s ease-in-out forwards;
+  }
+
+  .menu-container .fa-xmark {
+    color: var(--text-color);
+    margin-top: 1rem;
+    margin-right: 1rem;
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .menu-container .fa-xmark:hover {
+    transform: rotate(90deg);
+  }
+
+  .menu-lists {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-lists li {
+    list-style: none;
+    padding-bottom: 15px;
+    transition: transform 0.3s ease;
+  }
+
+  .menu-lists a {
+    color: var(--text-color) !important;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .menu-lists li:hover {
+    transform: translateY(-3px);
+  }
+
+  @keyframes menuIn {
+    0% {
+      transform: translateX(100%);
     }
 
-    .fa-bars {
-        display: block;
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes menuOut {
+    0% {
+      transform: translateX(0);
     }
 
-    .fa-bars:hover {
-        transform: scale(1.1);
+    100% {
+      transform: translateX(100%);
     }
-
-    .menu-container {
-        position: fixed;
-        background-color: var(--bg-color);
-        z-index: 5;
-    }
-
-    .menu-container.menuIn {
-        animation: menuIn 0.6s ease-in-out forwards;
-    }
-
-    .menu-container.menuOut {
-        animation: menuOut 0.6s ease-in-out forwards;
-    }
-
-    .menu-container .fa-xmark {
-        color: var(--text-color);
-        margin-top: 1rem;
-        margin-right: 1rem;
-        float: right;
-        cursor: pointer;
-        font-size: 20px;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .menu-container .fa-xmark:hover {
-        transform: rotate(90deg);
-    }
-
-    .menu-lists {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .menu-lists li {
-        list-style: none;
-        padding-bottom: 15px;
-        transition: transform 0.3s ease;
-    }
-
-    .menu-lists a {
-        color: var(--text-color) !important;
-        text-decoration: none;
-        cursor: pointer;
-        font-size: 20px;
-    }
-
-    .menu-lists li:hover {
-        transform: translateY(-3px);
-    }
-
-    @keyframes menuIn {
-        0% {
-            transform: translateX(100%);
-        }
-
-        100% {
-            transform: translateX(0);
-        }
-    }
-
-    @keyframes menuOut {
-        0% {
-            transform: translateX(0);
-        }
-
-        100% {
-            transform: translateX(100%);
-        }
-    }
+  }
 }
 
 @media (max-width: 550px) {
+  /*********** Hero Section ***********/
+  .HeroSection img {
+    height: 180px;
+  }
 
-    /*********** Hero Section ***********/
-    .HeroSection img {
-        height: 180px;
-    }
+  .HeroSection-h1 {
+    font-size: 1.2rem;
+  }
 
-    .HeroSection-h1 {
-        font-size: 1.2rem;
-    }
+  .h2-heading-parent {
+    width: 270px;
+  }
 
-    .h2-heading-parent {
-        width: 270px;
-    }
+  /********** Beyond Coding *******/
 
-    /********** Beyond Coding *******/
+  .image1-Cont,
+  .image2-Cont,
+  .image3-Cont {
+    min-height: 85px;
+  }
 
-    .image1-Cont,
-    .image2-Cont,
-    .image3-Cont {
-        min-height: 85px;
-    }
+  .beyond-coding img {
+    max-width: 85px;
+  }
 
-    .beyond-coding img {
-        max-width: 85px;
-    }
+  .hobby-content h3 {
+    font-size: 17px;
+    margin-bottom: 6px;
+  }
 
-    .hobby-content h3 {
-        font-size: 17px;
-        margin-bottom: 6px;
-    }
-
-    .hobby-content p {
-        font-size: 13px;
-        margin-bottom: 0;
-    }
+  .hobby-content p {
+    font-size: 13px;
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 430px) {
+  /*********** Navbar **********/
+  .heading1 {
+    font-size: 1.7rem;
+  }
 
-    /*********** Navbar **********/
-    .heading1 {
-        font-size: 1.7rem;
-    }
+  .resume-btn {
+    font-size: 0.5rem;
+    height: 2.2rem;
+    width: 4.9rem;
+  }
 
-    .resume-btn {
-        font-size: 0.5rem;
-        height: 2.2rem;
-        width: 4.9rem;
-    }
+  .fa-bars {
+    font-size: 19px;
+  }
 
-    .fa-bars {
-        font-size: 19px;
-    }
+  /************* Hero Section ***********/
+  .HeroSection img {
+    height: 160px;
+  }
 
-    /************* Hero Section ***********/
-    .HeroSection img {
-        height: 160px;
-    }
+  .HeroSection-h1 {
+    font-size: 1.1rem;
+  }
 
-    .HeroSection-h1 {
-        font-size: 1.1rem;
-    }
+  .h2-heading-parent {
+    width: 250px;
+  }
 
-    .h2-heading-parent {
-        width: 250px;
-    }
+  .HeroSection-h2 {
+    font-size: 1.3rem;
+  }
 
-    .HeroSection-h2 {
-        font-size: 1.3rem;
-    }
+  .HeroSection-p {
+    font-size: 14px;
+  }
 
-    .HeroSection-p {
-        font-size: 14px;
-    }
+  .Hire-Button {
+    font-size: 0.5rem;
+    height: 2.2rem;
+    width: 4.9rem;
+  }
 
-    .Hire-Button {
-        font-size: 0.5rem;
-        height: 2.2rem;
-        width: 4.9rem;
-    }
+  /*********** Beyond Coding *********/
 
-    /*********** Beyond Coding *********/
+  .beyond-coding h1 {
+    font-size: 1.3rem;
+  }
 
-    .beyond-coding h1 {
-        font-size: 1.3rem;
-    }
+  .beyondCoding-content {
+    padding: 0 10px;
+  }
 
-    .beyondCoding-content {
-        padding: 0 10px;
-    }
+  .beyond-coding hr {
+    width: 55px;
+    height: 3px;
+  }
 
-    .beyond-coding hr {
-        width: 55px;
-        height: 3px;
-    }
+  .image1-Cont,
+  .image2-Cont,
+  .image3-Cont {
+    min-height: 90px;
+  }
 
-    .image1-Cont,
-    .image2-Cont,
-    .image3-Cont {
-        min-height: 90px;
-    }
+  .beyond-coding img {
+    max-width: 90px;
+  }
 
-    .beyond-coding img {
-        max-width: 90px;
-    }
+  .hobby-content h3 {
+    font-size: 14px;
+  }
 
-    .hobby-content h3 {
-        font-size: 14px;
-    }
-
-    .hobby-content p {
-        font-size: 12px;
-    }
+  .hobby-content p {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 360px) {
+  .resume-btn {
+    height: 2rem;
+    width: 4.7rem;
+  }
 
-    .resume-btn {
-        height: 2rem;
-        width: 4.7rem;
-    }
+  /************* Hero Section ***********/
+  .HeroSection img {
+    height: 150px;
+  }
 
-    /************* Hero Section ***********/
-    .HeroSection img {
-        height: 150px;
-    }
+  .h2-heading-parent {
+    width: 210px;
+  }
 
-    .h2-heading-parent {
-        width: 210px;
-    }
+  .Hire-Button {
+    height: 2rem;
+    width: 4.7rem;
+  }
 
-    .Hire-Button {
-        height: 2rem;
-        width: 4.7rem;
-    }
+  /*********** Beyond Coding *********/
+  .beyondCoding-content {
+    padding: 0 7px;
+  }
 
-    /*********** Beyond Coding *********/
-    .beyondCoding-content {
-        padding: 0 7px;
-    }
+  .image1-Cont,
+  .image2-Cont,
+  .image3-Cont {
+    min-height: 75px;
+  }
 
-    .image1-Cont,
-    .image2-Cont,
-    .image3-Cont {
-        min-height: 75px;
-    }
+  .beyond-coding img {
+    max-width: 75px;
+  }
 
-    .beyond-coding img {
-        max-width: 75px;
-    }
-
-    .beyond-coding hr {
-        width: 50px;
-        height: 2px;
-    }
+  .beyond-coding hr {
+    width: 50px;
+    height: 2px;
+  }
 }
