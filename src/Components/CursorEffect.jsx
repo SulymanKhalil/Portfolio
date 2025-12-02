@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 
 const TRAIL_LENGTH = 20;
 const BUBBLE_RADIUS = 14;
+const GAP = 6;
 
 export default function CursorEffect() {
   const canvasRef = useRef(null);
@@ -9,10 +10,11 @@ export default function CursorEffect() {
   const trail = useRef([]);
   const rafRef = useRef(null);
   const hasMoved = useRef(false);
+  const isTouching = useRef(false);
+  const showBubble = useRef(false);
+  const ignoreMouseUntil = useRef(0);
 
   useEffect(() => {
-    if ("ontouchstart" in window) return;
-
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
 
@@ -28,8 +30,13 @@ export default function CursorEffect() {
     resize();
     window.addEventListener("resize", resize);
 
+    // ================= DESKTOP =================
     const handleMove = (e) => {
+      if (Date.now() < ignoreMouseUntil.current) return;
+
+      showBubble.current = true;
       hasMoved.current = true;
+
       mouse.current.x = e.clientX;
       mouse.current.y = e.clientY;
 
@@ -37,24 +44,65 @@ export default function CursorEffect() {
       if (trail.current.length > TRAIL_LENGTH) trail.current.shift();
     };
 
+    // ================= MOBILE =================
+    const handleTouchStart = (e) => {
+      ignoreMouseUntil.current = Date.now() + 1000;
+
+      const t = e.touches[0];
+      isTouching.current = true;
+      showBubble.current = true;
+      hasMoved.current = false;
+      trail.current = [];
+
+      mouse.current.x = t.clientX;
+      mouse.current.y = t.clientY;
+    };
+
+    const handleTouchMove = (e) => {
+      if (!isTouching.current) return;
+
+      const t = e.touches[0];
+      hasMoved.current = true;
+
+      mouse.current.x = t.clientX;
+      mouse.current.y = t.clientY;
+
+      trail.current.push({ x: t.clientX, y: t.clientY });
+      if (trail.current.length > TRAIL_LENGTH) trail.current.shift();
+    };
+
+    const handleTouchEnd = () => {
+      ignoreMouseUntil.current = Date.now() + 1000;
+
+      isTouching.current = false;
+      showBubble.current = false;
+      hasMoved.current = false;
+      trail.current = [];
+    };
+
     window.addEventListener("mousemove", handleMove, { passive: true });
+    window.addEventListener("touchstart", handleTouchStart, { passive: true });
+    window.addEventListener("touchmove", handleTouchMove, { passive: true });
+    window.addEventListener("touchend", handleTouchEnd, { passive: true });
+    window.addEventListener("touchcancel", handleTouchEnd, { passive: true });
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      if (hasMoved.current && trail.current.length > 2) {
-        const color =
-          getComputedStyle(document.documentElement)
-            .getPropertyValue("--highlight-color")
-            .trim() || "#f59e0b";
+      const color =
+        getComputedStyle(document.documentElement)
+          .getPropertyValue("--highlight-color")
+          .trim() || "#f59e0b";
 
+      // ===== GAP WALI LINE (CIRCLE KE ANDAR NA JAYE) =====
+      if (hasMoved.current && trail.current.length > 1) {
         ctx.save();
         ctx.beginPath();
         ctx.rect(0, 0, canvas.width, canvas.height);
         ctx.arc(
           mouse.current.x,
           mouse.current.y,
-          BUBBLE_RADIUS,
+          BUBBLE_RADIUS + GAP,
           0,
           Math.PI * 2,
           true
@@ -75,7 +123,10 @@ export default function CursorEffect() {
 
         ctx.stroke();
         ctx.restore();
+      }
 
+      // ===== BUBBLE =====
+      if (showBubble.current) {
         ctx.beginPath();
         ctx.arc(
           mouse.current.x,
@@ -97,6 +148,10 @@ export default function CursorEffect() {
     return () => {
       window.removeEventListener("mousemove", handleMove);
       window.removeEventListener("resize", resize);
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchmove", handleTouchMove);
+      window.removeEventListener("touchend", handleTouchEnd);
+      window.removeEventListener("touchcancel", handleTouchEnd);
       cancelAnimationFrame(rafRef.current);
     };
   }, []);
