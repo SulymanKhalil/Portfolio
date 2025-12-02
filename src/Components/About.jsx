@@ -28,7 +28,7 @@ const About = () => {
                 <div className="about-texts" data-aos="fade-left" >
                     <h2 data-aos="fade-up">Meet Sulyman</h2>
                     <p data-aos="fade-up">
-                        Hello World, <span className="highlight-text">Sulyman Khalil</span> is a fresher <span className="highlight-text">Frontend Developer</span>, turning ideas into sleek, responsive,
+                        Hello World, meet <span className="highlight-text">Sulyman Khalil</span> — an entry-level <span className="highlight-text">Frontend Developer</span> turning ideas into sleek, responsive,
                         and impactful web experiences.
                     </p>
                     <br />
