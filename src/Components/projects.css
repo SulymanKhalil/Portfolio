@@ -1,294 +1,294 @@
 /****************** Project Container ********************/
 .projectsContainer {
-    color: var(--text-color);
-    margin: 20px;
+  color: var(--text-color);
+  margin: 20px;
 }
 
 /********************** Project Headings **********************/
 .projectHeadingsContainer {
-    background-color: var(--bg-color);
-    padding: 15px;
-    padding-bottom: 15px;
-    border-radius: 1rem;
-    box-shadow: var(--shadow);
+  background-color: var(--bg-color);
+  padding: 15px;
+  padding-bottom: 15px;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
 }
 
 .projectsHeadings {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border-radius: 1rem;
-    padding: 2rem 1rem;
-    text-align: center;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .projectsHeadings h2 {
-    text-align: center;
-    margin: 0;
-    padding-bottom: 18px;
-    font-weight: 650;
-    font-size: 2.2rem;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 18px;
+  font-weight: 650;
+  font-size: 2.2rem;
 }
 
 .projectsHeadings h2::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
-    margin: 10px auto 0;
-    background: var(--highlight-color);
-    border-radius: 2px;
-    animation: grow 1s ease-in-out infinite alternate;
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 10px auto 0;
+  background: var(--highlight-color);
+  border-radius: 2px;
+  animation: grow 1s ease-in-out infinite alternate;
 }
 
 @keyframes grow {
-    from {
-        width: 40px;
-    }
+  from {
+    width: 40px;
+  }
 
-    to {
-        width: 80px;
-    }
+  to {
+    width: 80px;
+  }
 }
 
 .projects-p {
-    max-width: 550px;
-    text-align: center;
-    margin-inline: auto;
-    margin-bottom: 7px;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
+  max-width: 550px;
+  text-align: center;
+  margin-inline: auto;
+  margin-bottom: 7px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
 }
 
 .projects-p:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .projects-tagline {
-    text-align: center;
-    margin: 0;
-    font-weight: 600;
+  text-align: center;
+  margin: 0;
+  font-weight: 600;
 }
 
 /******************** Project Content *********************/
 .arrangeOrder-heading {
-    margin-top: 12px;
-    opacity: 0.5 !important;
-    margin-bottom: 15px;
+  margin-top: 12px;
+  opacity: 0.5 !important;
+  margin-bottom: 15px;
 }
 
 .projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
 }
 
 .projectContainer {
-    background-color: var(--bg-color);
-    border-radius: 1rem;
-    box-shadow: var(--shadow);
+  background-color: var(--bg-color);
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
 }
 
 .projectImage {
-    width: 100%;
-    overflow: hidden;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
+  width: 100%;
+  overflow: hidden;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
 }
 
 .projectImage img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
 }
 
 .projectContainer:hover img {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .projectContent {
-    padding: 15px;
-    padding-bottom: 30px;
+  padding: 15px;
+  padding-bottom: 30px;
 }
 
 .projectContent h3 {
-    color: var(--highlight-color);
-    font-weight: bold;
-    margin-top: 10px;
-    margin-right: 7px;
-    display: inline;
+  color: var(--highlight-color);
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right: 7px;
+  display: inline;
 }
 
 .newtag-Container {
-    background-color: red;
-    display: inline;
-    padding-inline: .8rem;
-    padding-block: .3rem;
-    border-radius: 1rem;
+  background-color: red;
+  display: inline;
+  padding-inline: 0.8rem;
+  padding-block: 0.3rem;
+  border-radius: 1rem;
 }
 
 .projectContent p {
-    opacity: 0.7;
-    margin-block: 15px;
+  opacity: 0.7;
+  margin-block: 15px;
 }
 
 .projectLanguages {
-    margin: 15px 0;
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
+  margin: 15px 0;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .langTag {
-    border-radius: 999px;
-    background-color: var(--highlight-color);
-    padding: 4px 10px;
-    box-shadow: var(--shadow);
+  border-radius: 0.7rem;
+  background-color: var(--highlight-color);
+  padding: 4px 10px;
+  box-shadow: var(--shadow);
 }
 
 .projectContent a {
-    text-decoration: none;
-    color: var(--text-color);
-    border-bottom: 3px solid var(--highlight-color);
-    padding-bottom: 5px;
+  text-decoration: none;
+  color: var(--text-color);
+  border-bottom: 3px solid var(--highlight-color);
+  padding-bottom: 5px;
 }
 
 .projectContent i {
-    transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .projectContent a:hover i {
-    transform: translateX(3px);
+  transform: translateX(5px);
 }
 
 /*************************** View All Projects *************************/
 .viewAllProjectsContainer {
-    background-color: var(--bg-color);
-    padding: 15px;
-    padding-bottom: 15px;
-    border-radius: 1rem;
-    box-shadow: var(--shadow);
-    margin-top: 25px;
+  background-color: var(--bg-color);
+  padding: 15px;
+  padding-bottom: 15px;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  margin-top: 25px;
 }
 
 .viewAllProjects {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border-radius: 1rem;
-    padding: 13px;
-    text-align: center;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 13px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .viewAllProjects p {
-    margin: 0;
-    margin-bottom: 5px;
+  margin: 0;
+  margin-bottom: 5px;
 }
 
 .viewAllProjects div {
-    margin-inline: auto;
-    border-radius: 1rem;
-    padding: 5px;
-    width: 190px;
-    background-color: var(--highlight-color);
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+  margin-inline: auto;
+  border-radius: 1rem;
+  padding: 5px;
+  width: 190px;
+  background-color: var(--highlight-color);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
 .viewAllProjects div:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .viewAllProjects a {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
 }
 
 .viewAllProjects i {
-    transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .viewAllProjects div:hover i {
-    transform: translateX(4px);
+  transform: translateX(4px);
 }
 
 /********************** Medias ***********************/
 @media (max-width: 1225px) {
-    /**************************** View All Projects **************************/
-    .viewAllProjects div {
-        width: 185px;
-    }
+  /**************************** View All Projects **************************/
+  .viewAllProjects div {
+    width: 185px;
+  }
 }
 
 @media (max-width: 680px) {
-    /************************ Project Headings ********************/
-    .projectsHeadings h2 {
-        font-size: 1.8rem;
-    }
+  /************************ Project Headings ********************/
+  .projectsHeadings h2 {
+    font-size: 1.8rem;
+  }
 
-    /*************************** View All Projects **********************/
-    .viewAllProjects p,
-    .viewAllProjects a {
-        font-size: 15px;
-    }
+  /*************************** View All Projects **********************/
+  .viewAllProjects p,
+  .viewAllProjects a {
+    font-size: 15px;
+  }
 
-    .viewAllProjects div {
-        width: 175px;
-    }
+  .viewAllProjects div {
+    width: 175px;
+  }
 }
 
 @media (max-width: 570px) {
-    /********************** Project Headings **********************/
-    .projectsHeadings h2 {
-        font-size: 1.6rem;
-    }
+  /********************** Project Headings **********************/
+  .projectsHeadings h2 {
+    font-size: 1.6rem;
+  }
 
-    .projects-p {
-        font-size: 14px;
-    }
+  .projects-p {
+    font-size: 14px;
+  }
 
-    .projects-tagline {
-        font-size: 14px;
-    }
+  .projects-tagline {
+    font-size: 14px;
+  }
 
-    /********************* View All Projects *******************/
-    .viewAllProjects p,
-    .viewAllProjects a {
-        font-size: 14px;
-    }
+  /********************* View All Projects *******************/
+  .viewAllProjects p,
+  .viewAllProjects a {
+    font-size: 14px;
+  }
 
-    .viewAllProjects div {
-        padding: 4px;
-        width: 165px;
-    }
+  .viewAllProjects div {
+    padding: 4px;
+    width: 165px;
+  }
 }
 
 @media (max-width: 480px) {
-    .viewAllProjects div {
-        padding: 3px;
-        width: 153px;
-    }
+  .viewAllProjects div {
+    padding: 3px;
+    width: 153px;
+  }
 }
 
 @media (max-width: 420px) {
-    .viewAllProjects div {
-        width: 142px;
-    }
+  .viewAllProjects div {
+    width: 142px;
+  }
 }
 
 @media (max-width: 370px) {
-    /****************** Project Headings *****************/
-    .projectsHeadings h2 {
-        padding-bottom: 10px;
-    }
+  /****************** Project Headings *****************/
+  .projectsHeadings h2 {
+    padding-bottom: 10px;
+  }
 
-    .projectsHeadings h2::after {
-        margin: 7px auto 0;
-    }
+  .projectsHeadings h2::after {
+    margin: 7px auto 0;
+  }
 
-    .viewAllProjects div {
-        width: 133px;
-    }
+  .viewAllProjects div {
+    width: 133px;
+  }
 }

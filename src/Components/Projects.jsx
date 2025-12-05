@@ -94,7 +94,7 @@ const Projects = () => {
           <p className="projects-p">
             Here’s a curated selection of my work — projects where code meets
             creativity, blending clean development with real-world problem
-            solving
+            solving.
           </p>
           <p className="projects-tagline">Curious? Let’s jump into the work.</p>
         </div>
@@ -106,35 +106,41 @@ const Projects = () => {
         <div>
           <div className="projects">
             {projectsData.map((project, index) => (
-                <div
-                  className="projectContainer"
-                  key={index}
-                  data-aos="fade-up"
-                  data-aos-delay={index * 150}
-                >
-                  <div className="projectImage">
-                    <img src={project.img} alt={project.title} />
-                  </div>
-                  <div className="projectContent">
-                    <h3>{project.title}</h3>
-                    {project.isNew && (<div className="newtag-Container"><span className="newtag">New</span></div>)}
-                    <p>{project.desc}</p>
-                    <div className="projectLanguages">
-                    {project.languages.map((lang, i)=>(
-                      <span key={i} className="langTag">{lang}</span>
-                    ))}
-                    </div>
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="projectLiveBtn"
-                    >
-                      Live <i className="fas fa-external-link-alt"></i>
-                    </a>
-                  </div>
+              <div
+                className="projectContainer"
+                key={index}
+                data-aos="fade-up"
+                data-aos-delay={index * 150}
+              >
+                <div className="projectImage">
+                  <img src={project.img} alt={project.title} />
                 </div>
-              ))}
+                <div className="projectContent">
+                  <h3>{project.title}</h3>
+                  {project.isNew && (
+                    <div className="newtag-Container">
+                      <span className="newtag">New</span>
+                    </div>
+                  )}
+                  <p>{project.desc}</p>
+                  <div className="projectLanguages">
+                    {project.languages.map((lang, i) => (
+                      <span key={i} className="langTag">
+                        {lang}
+                      </span>
+                    ))}
+                  </div>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="projectLiveBtn"
+                  >
+                    Live <i className="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
