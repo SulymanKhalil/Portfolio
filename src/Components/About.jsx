@@ -35,14 +35,14 @@ const About = () => {
                     <h2 data-aos="fade-up">Fuel Behind My Work</h2>
                     <p data-aos="fade-up">
                         What drives me is a mix of <span className="highlight-text">creativity</span> and <span className="highlight-text">logic</span> — blending design
-                        with code to make <span className="highlight-text">interfaces</span> that don’t just work, but feel <span className="highlight-text">alive</span>.
+                        with code to make <span className="highlight-text">interfaces</span> that don’t just work but feel <span className="highlight-text">alive</span>.
                     </p>
                     <br />
                     <h2 data-aos="fade-up">Education</h2>
                     <p data-aos="fade-up">
                         From <span class="highlight-text">Matric in Computer Science</span> at <span class="highlight-text">Asaas National School</span>,
-                        to <span class="highlight-text">ICS (Physics)</span> at <span class="highlight-text">Punjab College</span>,
-                        and now pursuing <span class="highlight-text">BS Software Engineering</span> at <span class="highlight-text">Virtual University</span> — my academic path reflects a steady growth in technology and problem-solving.
+                        to <span class="highlight-text">ICS (Physics)</span> at <span class="highlight-text">Punjab Group Of Colleges (PGC)</span>,
+                        and now pursuing <span class="highlight-text">BS Software Engineering</span> at <span class="highlight-text">Virtual University Of Pakistan</span> — my academic path reflects a steady growth in technology and problem-solving.
                     </p>
                     <br />
                     <h3 data-aos="zoom-in" ><span className="quotes">❝ </span>Turning concepts into code, and code into experiences<span className="quotes"> ❞</span></h3>

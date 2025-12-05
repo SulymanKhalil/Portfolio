@@ -18,7 +18,7 @@
 .about-content {
     background-color: var(--bg-color);
     max-width: 1000px;
-    min-height: 470px;
+    min-height: 500px;
     margin: auto;
     display: flex;
     margin-bottom: 20px;
@@ -34,7 +34,7 @@
 .image-border img {
     position: relative;
     max-width: 320px;
-    margin-top: 47px;
+    margin-top: 60px;
     margin-left: 50px;
     z-index: 1;
     border-radius: 1rem;
@@ -44,10 +44,10 @@
 .image-border::before {
     content: "";
     position: absolute;
-    top: 25px;
+    top: 35px;
     left: 25px;
     width: 87%;
-    height: 85%;
+    height: 80%;
     background-color: var(--highlight-color);
     border: 3px solid var(--highlight-color);
     z-index: 0;
@@ -129,8 +129,8 @@
 
     .image-border::before {
         width: 100%;
-        height: 88%;
-        top: 25px;
+        height: 85%;
+        top: 35px;
         left: -24px;
     }
 
@@ -168,9 +168,9 @@
 
     .image-border::before {
         width: 100%;
-        height: 86%;
-        top: 27px;
-        left: -20px;
+        height: 83%;
+        top: 37px;
+        left: -23px;
     }
 
     .about-texts h2 {
@@ -187,79 +187,27 @@
 }
 
 @media (max-width: 460px) {
-    /* .heading-container h2 {
-        font-size: 18px;
-    } */
-
-    /* .heading-container h5 {
-        font-size: 13px;
-    } */
-
     .image-border img {
         max-width: 200px;
     }
 
     .image-border::before {
         width: 100%;
-        height: 84%;
-        top: 29px;
-        left: -18px;
+        height: 80%;
+        top: 40px;
+        left: -19px;
     }
-
-    /* .about-texts h2 {
-        font-size: 16px;
-    } */
-
-    /* .about-texts p {
-        font-size: 11px;
-    }
-
-    .about-texts h3 {
-        font-size: 11px;
-    } */
 }
 
 @media (max-width: 412px) {
-    /* .heading-container h2 {
-        font-size: 16px;
-    }
-
-    .heading-container h5 {
-        font-size: 11px;
-    } */
-
     .image-border img {
         max-width: 170px;
     }
 
     .image-border::before {
         width: 100%;
-        height: 82%;
-        top: 31px;
+        height: 78%;
+        top: 43px;
         left: -16px;
     }
-
-    /* .about-texts h2 {
-        font-size: 11px;
-    }
-
-    .about-texts p {
-        font-size: 9px;
-    }
-
-    .about-texts h3 {
-        font-size: 9px;
-    } */
 }
-
-/* @media (max-width: 362px) {
-    .about-texts h3 {
-        font-size: 8px;
-    }
-}
-
-@media (max-width: 340px) {
-    .about-texts h3 {
-        font-size: 7px;
-    }
-} */
