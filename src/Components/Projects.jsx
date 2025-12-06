@@ -103,45 +103,43 @@ const Projects = () => {
         <p className="arrangeOrder-heading" data-aos="fade-up">
           Arranged Chronologically (Oldest → Newest)
         </p>
-        <div>
-          <div className="projects">
-            {projectsData.map((project, index) => (
-              <div
-                className="projectContainer"
-                key={index}
-                data-aos="fade-up"
-                data-aos-delay={index * 150}
-              >
-                <div className="projectImage">
-                  <img src={project.img} alt={project.title} />
-                </div>
-                <div className="projectContent">
-                  <h3>{project.title}</h3>
-                  {project.isNew && (
-                    <div className="newtag-Container">
-                      <span className="newtag">New</span>
-                    </div>
-                  )}
-                  <p>{project.desc}</p>
-                  <div className="projectLanguages">
-                    {project.languages.map((lang, i) => (
-                      <span key={i} className="langTag">
-                        {lang}
-                      </span>
-                    ))}
-                  </div>
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="projectLiveBtn"
-                  >
-                    Live <i className="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
+        <div className="projects">
+          {projectsData.map((project, index) => (
+            <div
+              className="projectContainer"
+              key={index}
+              data-aos="fade-up"
+              data-aos-delay={index * 150}
+            >
+              <div className="projectImage">
+                <img src={project.img} alt={project.title} />
               </div>
-            ))}
-          </div>
+              <div className="projectContent">
+                <h3>{project.title}</h3>
+                {project.isNew && (
+                  <div className="newtag-Container">
+                    <span className="newtag">New</span>
+                  </div>
+                )}
+                <p>{project.desc}</p>
+                <div className="projectLanguages">
+                  {project.languages.map((lang, i) => (
+                    <span key={i} className="langTag">
+                      {lang}
+                    </span>
+                  ))}
+                </div>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="projectLiveBtn"
+                >
+                  Live <i className="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
       <div className="viewAllProjectsContainer" data-aos="fade-down">
