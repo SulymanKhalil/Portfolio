@@ -13,6 +13,7 @@ export default function CursorEffect() {
   const isTouching = useRef(false);
   const showBubble = useRef(false);
   const ignoreMouseUntil = useRef(0);
+  const tRef = useRef(0);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -45,33 +46,27 @@ export default function CursorEffect() {
 
     const handleTouchStart = (e) => {
       ignoreMouseUntil.current = Date.now() + 1000;
-
       const t = e.touches[0];
       isTouching.current = true;
       showBubble.current = true;
       hasMoved.current = false;
       trail.current = [];
-
       mouse.current.x = t.clientX;
       mouse.current.y = t.clientY;
     };
 
     const handleTouchMove = (e) => {
       if (!isTouching.current) return;
-
       const t = e.touches[0];
       hasMoved.current = true;
-
       mouse.current.x = t.clientX;
       mouse.current.y = t.clientY;
-
       trail.current.push({ x: t.clientX, y: t.clientY });
       if (trail.current.length > TRAIL_LENGTH) trail.current.shift();
     };
 
     const handleTouchEnd = () => {
       ignoreMouseUntil.current = Date.now() + 1000;
-
       isTouching.current = false;
       showBubble.current = false;
       hasMoved.current = false;
@@ -86,11 +81,14 @@ export default function CursorEffect() {
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
+      tRef.current += 0.04;
 
       const color =
         getComputedStyle(document.documentElement)
           .getPropertyValue("--highlight-color")
           .trim() || "#f59e0b";
+
+      const neonPulse = 8 + Math.sin(tRef.current) * 6;
 
       if (hasMoved.current && trail.current.length > 1) {
         ctx.save();
@@ -106,33 +104,56 @@ export default function CursorEffect() {
         );
         ctx.clip("evenodd");
 
-        ctx.beginPath();
-        ctx.lineWidth = 2;
         ctx.lineCap = "round";
         ctx.lineJoin = "round";
-        ctx.strokeStyle = color;
+        ctx.shadowBlur = neonPulse;
+        ctx.shadowColor = color;
 
+        const grad = ctx.createLinearGradient(
+          trail.current[0].x,
+          trail.current[0].y,
+          mouse.current.x,
+          mouse.current.y
+        );
+        grad.addColorStop(0, color + "00");
+        grad.addColorStop(0.5, color + "aa");
+        grad.addColorStop(1, color);
+        ctx.strokeStyle = grad;
+
+        ctx.beginPath();
         for (let i = 0; i < trail.current.length; i++) {
           const p = trail.current[i];
+          const k = i / trail.current.length;
+          ctx.lineWidth = 1 + k * (3 + Math.sin(tRef.current + i) * 1.2);
           if (i === 0) ctx.moveTo(p.x, p.y);
           else ctx.lineTo(p.x, p.y);
         }
-
         ctx.stroke();
         ctx.restore();
       }
 
       if (showBubble.current) {
-        ctx.beginPath();
-        ctx.arc(
+        const wobble = Math.sin(tRef.current * 1.5) * 1.5;
+        const r = BUBBLE_RADIUS + wobble;
+
+        const bubbleGrad = ctx.createRadialGradient(
           mouse.current.x,
           mouse.current.y,
-          BUBBLE_RADIUS,
-          0,
-          Math.PI * 2
+          r * 0.2,
+          mouse.current.x,
+          mouse.current.y,
+          r * 1.4
         );
-        ctx.lineWidth = 2;
-        ctx.strokeStyle = color;
+        bubbleGrad.addColorStop(0, color + "33");
+        bubbleGrad.addColorStop(0.6, color + "99");
+        bubbleGrad.addColorStop(1, color);
+
+        ctx.beginPath();
+        ctx.arc(mouse.current.x, mouse.current.y, r, 0, Math.PI * 2);
+        ctx.lineWidth = 2.5;
+        ctx.strokeStyle = bubbleGrad;
+        ctx.shadowBlur = neonPulse + 4;
+        ctx.shadowColor = color;
         ctx.stroke();
       }
 
