@@ -30,7 +30,6 @@ export default function CursorEffect() {
     resize();
     window.addEventListener("resize", resize);
 
-    // ================= DESKTOP =================
     const handleMove = (e) => {
       if (Date.now() < ignoreMouseUntil.current) return;
 
@@ -44,7 +43,6 @@ export default function CursorEffect() {
       if (trail.current.length > TRAIL_LENGTH) trail.current.shift();
     };
 
-    // ================= MOBILE =================
     const handleTouchStart = (e) => {
       ignoreMouseUntil.current = Date.now() + 1000;
 
@@ -94,7 +92,6 @@ export default function CursorEffect() {
           .getPropertyValue("--highlight-color")
           .trim() || "#f59e0b";
 
-      // ===== GAP WALI LINE (CIRCLE KE ANDAR NA JAYE) =====
       if (hasMoved.current && trail.current.length > 1) {
         ctx.save();
         ctx.beginPath();
@@ -125,7 +122,6 @@ export default function CursorEffect() {
         ctx.restore();
       }
 
-      // ===== BUBBLE =====
       if (showBubble.current) {
         ctx.beginPath();
         ctx.arc(
