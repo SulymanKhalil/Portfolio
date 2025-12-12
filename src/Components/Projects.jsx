@@ -73,6 +73,14 @@ const projectsData = [
     link: "https://solvequizz.netlify.app/",
     isNew: true,
   },
+  {
+    title: "Login Form",
+    desc: "Simple Login Form built with React & TypeScript — includes basic input validation, password toggle, and smooth Tailwind-based animations.",
+    img: "/Images/loginform.webp",
+    languages: ["React (TS)", "Tailwind CSS"],
+    link: "https://loginform-bysulyman.netlify.app/",
+    isNew: true,
+  }
 ];
 
 const Projects = () => {
