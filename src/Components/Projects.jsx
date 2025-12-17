@@ -71,7 +71,7 @@ const projectsData = [
     img: "/Images/QuizApp.png",
     languages: ["React (TS)", "BootStrap"],
     link: "https://solvequizz.netlify.app/",
-    isNew: true,
+    isNew: false,
   },
   {
     title: "Login Form",
@@ -79,6 +79,14 @@ const projectsData = [
     img: "/Images/loginform.webp",
     languages: ["React (TS)", "Tailwind CSS"],
     link: "https://loginform-bysulyman.netlify.app/",
+    isNew: true,
+  },
+  {
+    title: "E-Commerce App",
+    desc: "E-commerce app built with React & Redux featuring add-to-cart, quantity control, dynamic pricing, and a responsive Bootstrap UI.",
+    img: "/Images/e-commerceapp.webp",
+    languages: ["React", "Redux", "CSS", "BootStrap"],
+    link: "https://addtocart-by-sulyman.netlify.app/",
     isNew: true,
   }
 ];
