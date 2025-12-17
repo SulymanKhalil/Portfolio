@@ -82,10 +82,10 @@ const projectsData = [
     isNew: true,
   },
   {
-    title: "E-Commerce App",
+    title: "E-Com App",
     desc: "E-commerce app built with React & Redux featuring add-to-cart, quantity control, dynamic pricing, and a responsive Bootstrap UI.",
     img: "/Images/e-commerceapp.webp",
-    languages: ["React", "Redux", "CSS", "BootStrap"],
+    languages: ["React", "Redux", "CSS", "+1"],
     link: "https://addtocart-by-sulyman.netlify.app/",
     isNew: true,
   }
