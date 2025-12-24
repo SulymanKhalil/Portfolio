@@ -6,7 +6,6 @@ import "./Components/heroSection.css"
 import "./Components/about.css"
 import "./Components/skills.css"
 import "./Components/projects.css"
-import "./Components/experience.css"
 import "./Components/contact.css"
 import "./Components/notFound.css"
 
