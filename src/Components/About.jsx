@@ -23,7 +23,7 @@ const About = () => {
             </div>
             <div className="about-content">
                 <div className="image-border" data-aos="zoom-in">
-                    <img src="/Images/About-Pic.webp" alt="About-Pic" />
+                    <img src="/Images/About-Pic.jpeg" alt="About me Pic" />
                 </div>
                 <div className="about-texts" data-aos="fade-left" >
                     <h2 data-aos="fade-up">Meet Sulyman</h2>

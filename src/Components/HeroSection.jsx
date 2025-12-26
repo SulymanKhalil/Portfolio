@@ -4,7 +4,7 @@ const HeroSection = () => {
     return (
         <div className="HeroSection-container">
             <div className="HeroSection m-2 p-3 rounded-3">
-                <img data-aos="zoom-in" src="/Images/Sulyman.jpg" alt="Developer's Pic" className="rounded-circle" />
+                <img data-aos="zoom-in" src="/Images/Sulyman.jpg" alt="Sulyman.jpg" className="rounded-circle" />
                 <h1 data-aos="fade-up" className="HeroSection-h1">Hi, I'm Sulyman Khalil</h1>
                 <div data-aos="fade-up" className="h2-heading-parent">
                     <h2 className="HeroSection-h2">Front-End Developer</h2>
