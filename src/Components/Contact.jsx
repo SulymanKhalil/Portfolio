@@ -22,7 +22,7 @@ const Contact = () => {
                     <div className="mediaIcon" data-aos="fade-right" data-aos-delay="100"><i className="fa-solid fa-phone"></i></div>
                     <div className="mediaContent" data-aos="fade-right" data-aos-delay="100">
                         <h4>Phone</h4>
-                        <a href="tel:+923076250127">+92 370 7843216</a>
+                        <a href="tel:+923707843216">+92 370 7843216</a>
                     </div>
                 </div>
                 <div className="socialMediaLinks">
