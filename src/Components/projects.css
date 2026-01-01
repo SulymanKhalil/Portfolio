@@ -260,21 +260,8 @@
   }
 
   .viewAllProjects div {
-    padding: 4px;
+    padding: 4px 8px;
     width: 165px;
-  }
-}
-
-@media (max-width: 480px) {
-  .viewAllProjects div {
-    padding: 3px;
-    width: 153px;
-  }
-}
-
-@media (max-width: 420px) {
-  .viewAllProjects div {
-    width: 142px;
   }
 }
 

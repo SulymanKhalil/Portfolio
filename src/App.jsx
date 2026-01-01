@@ -7,6 +7,7 @@ import HeroSection from "./Components/HeroSection";
 import About from "./Components/About";
 import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
+import Experience from "./Components/Experience";
 import Contact from "./Components/Contact";
 import NotFound from "./Components/NotFound";
 import ScrollToTop from "./Components/goToTop";
@@ -36,6 +37,7 @@ const App = () => {
                         <Route path="about" element={<About />} />
                         <Route path="skills" element={<Skills />} />
                         <Route path="projects" element={<Projects />} />
+                        <Route path="experience" element={<Experience />} />
                         <Route path="contact" element={<Contact />} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>

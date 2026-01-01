@@ -41,12 +41,15 @@ const Navbar = () => {
                             <NavLink className={({ isActive }) => isActive ? "nav-link activeTab" : "nav-link inActiveTab"} to="/projects">Projects</NavLink>
                         </li>
                         <li className="nav-item">
+                            <NavLink className={({ isActive }) => isActive ? "nav-link activeTab" : "nav-link inActiveTab"} to="/experience">Experience</NavLink>
+                        </li>
+                        <li className="nav-item">
                             <NavLink className={({ isActive }) => isActive ? "nav-link activeTab" : "nav-link inActiveTab"} to="/contact">Contact</NavLink>
                         </li>
                     </ul>
                 </div>
             </nav>
-            <div className="resume-and-hireBtn-cont" >
+            <div className="resume-and-menuBar" >
                 <button className="resume-btn">
                     <a href="/Docs/Sulyman-Resume.pdf" download data-aos="zoom-in-up">RESUME</a>
                 </button>
@@ -60,6 +63,7 @@ const Navbar = () => {
                         <li><NavLink className={({ isActive }) => isActive ? "activeTab" : "inActiveTab"} onClick={handleClsoeMenu} to="/about">About</NavLink></li>
                         <li><NavLink className={({ isActive }) => isActive ? "activeTab" : "inActiveTab"} onClick={handleClsoeMenu} to="/skills">Skills</NavLink></li>
                         <li><NavLink className={({ isActive }) => isActive ? "activeTab" : "inActiveTab"} onClick={handleClsoeMenu} to="/projects">Projects</NavLink></li>
+                        <li><NavLink className={({ isActive }) => isActive ? "activeTab" : "inActiveTab"} onClick={handleClsoeMenu} to="/experience">Experience</NavLink></li>
                         <li><NavLink className={({ isActive }) => isActive ? "activeTab" : "inActiveTab"} onClick={handleClsoeMenu} to="/contact">Contact</NavLink></li>
                     </div>
                 </div>

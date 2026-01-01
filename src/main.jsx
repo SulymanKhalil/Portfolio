@@ -7,6 +7,7 @@ import "./Components/about.css"
 import "./Components/skills.css"
 import "./Components/projects.css"
 import "./Components/contact.css"
+import "./Components/experience.css"
 import "./Components/notFound.css"
 
 createRoot(document.getElementById('root')).render(

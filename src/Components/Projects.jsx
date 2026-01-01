@@ -79,7 +79,7 @@ const projectsData = [
     img: "/Images/loginform.webp",
     languages: ["React (TS)", "Tailwind CSS"],
     link: "https://loginform-bysulyman.netlify.app/",
-    isNew: true,
+    isNew: false,
   },
   {
     title: "E-Com App",
@@ -87,7 +87,7 @@ const projectsData = [
     img: "/Images/e-commerceapp.webp",
     languages: ["React", "Redux", "CSS", "+1"],
     link: "https://addtocart-by-sulyman.netlify.app/",
-    isNew: true,
+    isNew: false,
   }
 ];
 

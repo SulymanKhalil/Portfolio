@@ -1,0 +1,242 @@
+/****************** Experience Container ***************/
+.ExperienceContainer {
+  color: var(--text-color);
+}
+
+/****************** Experience Headings **************/
+.ExperienceHeadings h1 {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Merienda";
+  text-align: center;
+}
+
+/**************** Experience Content Container ****************/
+.ExperienceContentCont {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 25px 15px 0 15px;
+}
+
+.ExperienceContentCont img {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  box-shadow: var(--shadow);
+  min-height: 264px;
+  height: 100%;
+  max-width: 264px;
+  width: 100%;
+}
+
+.ExperienceContent {
+  background-color: var(--bg-color);
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.ExperienceContent h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.ExperienceH2-Link {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem 0 2rem;
+}
+
+.ExperienceH2-Link a {
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.ExperienceH2-Link a:hover {
+  color: var(--highlight-color);
+  transform: translateY(-4px);
+}
+
+.ExperienceBottomContent {
+  padding: 0 13rem 2rem 2rem;
+}
+
+.ExperienceContent h1 {
+  font-size: 25px;
+  color: #e03a45;
+  font-weight: 700;
+}
+
+.ExperienceContent p {
+  opacity: 0.7;
+}
+
+.ExperienceDesc {
+  margin: 10px 0 0 0;
+}
+
+/****************** Media Queries ***************/
+@media (max-width: 963px) {
+  /**************** Experience Content Container ****************/
+  .ExperienceContentCont img {
+    min-height: 240px;
+    max-width: 240px;
+  }
+
+  .ExperienceContent h2 {
+    font-size: 17px;
+  }
+
+  .ExperienceContent h1 {
+    font-size: 22px;
+  }
+
+  .ExperienceH2-Link {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+  }
+
+  .ExperienceBottomContent {
+    padding: 0 11rem 1.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 889px) {
+  /****************** Experience Headings **************/
+  .ExperienceHeadings h1 {
+    font-size: 25px;
+  }
+
+  /**************** Experience Content Container ****************/
+  .ExperienceContentCont img {
+    min-height: 210px;
+    max-width: 210px;
+  }
+
+  .ExperienceContent h2 {
+    font-size: 15px;
+  }
+
+  .ExperienceContent h1 {
+    font-size: 20px;
+  }
+
+  .ExperienceH2-Link {
+    padding: 1.2rem 1.2rem 0 1.2rem;
+  }
+
+  .ExperienceBottomContent {
+    padding: 0 9rem 1.2rem 1.2rem;
+  }
+
+  .ExperienceContent p,
+  .ExperienceDesc {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 773px) {
+  /**************** Experience Content Container ****************/
+  .ExperienceContentCont img {
+    min-height: 185px;
+    max-width: 185px;
+  }
+
+  .ExperienceContent h2 {
+    font-size: 13px;
+  }
+
+  .ExperienceContent h1 {
+    font-size: 17px;
+  }
+
+  .ExperienceH2-Link {
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  .ExperienceBottomContent {
+    padding: 0 7rem 1rem 1rem;
+  }
+
+  .ExperienceContent p,
+  .ExperienceDesc {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 665px) {
+  /**************** Experience Content Container ****************/
+  .ExperienceContentCont img {
+    min-height: 114px;
+    max-width: 114px;
+  }
+
+  .ExperienceH2-Link {
+    padding: 0.8rem 0.8rem 0 0.8rem;
+  }
+
+  .ExperienceBottomContent {
+    padding: 0 5rem 0.8rem 0.8rem;
+  }
+
+  .ExperienceDesc {
+    display: none;
+  }
+}
+
+@media (max-width: 526px) {
+  /****************** Experience Headings **************/
+  .ExperienceHeadings h1 {
+    font-size: 20px;
+  }
+
+  /**************** Experience Content Container ****************/
+  .ExperienceContentCont img {
+    min-height: 108px;
+    max-width: 108px;
+  }
+
+  .ExperienceH2-Link {
+    padding: 0.6rem 0.8rem 0 0.6rem;
+  }
+
+  .ExperienceBottomContent {
+    padding: 0 3rem 0.6rem 0.6rem;
+  }
+}
+
+@media (max-width: 486px) {
+  /**************** Experience Content Container ****************/
+  .ExperienceContentCont img {
+    min-height: 128px;
+    max-width: 128px;
+  }
+}
+
+@media (max-width: 392px) {
+  /**************** Experience Content Container ****************/
+  .ExperienceContentCont img {
+    min-height: 123px;
+    max-width: 123px;
+  }
+
+  .ExperienceContent h2 {
+    font-size: 12px;
+  }
+
+  .ExperienceContent h1 {
+    font-size: 16px;
+  }
+
+  .ExperienceContent p,
+  .ExperienceDesc {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 376px) {
+  /**************** Experience Content Container ****************/
+  .ExperienceContentCont img {
+    min-height: 142px;
+    max-width: 142px;
+  }
+}
