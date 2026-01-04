@@ -128,7 +128,7 @@ const Projects = () => {
               data-aos-delay={index * 150}
             >
               <div className="projectImage">
-                <img src={project.img} alt={project.title} />
+                <img src={project.img} alt={project.title} loading="lazy"/>
               </div>
               <div className="projectContent">
                 <h3>{project.title}</h3>
