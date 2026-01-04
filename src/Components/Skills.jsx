@@ -23,7 +23,11 @@ const Skills = () => {
           <h1>LANGUAGES</h1>
           <div className="frontEnd-content">
             <div className="language-container html">
-              <img className="html-img" src="/Images/htmllogo.png" />
+              <img
+                className="html-img"
+                src="/Images/htmllogo.png"
+                loading="lazy"
+              />
               <div className="language-body">
                 <h5 className="language-title">HTML5</h5>
                 <p className="language-desc">
@@ -45,7 +49,7 @@ const Skills = () => {
               </div>
             </div>
             <div className="language-container css">
-              <img src="/Images/csslogo.png" />
+              <img src="/Images/csslogo.png" loading="lazy" />
               <div className="language-body">
                 <h5 className="language-title">CSS3</h5>
                 <p className="language-desc">
@@ -67,7 +71,11 @@ const Skills = () => {
               </div>
             </div>
             <div className="language-container javascript">
-              <img className="js-img" src="/Images/javascriptlogo.jpg" />
+              <img
+                className="js-img"
+                src="/Images/javascriptlogo.jpg"
+                loading="lazy"
+              />
               <div className="language-body">
                 <h5 className="language-title">JavaScript (ES6+)</h5>
                 <p className="language-desc">DOM Manipulation and Async Code</p>
@@ -87,7 +95,11 @@ const Skills = () => {
               </div>
             </div>
             <div className="language-container typescript">
-              <img className="ts-img" src="/Images/typescript.svg" />
+              <img
+                className="ts-img"
+                src="/Images/typescript.svg"
+                loading="lazy"
+              />
               <div className="language-body">
                 <h5 className="language-title">TypeScript</h5>
                 <p className="language-desc">Typed and Maintainable</p>
@@ -113,7 +125,11 @@ const Skills = () => {
           <h1>FRAMEWORKS & LIBRARIES</h1>
           <div className="frameworksLibraries-content">
             <div className="framework-container React">
-              <img className="React-img" src="/Images/reactlogo.png" />
+              <img
+                className="React-img"
+                src="/Images/reactlogo.png"
+                loading="lazy"
+              />
               <div className="framework-body">
                 <h5 className="framework-title">React JS</h5>
                 <p className="framework-desc">
@@ -135,7 +151,11 @@ const Skills = () => {
               </div>
             </div>
             <div className="framework-container BootStrap">
-              <img className="BootStrap-img" src="/Images/bootstraplogo.png" />
+              <img
+                className="BootStrap-img"
+                src="/Images/bootstraplogo.png"
+                loading="lazy"
+              />
               <div className="framework-body">
                 <h5 className="framework-title">BootStrap 5</h5>
                 <p className="framework-desc">
@@ -160,6 +180,7 @@ const Skills = () => {
               <img
                 className="tailwind-CSS-img"
                 src="/Images/tailwindcsslogo.png"
+                loading="lazy"
               />
               <div className="framework-body">
                 <h5 className="framework-title">Tailwind CSS</h5>

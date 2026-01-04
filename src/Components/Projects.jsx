@@ -4,7 +4,7 @@ const projectsData = [
   {
     title: "Spotify Like App",
     desc: "Responsive music player app built with HTML, CSS, and JavaScript, featuring clean UI and interactive controls.",
-    img: "/Images/SpotifyClone.png",
+    img: "/Images/SpotifyClone.jpeg",
     languages: ["HTML", "CSS", "JavaScript"],
     link: "https://spotify-like-app.netlify.app/",
     isNew: false,
@@ -12,7 +12,7 @@ const projectsData = [
   {
     title: "Todo App",
     desc: "Todo App built with HTML, CSS, and JavaScript, featuring Local Storage-based task persistence and fully responsive design.",
-    img: "/Images/TodoApp.png",
+    img: "/Images/TodoApp.jpeg",
     languages: ["HTML", "CSS", "JavaScript"],
     link: "https://todoapp-by-sulyman.netlify.app/",
     isNew: false,
@@ -20,7 +20,7 @@ const projectsData = [
   {
     title: "Expense Tracker",
     desc: "Expense Tracker App built with HTML, Tailwind CSS, & JavaScript, using Local Storage to track expense, income, & balance.",
-    img: "/Images/ExpenseTracker.png",
+    img: "/Images/ExpenseTracker.jpeg",
     languages: ["HTML", "Tailwind CSS", "JS"],
     link: "https://web-expensetracker.netlify.app/",
     isNew: false,
@@ -28,7 +28,7 @@ const projectsData = [
   {
     title: "Calculator",
     desc: "Calculator App built with React & CSS, featuring dynamic calculations, state management, and a user-friendly interface.",
-    img: "/Images/Calculator.png",
+    img: "/Images/Calculator.jpeg",
     languages: ["React", "CSS"],
     link: "https://calculator-by-sulyman.netlify.app/",
     isNew: false,
@@ -36,7 +36,7 @@ const projectsData = [
   {
     title: "Recipe Finder",
     desc: "Recipe Finder App built with React, styled with Bootstrap, featuring API-powered recipe search and detailed recipe display.",
-    img: "/Images/RecipeFinder.png",
+    img: "/Images/RecipeFinder.jpeg",
     languages: ["React", "BootStrap"],
     link: "https://web-find-recipes.netlify.app/",
     isNew: false,
@@ -44,7 +44,7 @@ const projectsData = [
   {
     title: "Notes App",
     desc: "Responsive Notes App built with React, Redux and Tailwind CSS — featuring state management, Local Storage, and smooth performance.",
-    img: "/Images/NotesApp.png",
+    img: "/Images/NotesApp.jpeg",
     languages: ["React", "Redux", "Tailwind CSS"],
     link: "https://notes-app-by-sulyman.netlify.app/",
     isNew: false,
@@ -52,7 +52,7 @@ const projectsData = [
   {
     title: "Quote Generator",
     desc: "Responsive Quote Generator built with HTML, TypeScript, and CSS — generate, copy, and share quotes on X, Facebook, and WhatsApp.",
-    img: "/Images/QuotesApp.png",
+    img: "/Images/QuotesApp.jpeg",
     languages: ["HTML", "CSS", "TypeScript"],
     link: "https://quote-generatorsite.netlify.app/",
     isNew: false,
@@ -60,7 +60,7 @@ const projectsData = [
   {
     title: "Currency Converter",
     desc: "Responsive Currency Converter built with React and Tailwind CSS — real-time currency conversion using live exchange rate API.",
-    img: "/Images/CurrencyConverter.png",
+    img: "/Images/CurrencyConverter.jpeg",
     languages: ["React", "Tailwind CSS"],
     link: "https://convertcurrencyweb.netlify.app/",
     isNew: false,
@@ -68,7 +68,7 @@ const projectsData = [
   {
     title: "Quiz App",
     desc: "Interactive Quiz App built with React & TypeScript — featuring timer-based questions and real-time score tracking.",
-    img: "/Images/QuizApp.png",
+    img: "/Images/QuizApp.jpeg",
     languages: ["React (TS)", "BootStrap"],
     link: "https://solvequizz.netlify.app/",
     isNew: false,
