@@ -4,7 +4,7 @@ const HeroSection = () => {
     return (
         <div className="HeroSection-container">
             <div className="HeroSection m-2 p-3 rounded-3">
-                <img data-aos="zoom-in" src="/Images/Sulyman.jpg" alt="Sulyman.jpg" className="rounded-circle" />
+                <img data-aos="zoom-in" src="/Images/Sulyman.jpg" alt="Sulyman" className="rounded-circle" />
                 <h1 data-aos="fade-up" className="HeroSection-h1">Hi, I'm Sulyman Khalil</h1>
                 <div data-aos="fade-up" className="h2-heading-parent">
                     <h2 className="HeroSection-h2">Front-End Developer</h2>
@@ -19,21 +19,21 @@ const HeroSection = () => {
                 <hr data-aos="fade-left" />
                 <div className="beyondCoding-content">
                     <div className="image1-Cont" data-aos="fade-up">
-                        <img src="/Images/cricket.jpg" alt="Cricket Pic" />
+                        <img src="/Images/cricket.jpg" alt="Cricket" />
                         <div className="hobby-content">
                             <h3>• Cricket</h3>
                             <p>"Cricket helps me stay active and teaches teamwork & patience."</p>
                         </div>
                     </div>
                     <div className="image2-Cont" data-aos="fade-up">
-                        <img src="/Images/sketching.jpg" alt="Sketching Pic" />
+                        <img src="/Images/sketching.jpg" alt="Sketching" />
                         <div className="hobby-content">
                             <h3>• Sketching</h3>
                             <p>"Sketching allows me to express creativity and improve observation."</p>
                         </div>
                     </div>
                     <div className="image3-Cont" data-aos="fade-up">
-                        <img src="/Images/reading.jpg" alt="Reading Pic" />
+                        <img src="/Images/reading.jpg" alt="Reading" />
                         <div className="hobby-content">
                             <h3>• Reading</h3>
                             <p>"Reading broadens knowledge, enhances focus & keeps me inspired."</p>

@@ -5,7 +5,7 @@ const Experience = () => {
         <h1>Professional Journey</h1>
       </div>
       <div className="ExperienceContentCont" data-aos="fade-down">
-        <img src="/Images/multiconnect_horizon_logo.jpeg" />
+        <img src="/Images/multiconnect_horizon_logo.jpeg" alt="MultiConnect Horizon"/>
         <div className="ExperienceContent">
           <div className="ExperienceH2-Link">
             <h2>Frontend Developer Intern</h2>
