@@ -157,7 +157,7 @@ const Skills = () => {
                 loading="lazy"
               />
               <div className="framework-body">
-                <h5 className="framework-title">BootStrap 5</h5>
+                <h5 className="framework-title">Bootstrap 5</h5>
                 <p className="framework-desc">
                   Utility-first and Responsive Styling
                 </p>
@@ -208,7 +208,7 @@ const Skills = () => {
           <h1>Additional Skills</h1>
           <div className="additionalSkills-content">
             <div>
-              <p>Redux</p>
+              <p>Redux Toolkit</p>
             </div>
             <div>
               <p>API Integration</p>
@@ -218,6 +218,12 @@ const Skills = () => {
             </div>
             <div>
               <p>Responsive Design</p>
+            </div>
+            <div>
+              <p>State Management</p>
+            </div>
+            <div>
+              <p>UI/UX Implementation</p>
             </div>
             <div>
               <p>Git & GitHub</p>

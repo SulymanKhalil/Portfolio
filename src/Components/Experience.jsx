@@ -24,7 +24,7 @@ const Experience = () => {
               <ul className="ExperienceDesc">
                 <li>Built responsive UI using React, Tailwind / Bootstrap</li>
                 <li>Converted Figma → React components</li>
-                <li>Managed state with Redux / useContext</li>
+                <li>Managed state with Redux</li>
               </ul>
           </div>
         </div>

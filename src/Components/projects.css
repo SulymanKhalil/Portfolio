@@ -253,6 +253,10 @@
     font-size: 14px;
   }
 
+  .projects {
+    margin-inline: 15px;
+  }
+
   /********************* View All Projects *******************/
   .viewAllProjects p,
   .viewAllProjects a {

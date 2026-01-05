@@ -24,7 +24,7 @@ const Navbar = () => {
 
     return (
         <div className="header">
-            <Link className="text-decoration-none" to="/"><h1 className="heading1 ms-3" data-aos="fade-down">Sulyman<span>.com</span></h1></Link>
+            <Link className="text-decoration-none" to="/"><h1 className="heading1 ms-3" data-aos="fade-down">Sulyman<span>live</span></h1></Link>
             <nav className="navbar navbar-expand">
                 <div>
                     <ul className="nav-item-list" data-aos="fade-up">
@@ -51,7 +51,7 @@ const Navbar = () => {
             </nav>
             <div className="resume-and-menuBar" >
                 <button className="resume-btn">
-                    <a href="/Docs/Sulyman-Resume.pdf" download data-aos="zoom-in-up">RESUME</a>
+                    <a href="/Docs/Sulyman-Resume.pdf" download data-aos="zoom-in-up">RÉSUMÉ</a>
                 </button>
                 <i onClick={() => setIsMenuOpen(!isMenuOpen)} className="fa-solid fa-bars"></i>
             </div>
