@@ -59,7 +59,7 @@ const Contact = () => {
                 <p>Frontend Developer | React.js Developer</p>
                 <hr />
                 <p className="copyright-line">Copyright © 2026 | Sulyman Khalil <br /> All rights reserved.</p>
-                <p className="last-updated">Last updated: 05 January, 2026</p>
+                <p className="last-updated">Last updated: 06 January, 2026</p>
             </div>
         </div>
     )
