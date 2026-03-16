@@ -9,6 +9,7 @@ import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import Experience from "./Components/Experience";
 import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 import NotFound from "./Components/NotFound";
 import ScrollToTop from "./Components/goToTop";
 import CursorEffect from "./Components/CursorEffect";
@@ -29,9 +30,9 @@ const App = () => {
         <Router>
             <ScrollToTop/>
             <CursorEffect/>
-            <div className="App">
+            <div className="app-container">
                 <Navbar />
-                <div className="content">
+                <div className="main-content">
                     <Routes>
                         <Route path="/" element={<HeroSection />} />
                         <Route path="about" element={<About />} />
@@ -42,6 +43,7 @@ const App = () => {
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                 </div>
+                <Footer />
             </div>
         </Router>
     )

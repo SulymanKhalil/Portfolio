@@ -54,13 +54,6 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <div className="footer" data-aos="fade-up" data-aos-offset="150">
-                <h1>Sulyman Khalil</h1>
-                <p>Frontend Developer | React.js Developer</p>
-                <hr />
-                <p className="copyright-line">Copyright © 2026 | Sulyman Khalil <br /> All rights reserved.</p>
-                <p className="last-updated">Last updated: 06 January, 2026</p>
-            </div>
         </div>
     )
 }

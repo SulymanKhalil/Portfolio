@@ -8,7 +8,7 @@ const Experience = () => {
         <img src="/Images/multiconnect_horizon_logo.jpeg" alt="MultiConnect Horizon"/>
         <div className="ExperienceContent">
           <div className="ExperienceH2-Link">
-            <h2>Frontend Developer Intern</h2>
+            <h2>Software Engineer</h2>
             <a
               href="http://multiconnect.com.hk/"
               target="_blank"
@@ -18,8 +18,8 @@ const Experience = () => {
             </a>
           </div>
           <div className="ExperienceBottomContent">
-            <h1>MultiConnect Horizon Technologies</h1>
-            <p>January 2026 - Present</p>
+            <h1>MultiConnect Horizon Ltd.</h1>
+            <p>February 2025 - February 2026</p>
             <p>Hong Kong • Remote</p>
               <ul className="ExperienceDesc">
                 <li>Built responsive UI using React, Tailwind / Bootstrap</li>
