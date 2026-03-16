@@ -19,7 +19,7 @@ const Experience = () => {
           </div>
           <div className="ExperienceBottomContent">
             <h1>MultiConnect Horizon Ltd.</h1>
-            <p>February 2025 - February 2026</p>
+            <p>February 2025 - PRESENT</p>
             <p>Hong Kong • Remote</p>
               <ul className="ExperienceDesc">
                 <li>Built responsive UI using React, Tailwind / Bootstrap</li>
