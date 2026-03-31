@@ -33,12 +33,6 @@
 }
 
 /************************ Medias ***********************/
-@media (max-width: 500px) {
-    .footer {
-        min-height: 350px;
-    }
-}
-
 @media (max-width: 355px) {
     .footer p {
         font-size: 15px;

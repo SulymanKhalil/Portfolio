@@ -5,27 +5,37 @@ const Experience = () => {
         <h1>Professional Journey</h1>
       </div>
       <div className="ExperienceContentCont" data-aos="fade-down">
-        <img src="/Images/multiconnect_horizon_logo.jpeg" alt="MultiConnect Horizon"/>
         <div className="ExperienceContent">
-          <div className="ExperienceH2-Link">
-            <h2>Software Engineer</h2>
-            <a
-              href="http://multiconnect.com.hk/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fas fa-external-link-alt"></i>
-            </a>
-          </div>
           <div className="ExperienceBottomContent">
-            <h1>MultiConnect Horizon Ltd.</h1>
-            <p>February 2025 - PRESENT</p>
-            <p>Hong Kong • Remote</p>
-              <ul className="ExperienceDesc">
-                <li>Built responsive UI using React, Tailwind / Bootstrap</li>
-                <li>Converted Figma → React components</li>
-                <li>Managed state with Redux</li>
-              </ul>
+            <h1>
+              <a
+                href="https://www.multiconnect.com.hk/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MultiConnect Horizon Ltd.
+              </a>{" "}
+              | Hong Kong • Remote
+            </h1>
+            <h2>Software Engineer (Full-Time)</h2>
+            <p>April 2025 - Present</p>
+            <ul className="ExperienceDesc">
+              <li>
+                Leveraged AI tools to contribute to production projects while
+                building React-based interactive UIs for scalable applications.
+              </li>
+              <li>
+                Built and optimized UI components focusing on performance,
+                responsiveness, and maintainability across devices.
+              </li>
+            </ul>
+            <br />
+            <h2>Software Engineer (Intern)</h2>
+            <p>February 2025 - March 2025</p>
+            <ul className="ExperienceDesc">
+              <li>Created reusable frontend components and scalable UI features using React, Umi.js, Ant Design, and Day.js with clean, maintainable code.</li>
+              <li>Implemented i18n for multi-language support and integrated REST APIs for dynamic data handling and smooth user experience.</li>
+            </ul>
           </div>
         </div>
       </div>
