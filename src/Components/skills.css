@@ -308,6 +308,22 @@
   }
 }
 
+.NextJS .progress-bar {
+  background-color: #a4a29b;
+  animation: fill-NextJS 2s ease-in-out forwards;
+  border-radius: 0.2rem !important;
+}
+
+@keyframes fill-NextJS {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 70%;
+  }
+}
+
 .BootStrap .progress-bar {
   background-color: #790af7;
   animation: fill-BootStrap 2s ease-in-out forwards;
@@ -339,6 +355,7 @@
     width: 95%;
   }
 }
+
 /***************************** Additional Skills **************************/
 .additionalSkills hr {
   margin-top: 75px;
@@ -471,6 +488,10 @@
     margin-bottom: 3px;
   }
 
+  .NextJS-img {
+    max-width: 37px !important;
+  }
+  
   .React-img {
     max-width: 35px !important;
   }
@@ -587,6 +608,10 @@
     margin-bottom: 2px;
   }
 
+  .NextJS-img {
+    max-width: 35px !important;
+  }
+  
   .React-img {
     max-width: 28px !important;
   }

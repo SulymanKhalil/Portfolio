@@ -59,5 +59,33 @@
 
 /****************** Media Queries ***************/
 @media (max-width: 750px) {
-  
+  .ExperienceHeadings {
+    h1 {
+      font-size: 27px;
+    }
+  }
+
+  .ExperienceBottomContent h1 {
+    font-size: 23px;
+  }
+
+  .ExperienceBottomContent h2, p, ul {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .ExperienceHeadings {
+    h1 {
+      font-size: 21px;
+    }
+  }
+
+  .ExperienceBottomContent h1 {
+    font-size: 17px;
+  }
+
+  .ExperienceBottomContent h2, p, ul {
+    font-size: 14px;
+  }
 }

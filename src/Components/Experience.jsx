@@ -18,23 +18,30 @@ const Experience = () => {
               | Hong Kong • Remote
             </h1>
             <h2>Software Engineer (Full-Time)</h2>
-            <p>April 2025 - Present</p>
+            <p>April 2024 - Present</p>
             <ul className="ExperienceDesc">
               <li>
                 Leveraged AI tools to contribute to production projects while
                 building React-based interactive UIs for scalable applications.
               </li>
               <li>
-                Built and optimized UI components focusing on performance,
-                responsiveness, and maintainability across devices.
+                Built and optimized UI components using Next.js, focusing on
+                performance, responsiveness, server-side rendering, and maintainability <br/> across devices.
               </li>
             </ul>
             <br />
             <h2>Software Engineer (Intern)</h2>
-            <p>February 2025 - March 2025</p>
+            <p>February 2024 - March 2024</p>
             <ul className="ExperienceDesc">
-              <li>Created reusable frontend components and scalable UI features using React, Umi.js, Ant Design, and Day.js with clean, maintainable code.</li>
-              <li>Implemented i18n for multi-language support and integrated REST APIs for dynamic data handling and smooth user experience.</li>
+              <li>
+                Created reusable frontend components and scalable UI features
+                using React, Umi.js, Ant Design, and Day.js with clean,
+                maintainable code.
+              </li>
+              <li>
+                Implemented i18n for multi-language support and integrated REST
+                APIs for dynamic data handling and smooth user experience.
+              </li>
             </ul>
           </div>
         </div>

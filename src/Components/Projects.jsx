@@ -1,22 +1,22 @@
 import TypewriterComponent from "typewriter-effect";
 
 const projectsData = [
-  {
-    title: "Spotify Like App",
-    desc: "Responsive music player app built with HTML, CSS, and JavaScript, featuring clean UI and interactive controls.",
-    img: "/Images/SpotifyClone.jpeg",
-    languages: ["HTML", "CSS", "JavaScript"],
-    link: "https://spotify-like-app.netlify.app/",
-    isNew: false,
-  },
-  {
-    title: "Todo App",
-    desc: "Todo App built with HTML, CSS, and JavaScript, featuring Local Storage-based task persistence and fully responsive design.",
-    img: "/Images/TodoApp.jpeg",
-    languages: ["HTML", "CSS", "JavaScript"],
-    link: "https://todoapp-by-sulyman.netlify.app/",
-    isNew: false,
-  },
+  // {
+  //   title: "Spotify Like App",
+  //   desc: "Responsive music player app built with HTML, CSS, and JavaScript, featuring clean UI and interactive controls.",
+  //   img: "/Images/SpotifyClone.jpeg",
+  //   languages: ["HTML", "CSS", "JavaScript"],
+  //   link: "https://spotify-like-app.netlify.app/",
+  //   isNew: false,
+  // },
+  // {
+  //   title: "Todo App",
+  //   desc: "Todo App built with HTML, CSS, and JavaScript, featuring Local Storage-based task persistence and fully responsive design.",
+  //   img: "/Images/TodoApp.jpeg",
+  //   languages: ["HTML", "CSS", "JavaScript"],
+  //   link: "https://todoapp-by-sulyman.netlify.app/",
+  //   isNew: false,
+  // },
   {
     title: "Expense Tracker",
     desc: "Expense Tracker App built with HTML, Tailwind CSS, & JavaScript, using Local Storage to track expense, income, & balance.",
@@ -25,14 +25,14 @@ const projectsData = [
     link: "https://web-expensetracker.netlify.app/",
     isNew: false,
   },
-  {
-    title: "Calculator",
-    desc: "Calculator App built with React & CSS, featuring dynamic calculations, state management, and a user-friendly interface.",
-    img: "/Images/Calculator.jpeg",
-    languages: ["React", "CSS"],
-    link: "https://calculator-by-sulyman.netlify.app/",
-    isNew: false,
-  },
+  // {
+  //   title: "Calculator",
+  //   desc: "Calculator App built with React & CSS, featuring dynamic calculations, state management, and a user-friendly interface.",
+  //   img: "/Images/Calculator.jpeg",
+  //   languages: ["React", "CSS"],
+  //   link: "https://calculator-by-sulyman.netlify.app/",
+  //   isNew: false,
+  // },
   {
     title: "Recipe Finder",
     desc: "Recipe Finder App built with React, styled with Bootstrap, featuring API-powered recipe search and detailed recipe display.",
@@ -49,14 +49,14 @@ const projectsData = [
     link: "https://notes-app-by-sulyman.netlify.app/",
     isNew: false,
   },
-  {
-    title: "Quote Generator",
-    desc: "Responsive Quote Generator built with HTML, TypeScript, and CSS — generate, copy, and share quotes on X, Facebook, and WhatsApp.",
-    img: "/Images/QuotesApp.jpeg",
-    languages: ["HTML", "CSS", "TypeScript"],
-    link: "https://quote-generatorsite.netlify.app/",
-    isNew: false,
-  },
+  // {
+  //   title: "Quote Generator",
+  //   desc: "Responsive Quote Generator built with HTML, TypeScript, and CSS — generate, copy, and share quotes on X, Facebook, and WhatsApp.",
+  //   img: "/Images/QuotesApp.jpeg",
+  //   languages: ["HTML", "CSS", "TypeScript"],
+  //   link: "https://quote-generatorsite.netlify.app/",
+  //   isNew: false,
+  // },
   {
     title: "Currency Converter",
     desc: "Responsive Currency Converter built with React and Tailwind CSS — real-time currency conversion using live exchange rate API.",
@@ -65,22 +65,22 @@ const projectsData = [
     link: "https://convertcurrencyweb.netlify.app/",
     isNew: false,
   },
-  {
-    title: "Quiz App",
-    desc: "Interactive Quiz App built with React & TypeScript — featuring timer-based questions and real-time score tracking.",
-    img: "/Images/QuizApp.jpeg",
-    languages: ["React (TS)", "BootStrap"],
-    link: "https://solvequizz.netlify.app/",
-    isNew: false,
-  },
-  {
-    title: "Login Form",
-    desc: "Simple Login Form built with React & TypeScript — includes basic input validation, password toggle, and smooth Tailwind-based animations.",
-    img: "/Images/loginform.webp",
-    languages: ["React (TS)", "Tailwind CSS"],
-    link: "https://loginform-bysulyman.netlify.app/",
-    isNew: false,
-  },
+  // {
+  //   title: "Quiz App",
+  //   desc: "Interactive Quiz App built with React & TypeScript — featuring timer-based questions and real-time score tracking.",
+  //   img: "/Images/QuizApp.jpeg",
+  //   languages: ["React (TS)", "BootStrap"],
+  //   link: "https://solvequizz.netlify.app/",
+  //   isNew: false,
+  // },
+  // {
+  //   title: "Login Form",
+  //   desc: "Simple Login Form built with React & TypeScript — includes basic input validation, password toggle, and smooth Tailwind-based animations.",
+  //   img: "/Images/loginform.webp",
+  //   languages: ["React (TS)", "Tailwind CSS"],
+  //   link: "https://loginform-bysulyman.netlify.app/",
+  //   isNew: false,
+  // },
   {
     title: "E-Com App",
     desc: "E-commerce app built with React & Redux featuring add-to-cart, quantity control, dynamic pricing, and a responsive Bootstrap UI.",
@@ -95,7 +95,7 @@ const projectsData = [
     img: "/Images/groceryapp.webp",
     languages: ["AI ✦", "React", "Tailwind CSS"],
     link: "https://glowing-chaja-c8d2bc.netlify.app/",
-    isNew: true,
+    isNew: false,
   },
   {
     title: "Tech Rivals",
@@ -103,7 +103,7 @@ const projectsData = [
     img: "/Images/applesamsung.webp",
     languages: ["AI ✦", "React", "Tailwind CSS"],
     link: "https://marvelous-salamander-95b72e.netlify.app/#ecosystem",
-    isNew: true,
+    isNew: false,
   },
   {
     title: "TaskFlow",
@@ -111,7 +111,7 @@ const projectsData = [
     img: "/Images/taskflow.webp",
     languages: ["React", "Umi.js", "antd", "+1"],
     link: "https://delightful-gecko-12a764.netlify.app/",
-    isNew: true,
+    isNew: false,
   }
 ];
 

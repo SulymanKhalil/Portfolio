@@ -17,8 +17,8 @@ import CursorEffect from "./Components/CursorEffect";
 const App = () => {
     useEffect(() => {
         AOS.init({
-            offset: 50,
-            duration: 1000,
+            offset: 10,
+            duration: 800,
             once: false,
             mirror: true,
             easing: "ease-in-out",

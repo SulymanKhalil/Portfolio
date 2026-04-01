@@ -150,6 +150,32 @@ const Skills = () => {
                 </div>
               </div>
             </div>
+            <div className="framework-container NextJS">
+              <img
+                className="NextJS-img"
+                src="/Images/nextjslogo.png"
+                loading="lazy"
+              />
+              <div className="framework-body">
+                <h5 className="framework-title">Next JS</h5>
+                <p className="framework-desc">
+                  Server-rendered React apps
+                </p>
+                <div className="framework-progress-container">
+                  <div
+                    className="progress framework-progress"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div className="progress-bar"></div>
+                  </div>
+                  <span className="framework-progress-value">70%</span>
+                </div>
+              </div>
+            </div>
             <div className="framework-container BootStrap">
               <img
                 className="BootStrap-img"
