@@ -198,7 +198,7 @@ const Skills = () => {
                   >
                     <div className="progress-bar"></div>
                   </div>
-                  <span className="framework-progress-value">70%</span>
+                  <span className="framework-progress-value">75%</span>
                 </div>
               </div>
             </div>
@@ -224,7 +224,7 @@ const Skills = () => {
                   >
                     <div className="progress-bar"></div>
                   </div>
-                  <span className="framework-progress-value">70%</span>
+                  <span className="framework-progress-value">90%</span>
                 </div>
               </div>
             </div>
