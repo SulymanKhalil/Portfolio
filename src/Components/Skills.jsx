@@ -176,6 +176,58 @@ const Skills = () => {
                 </div>
               </div>
             </div>
+            <div className="framework-container UmiJS">
+              <img
+                className="UmiJS-img"
+                src="/Images/UmiJSlogo.png"
+                loading="lazy"
+              />
+              <div className="framework-body">
+                <h5 className="framework-title">Umi JS</h5>
+                <p className="framework-desc">
+                  Convention-based and Scalable Apps
+                </p>
+                <div className="framework-progress-container">
+                  <div
+                    className="progress framework-progress"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div className="progress-bar"></div>
+                  </div>
+                  <span className="framework-progress-value">70%</span>
+                </div>
+              </div>
+            </div>
+            <div className="framework-container AntD">
+              <img
+                className="AntD-img"
+                src="/Images/AntDlogo.svg"
+                loading="lazy"
+              />
+              <div className="framework-body">
+                <h5 className="framework-title">Ant Design</h5>
+                <p className="framework-desc">
+                  Enterprise UI components
+                </p>
+                <div className="framework-progress-container">
+                  <div
+                    className="progress framework-progress"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div className="progress-bar"></div>
+                  </div>
+                  <span className="framework-progress-value">70%</span>
+                </div>
+              </div>
+            </div>
             <div className="framework-container BootStrap">
               <img
                 className="BootStrap-img"
@@ -233,6 +285,9 @@ const Skills = () => {
           <hr />
           <h1>Additional Skills</h1>
           <div className="additionalSkills-content">
+            <div>
+              <p>AI-Assisted Development <span className="additionalSkills-asterisk">✦</span></p>
+            </div>
             <div>
               <p>Redux Toolkit</p>
             </div>

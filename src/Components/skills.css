@@ -324,6 +324,39 @@
   }
 }
 
+.UmiJS .progress-bar {
+  background-color: #178fff;
+  animation: fill-UmiJS 2s ease-in-out forwards;
+  border-radius: 0.2rem !important;
+}
+
+@keyframes fill-UmiJS {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 70%;
+  }
+}
+
+
+.AntD .progress-bar {
+  background-color: #f74053;
+  animation: fill-AntD 2s ease-in-out forwards;
+  border-radius: 0.2rem !important;
+}
+
+@keyframes fill-AntD {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 70%;
+  }
+}
+
 .BootStrap .progress-bar {
   background-color: #790af7;
   animation: fill-BootStrap 2s ease-in-out forwards;
@@ -373,6 +406,10 @@
   text-align: center;
   font-size: 28px;
   font-weight: 600;
+}
+
+.additionalSkills-asterisk {
+  color: var(--highlight-color);
 }
 
 .additionalSkills-content {
@@ -491,17 +528,13 @@
   .NextJS-img {
     max-width: 37px !important;
   }
+
+  .UmiJS-img,  .AntD-img, .BootStrap-img,  .tailwind-CSS-img {
+    max-width: 41px !important;
+  }
   
   .React-img {
     max-width: 35px !important;
-  }
-
-  .BootStrap-img {
-    max-width: 41px !important;
-  }
-
-  .tailwind-CSS-img {
-    max-width: 41px !important;
   }
 
   .framework-title {
@@ -611,13 +644,17 @@
   .NextJS-img {
     max-width: 35px !important;
   }
+
+  .UmiJS-img, .AntD-img {
+    max-width: 35px !important;
+  }
   
   .React-img {
     max-width: 28px !important;
   }
 
   .BootStrap-img {
-    max-width: 33px !important;
+    max-width: 35px !important;
   }
 
   .tailwind-CSS-img {
@@ -725,10 +762,6 @@
 
   .React-img {
     max-width: 25px !important;
-  }
-
-  .BootStrap-img {
-    max-width: 30px !important;
   }
 
   .tailwind-CSS-img {
