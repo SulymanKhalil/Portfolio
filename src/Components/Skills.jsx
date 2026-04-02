@@ -295,6 +295,15 @@ const Skills = () => {
               <p>API Integration</p>
             </div>
             <div>
+              <p>i18n (Internationalization)</p>
+            </div>
+            <div>
+              <p>Day.js</p>
+            </div>
+            <div>
+              <p>Role-based Access</p>
+            </div>
+            <div>
               <p>Cross-Browser Compatibility</p>
             </div>
             <div>
