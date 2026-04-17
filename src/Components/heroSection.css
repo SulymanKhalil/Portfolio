@@ -113,7 +113,7 @@
 }
 
 .h2-heading-parent {
-  width: 320px;
+  width: 290px;
   background-color: var(--highlight-color);
   border-radius: 1rem;
   margin: auto;
@@ -319,7 +319,7 @@
   }
 
   .h2-heading-parent {
-    width: 270px;
+    width: 240px;
   }
 
   .HeroSection-h2 {
@@ -445,10 +445,6 @@
     font-size: 1.2rem;
   }
 
-  .h2-heading-parent {
-    width: 270px;
-  }
-
   /********** Beyond Coding *******/
 
   .image1-Cont,
@@ -498,7 +494,7 @@
   }
 
   .h2-heading-parent {
-    width: 250px;
+    width: 220px;
   }
 
   .HeroSection-h2 {
@@ -560,7 +556,7 @@
   }
 
   .h2-heading-parent {
-    width: 210px;
+    width: 180px;
   }
 
   .Hire-Button {

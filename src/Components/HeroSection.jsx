@@ -7,10 +7,10 @@ const HeroSection = () => {
                 <img data-aos="zoom-in" src="/Images/Sulyman.jpg" alt="Sulyman" className="rounded-circle" />
                 <h1 data-aos="fade-up" className="HeroSection-h1">Hi, I'm Sulyman Khalil</h1>
                 <div data-aos="fade-up" className="h2-heading-parent">
-                    <h2 className="HeroSection-h2">Front-End Developer</h2>
+                    <h2 className="HeroSection-h2">Software Engineer</h2>
                 </div>
                 <p data-aos="fade-up" className="HeroSection-p">
-                    "I build modern, responsive, and user-friendly websites. Passionate about creating clean code and engaging user experiences"
+                    "Crafting modern web apps and real-time streaming experiences, driven by clean architecture, performance and seamless UX."
                 </p>
                 <Link className="text-decoration-none" to="/contact" data-aos="zoom-in-up"><button className="Hire-Button">HIRE ME</button></Link>
             </div>
