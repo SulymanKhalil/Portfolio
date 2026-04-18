@@ -25,8 +25,9 @@ const Experience = () => {
                 building React-based interactive UIs for scalable applications.
               </li>
               <li>
-                Built and optimized UI components using Next.js, focusing on
-                performance, responsiveness, server-side rendering, and maintainability <br/> across devices.
+                Built and optimized Next.js UI components for performance,
+                responsiveness, SSR and maintainability, with WebRTC streaming
+                and <br/> FFmpeg media processing integration.
               </li>
             </ul>
             <br />
