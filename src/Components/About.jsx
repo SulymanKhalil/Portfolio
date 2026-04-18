@@ -28,9 +28,21 @@ const About = () => {
         <div className="about-texts" data-aos="fade-left">
           <h2 data-aos="fade-up">Meet Sulyman</h2>
           <p data-aos="fade-up">
-            Sulyman Khalil,{" "}
-            <span className="highlight-text">Software Engineer</span> crafting
-            scalable web apps and{" "}
+            Sulyman Khalil is a{" "}
+            <span className="highlight-text">Software Engineer </span>
+            with 2+ years of experience •{" "}
+            <span className="highlight-text">
+              Frontend Lead at{" "}
+              <a
+                href="https://streamlyweb.netlify.app/"
+                className="brand-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Streamly
+              </a>
+            </span>
+            , crafting scalable web apps and{" "}
             <span className="highlight-text">real-time</span> streaming systems
             with a focus on <span className="highlight-text">performance</span>{" "}
             and clean <span className="highlight-text">architecture</span>.
@@ -52,10 +64,13 @@ const About = () => {
             to
             <span class="highlight-text"> ICS (Physics)</span> and currently
             pursuing
-            <span class="highlight-text"> Bachelor's in Software Engineering</span>, my
-            academic journey reflects consistent growth in technology and
+            <span class="highlight-text">
+              {" "}
+              Bachelor's in Software Engineering
+            </span>
+            , my academic journey reflects consistent growth in technology and
             problem-solving, with a strong focus on
-            <span class="highlight-text">building real-world systems</span>.
+            <span class="highlight-text"> building real-world systems</span>.
           </p>
           <br />
           <h3 data-aos="zoom-in">
