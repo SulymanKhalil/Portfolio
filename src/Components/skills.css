@@ -308,6 +308,38 @@
   }
 }
 
+.Angular .progress-bar {
+  background-color: #c2002d;
+  animation: fill-Angular 2s ease-in-out forwards;
+  border-radius: 0.2rem !important;
+}
+
+@keyframes fill-Angular {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 80%;
+  }
+}
+
+.Vue .progress-bar {
+  background-color: #40b882;
+  animation: fill-Vue 2s ease-in-out forwards;
+  border-radius: 0.2rem !important;
+}
+
+@keyframes fill-Vue {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 80%;
+  }
+}
+
 .NextJS .progress-bar {
   background-color: #a4a29b;
   animation: fill-NextJS 2s ease-in-out forwards;
@@ -389,6 +421,147 @@
   }
 }
 
+/*********************** Video Streaming ***********************/
+
+.VideoStreaming h1 {
+  color: var(--text-color);
+  margin-left: 18px;
+  font-size: 28px;
+  margin-top: 33px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  letter-spacing: 4px;
+}
+
+.VideoStreaming h1::after {
+  content: "●";
+  font-size: 2rem;
+  margin-left: 6px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  color: var(--highlight-color);
+}
+
+.VideoStreaming-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-inline: 30px;
+}
+
+.VideoStreaming-container {
+  color: var(--text-color);
+  max-width: 420px;
+  width: 100%;
+  min-height: 100px;
+  background-color: var(--bg-color);
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  animation: VideoStreamingFloat 3s ease-in-out infinite;
+  animation-delay: 0.5s;
+  padding: 25px;
+}
+
+@keyframes VideoStreamingFloat {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.VideoStreaming-container img {
+  display: block;
+  margin-inline: auto;
+  max-width: 55px;
+  margin-bottom: 7px;
+}
+
+.VideoStreaming-body {
+  text-align: center;
+}
+
+.VideoStreaming-title {
+  font-weight: bold;
+}
+
+.VideoStreaming-desc {
+  margin-inline: 7px;
+  margin-bottom: 8px;
+  opacity: 0.7;
+}
+
+.VideoStreaming-progress-container {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.VideoStreaming-progress {
+  margin-left: 3px;
+  height: 12px !important;
+  width: 100%;
+  height: 6px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 3px;
+  border-radius: 0.5rem !important;
+}
+
+.WebRTC-img {
+  max-width: 90px !important;
+}
+
+.VideoStreaming-progress-value {
+  font-weight: 550;
+  color: var(--text-color);
+}
+
+.WebRTC .progress-bar {
+  background-color: #ff6600;
+  animation: fill-WebRTC 2s ease-in-out forwards;
+  border-radius: 0.2rem !important;
+}
+
+@keyframes fill-WebRTC {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 85%;
+  }
+}
+
+.ffmpeg .progress-bar {
+  background-color: #398f3d;
+  animation: fill-ffmpeg 2s ease-in-out forwards;
+  border-radius: 0.2rem !important;
+}
+
+@keyframes fill-ffmpeg {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 85%;
+  }
+}
+
+.Vue .progress-bar {
+  background-color: #40b882;
+  animation: fill-Vue 2s ease-in-out forwards;
+  border-radius: 0.2rem !important;
+}
+
 /***************************** Additional Skills **************************/
 .additionalSkills hr {
   margin-top: 75px;
@@ -446,6 +619,14 @@
 
   /***************************** Frameworks & Libraries **************************/
   .frameworksLibraries h1 {
+    margin-top: 30px;
+    margin-left: 8px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+  }
+
+  /***************************** Video Streaming **************************/
+  .VideoStreaming h1 {
     margin-top: 30px;
     margin-left: 8px;
     margin-bottom: 20px;
@@ -551,6 +732,50 @@
     margin-bottom: 8px;
     opacity: 0.7;
   }
+  
+  /***************************** Video Streaming **************************/
+  .VideoStreaming h1 {
+    margin-left: 8px;
+    margin-bottom: 10px;
+    margin-top: 27px;
+    letter-spacing: 3px;
+    font-size: 24px;
+  }
+
+  .VideoStreaming h1::after {
+    font-size: 1.8rem;
+  }
+
+  .VideoStreaming-container {
+    max-width: 340px;
+  }
+
+  .VideoStreaming-container img {
+    margin-bottom: 3px;
+  }
+
+  .WebRTC-img {
+    max-width: 60px !important;
+  }
+
+  .ffmpeg-img {
+    max-width: 40px !important;
+  }
+
+  .VideoStreaming-title {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .VideoStreaming-progress {
+    height: 10 px !important;
+  }
+
+  .VideoStreaming-desc {
+    margin-inline: 7px;
+    margin-bottom: 8px;
+    opacity: 0.7;
+  }
 
   /********************** Additonal Skills *********************/
   .additonalSkills h1 {
@@ -641,6 +866,14 @@
     margin-bottom: 2px;
   }
 
+  .Angular-img {
+    max-width: 45px !important;
+  }
+
+  .Vue-img {
+    max-width: 45px !important;
+  }
+
   .NextJS-img {
     max-width: 35px !important;
   }
@@ -682,6 +915,53 @@
   }
 
   .framework-progress-value {
+    font-size: 14px;
+  }
+
+
+  /***************************** Video Streaming **************************/
+  .VideoStreaming h1 {
+    margin-left: 8px;
+    margin-top: 24px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+
+  .VideoStreaming h1::after {
+    font-size: 1.5rem;
+  }
+
+  .VideoStreaming-container {
+    max-width: 310px;
+    padding: 20px;
+  }
+
+  .VideoStreaming-container img {
+    margin-bottom: 2px;
+  }
+
+  .VideoStreaming-title {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .VideoStreaming-desc {
+    margin-inline: 7px;
+    margin-bottom: 3px;
+    opacity: 0.7;
+    font-size: 14px;
+  }
+
+  .VideoStreaming-progress {
+    width: 82%;
+    margin-top: 3px;
+    height: 8px !important;
+  }
+
+  .VideoStreaming-progress-value {
     font-size: 14px;
   }
 
@@ -728,6 +1008,20 @@
     margin-inline: 15px;
     gap: 15px;
   }
+
+  /***************************** Video Streaming **************************/
+  .VideoStreaming h1 {
+    font-size: 17px;
+  }
+
+  .VideoStreaming h1::after {
+    font-size: 1.2rem;
+  }
+
+  .VideoStreaming-content {
+    margin-inline: 15px;
+    gap: 15px;
+  }
 }
 
 @media (max-width: 345px) {
@@ -769,6 +1063,20 @@
   }
 
   .framework-desc {
+    margin-inline: 9px;
+  }
+
+  /***************************** Video Streaming **************************/
+  .VideoStreaming-container {
+    max-width: 340px;
+    min-height: 142px;
+  }
+
+  .VideoStreaming-container img {
+    margin-bottom: 2px;
+  }
+
+  .VideoStreaming-desc {
     margin-inline: 9px;
   }
 }

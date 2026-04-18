@@ -150,6 +150,50 @@ const Skills = () => {
                 </div>
               </div>
             </div>
+            <div className="framework-container Angular">
+              <img
+                className="Angular-img"
+                src="/Images/angular.png"
+                loading="lazy"
+              />
+              <div className="framework-body">
+                <h5 className="framework-title">Angular JS</h5>
+                <p className="framework-desc">Structured and scalable UIs</p>
+                <div className="framework-progress-container">
+                  <div
+                    className="progress framework-progress"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div className="progress-bar"></div>
+                  </div>
+                  <span className="framework-progress-value">80%</span>
+                </div>
+              </div>
+            </div>
+            <div className="framework-container Vue">
+              <img className="Vue-img" src="/Images/vue.png" loading="lazy" />
+              <div className="framework-body">
+                <h5 className="framework-title">Vue JS</h5>
+                <p className="framework-desc">Reactive and flexible UIs</p>
+                <div className="framework-progress-container">
+                  <div
+                    className="progress framework-progress"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div className="progress-bar"></div>
+                  </div>
+                  <span className="framework-progress-value">80%</span>
+                </div>
+              </div>
+            </div>
             <div className="framework-container NextJS">
               <img
                 className="NextJS-img"
@@ -158,9 +202,7 @@ const Skills = () => {
               />
               <div className="framework-body">
                 <h5 className="framework-title">Next JS</h5>
-                <p className="framework-desc">
-                  Server-rendered React apps
-                </p>
+                <p className="framework-desc">Server-rendered React apps</p>
                 <div className="framework-progress-container">
                   <div
                     className="progress framework-progress"
@@ -210,9 +252,7 @@ const Skills = () => {
               />
               <div className="framework-body">
                 <h5 className="framework-title">Ant Design</h5>
-                <p className="framework-desc">
-                  Enterprise UI components
-                </p>
+                <p className="framework-desc">Enterprise UI components</p>
                 <div className="framework-progress-container">
                   <div
                     className="progress framework-progress"
@@ -280,13 +320,74 @@ const Skills = () => {
             </div>
           </div>
         </div>
+        {/******************* Video Streaming *****************/}
+        <div className="VideoStreaming">
+          <h1>VIDEO STREAMING</h1>
+          <div className="VideoStreaming-content">
+            <div className="VideoStreaming-container WebRTC">
+              <img
+                className="WebRTC-img"
+                src="/Images/webrtc.png"
+                loading="lazy"
+              />
+              <div className="VideoStreaming-body">
+                <h5 className="VideoStreaming-title">WebRTC</h5>
+                <p className="VideoStreaming-desc">
+                  Real-time peer communication
+                </p>
+                <div className="VideoStreaming-progress-container">
+                  <div
+                    className="progress VideoStreaming-progress"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div className="progress-bar"></div>
+                  </div>
+                  <span className="VideoStreaming-progress-value">85%</span>
+                </div>
+              </div>
+            </div>
+             <div className="VideoStreaming-container ffmpeg">
+              <img
+                className="ffmpeg-img"
+                src="/Images/ffmpeg.png"
+                loading="lazy"
+              />
+              <div className="VideoStreaming-body">
+                <h5 className="VideoStreaming-title">FFmpeg</h5>
+                <p className="VideoStreaming-desc">
+                  Video processing and streaming
+                </p>
+                <div className="VideoStreaming-progress-container">
+                  <div
+                    className="progress VideoStreaming-progress"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div className="progress-bar"></div>
+                  </div>
+                  <span className="VideoStreaming-progress-value">85%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         {/**************** Additional Skills ***************/}
         <div className="additionalSkills">
           <hr />
           <h1>Additional Skills</h1>
           <div className="additionalSkills-content">
             <div>
-              <p>AI-Assisted Development <span className="additionalSkills-asterisk">✦</span></p>
+              <p>
+                AI-Assisted Development{" "}
+                <span className="additionalSkills-asterisk">✦</span>
+              </p>
             </div>
             <div>
               <p>Redux Toolkit</p>
