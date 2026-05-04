@@ -1,7 +1,7 @@
 .notFoundContainer {
     color: var(--text-color);
     text-align: center;
-    margin-top: 140px;
+    margin-block: 140px;
     margin-inline: 15px;
 }
 
