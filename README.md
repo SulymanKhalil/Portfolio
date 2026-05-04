@@ -1,185 +1,114 @@
 # Portfolio Website
 
-A modern, responsive portfolio website showcasing my projects, skills, and experience as a Frontend Developer. Built with React and Vite for optimal performance and developer experience.
+Personal portfolio of **Sulyman Khalil**, focused on frontend engineering, modern UI, and real-world project showcases.
 
-## 🌐 Live Demo
+## Live Demo
 
-[View Portfolio](https://sulymanlive.netlify.app)
+[sulymanlive.netlify.app](https://sulymanlive.netlify.app)
 
-## ✨ Features
+## Features
 
-- **Responsive Design**: Fully responsive across all devices and screen sizes
-- **Smooth Animations**: AOS (Animate On Scroll) library for engaging scroll animations
-- **Dynamic Typing Effect**: Typewriter effect for interactive text animations
-- **Custom Cursor**: Unique cursor effect for enhanced user experience
-- **Multiple Sections**:
-  - Hero Section with introduction
-  - About section with personal information
-  - Skills showcase
-  - Projects portfolio
-  - Experience timeline
-  - Contact information with social links
-- **Dark Theme**: Modern dark theme design
-- **404 Page**: Custom not found page for better UX
-- **Smooth Scrolling**: Enhanced navigation with scroll-to-top functionality
+- Responsive dark-themed UI
+- Route-based sections with a custom 404 page
+- Animated scroll effects using AOS
+- Typewriter text effects in key sections
+- Interactive custom cursor experience
+- Project showcase with external live links
+- Contact section with direct phone/email/social actions
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-- **Frontend Framework**: React 19.1.1
-- **Build Tool**: Vite 7.1.2
-- **Routing**: React Router DOM 7.9.1
-- **Animations**: AOS (Animate On Scroll) 2.3.4
-- **Typography Effects**: Typewriter Effect 2.22.0
-- **UI Framework**: Bootstrap 5.3.3
-- **Icons**: Font Awesome 6.5.1
-- **Fonts**: Google Fonts (Montserrat, Raleway, Sacramento, Merienda)
-- **Deployment**: GitHub Pages
+- React 19
+- Vite 7
+- React Router DOM 7 (`HashRouter`)
+- AOS (Animate On Scroll)
+- Typewriter Effect
+- CSS + Bootstrap (via CDN)
+- Font Awesome + Google Fonts (via CDN)
 
-## 📁 Project Structure
+## Project Structure
 
-```
+```txt
 Portfolio/
-├── public/
-│   ├── Docs/              # Resume and documents
-│   └── Images/            # Project images and assets
-├── src/
-│   ├── Components/
-│   │   ├── About.jsx      # About section component
-│   │   ├── Contact.jsx    # Contact section component
-│   │   ├── CursorEffect.jsx # Custom cursor component
-│   │   ├── Experience.jsx # Experience timeline component
-│   │   ├── HeroSection.jsx # Hero/intro section
-│   │   ├── Navbar.jsx     # Navigation component
-│   │   ├── NotFound.jsx   # 404 page component
-│   │   ├── Projects.jsx   # Projects showcase component
-│   │   ├── Skills.jsx     # Skills section component
-│   │   ├── goToTop.jsx    # Scroll to top component
-│   │   └── *.css          # Component-specific styles
-│   ├── App.jsx            # Main app component with routing
-│   ├── main.jsx           # Entry point
-│   └── index.css          # Global styles
-├── index.html             # HTML template
-├── package.json           # Dependencies and scripts
-└── vite.config.js         # Vite configuration
+|-- public/
+|   `-- Images/
+|-- src/
+|   |-- Components/
+|   |   |-- About.jsx
+|   |   |-- Contact.jsx
+|   |   |-- CursorEffect.jsx
+|   |   |-- Experience.jsx
+|   |   |-- Footer.jsx
+|   |   |-- HeroSection.jsx
+|   |   |-- Navbar.jsx
+|   |   |-- NotFound.jsx
+|   |   |-- Projects.jsx
+|   |   |-- Skills.jsx
+|   |   `-- *.css
+|   |-- App.jsx
+|   |-- index.css
+|   `-- main.jsx
+|-- index.html
+|-- package.json
+`-- vite.config.js
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
-- Node.js (v16 or higher)
-- npm or yarn package manager
+- Node.js 18+ recommended
+- npm
 
 ### Installation
 
-1. Clone the repository:
 ```bash
 git clone https://github.com/SulymanKhalil/Portfolio.git
 cd Portfolio
-```
-
-2. Install dependencies:
-```bash
 npm install
 ```
 
-3. Start the development server:
+### Run Locally
+
 ```bash
 npm run dev
 ```
 
-4. Open your browser and navigate to `http://localhost:5173` (or the port shown in terminal)
+App runs on `http://localhost:5173` by default.
 
-## 📜 Available Scripts
+## Available Scripts
 
-- `npm run dev` - Start the development server
-- `npm run build` - Build the project for production
-- `npm run preview` - Preview the production build locally
-- `npm run lint` - Run ESLint to check code quality
-- `npm run deploy` - Build and deploy to GitHub Pages
+- `npm run dev` - Start development server
+- `npm run build` - Build production files into `dist`
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint
 
-## 🎨 Customization
+## Customization Guide
 
-### Updating Personal Information
+- Update intro/hero content: `src/Components/HeroSection.jsx`
+- Update bio/details: `src/Components/About.jsx`
+- Update skills list: `src/Components/Skills.jsx`
+- Update projects data/cards: `src/Components/Projects.jsx`
+- Update contact links/info: `src/Components/Contact.jsx`
+- Adjust global styling: `src/index.css`
+- Adjust section styling: related files in `src/Components/*.css`
 
-1. **Contact Information**: Edit `src/Components/Contact.jsx` to update:
-   - Phone number
-   - Email address
-   - Social media links
-   - Location
+## Deployment
 
-2. **About Section**: Edit `src/Components/About.jsx` for personal bio and details
+Current live deployment is on **Netlify**.
 
-3. **Projects**: Update `src/Components/Projects.jsx` to showcase your projects
+Recommended Netlify settings:
+- Build command: `npm run build`
+- Publish directory: `dist`
 
-4. **Experience**: Modify `src/Components/Experience.jsx` for work history
+## License
 
-5. **Skills**: Edit `src/Components/Skills.jsx` to display your technical skills
+This repository is intended for personal portfolio presentation.
 
-### Styling
-
-- Component-specific styles are in their respective `.css` files in `src/Components/`
-- Global styles are in `src/index.css`
-- Bootstrap classes are available for quick styling
-- Custom CSS variables can be added in `index.css` for theme customization
-
-## 🚀 Deployment
-
-This project is deployed on **Netlify**.
-
-### Build Settings
-- **Build Command:** `npm run build`
-- **Publish Directory:** `dist`
-
-The project is automatically deployed from the main branch using Netlify.
-
-## 📝 Features in Detail
-
-### Navigation
-- Smooth scrolling between sections
-- Active link highlighting
-- Mobile-responsive hamburger menu
-
-### Animations
-- Scroll-triggered animations using AOS
-- Configurable animation duration and easing
-- Fade, slide, and zoom effects
-
-### Typewriter Effect
-- Dynamic text cycling in hero and contact sections
-- Customizable delay and typing speed
-
-### Custom Cursor
-- Interactive cursor effect that follows mouse movement
-- Enhanced visual feedback
-
-## 🔒 Contribution Policy
-
-This project is a personal portfolio and is not open for external contributions.
-
-## 📄 License
-
-All rights reserved. This project is for portfolio demonstration purposes only.
-Unauthorized use, copying, or modification is not permitted.
-
-## 👤 Author
+## Author
 
 **Sulyman Khalil**
-- Frontend Developer | React.js Developer
-- Location: Lahore, Pakistan
-- Email: sulymankhalil.dev@gmail.com
-- LinkedIn: [linkedin.com/in/sulyman-khalil](https://www.linkedin.com/in/sulyman-khalil-6269a6250/)
+
+- Email: [sulymankhalil.dev@gmail.com](mailto:sulymankhalil.dev@gmail.com)
+- LinkedIn: [linkedin.com/in/sulyman-khalil-6269a6250](https://www.linkedin.com/in/sulyman-khalil-6269a6250/)
 - GitHub: [github.com/SulymanKhalil](https://github.com/SulymanKhalil)
-
-## 🙏 Acknowledgments
-
-- [React](https://react.dev/) - UI library
-- [Vite](https://vitejs.dev/) - Build tool
-- [AOS](https://michalsnik.github.io/aos/) - Scroll animations
-- [Bootstrap](https://getbootstrap.com/) - CSS framework
-- [Font Awesome](https://fontawesome.com/) - Icons
-- [Google Fonts](https://fonts.google.com/) - Typography
-
----
-
-⭐ If you like this project, please consider giving it a star on GitHub!
