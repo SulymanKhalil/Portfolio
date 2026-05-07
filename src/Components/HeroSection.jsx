@@ -7,7 +7,7 @@ const HeroSection = () => {
                 <img data-aos="zoom-in" src="/Images/Sulyman.jpg" alt="Sulyman" className="rounded-circle" />
                 <h1 data-aos="fade-up" className="HeroSection-h1">Hi, I'm Sulyman Khalil</h1>
                 <div data-aos="fade-up" className="h2-heading-parent">
-                    <h2 className="HeroSection-h2">Software Engineer</h2>
+                    <h2 className="HeroSection-h2">Frontend Engineer</h2>
                 </div>
                 <p data-aos="fade-up" className="HeroSection-p">
                     "Crafting modern web apps and real-time streaming experiences, driven by clean architecture, performance and seamless UX."
