@@ -18,7 +18,7 @@ const Experience = () => {
               | Hong Kong • Remote
             </h1>
             <h2>Software Engineer (Full-Time)</h2>
-            <p>April 2025 - Present</p>
+            <p>June 2025 - Present</p>
             <ul className="ExperienceDesc">
               <li>
                 Leveraged AI tools to contribute to production projects while
@@ -32,7 +32,7 @@ const Experience = () => {
             </ul>
             <br />
             <h2>Software Engineer (Intern)</h2>
-            <p>February 2025 - March 2025</p>
+            <p>April 2025 - May 2025</p>
             <ul className="ExperienceDesc">
               <li>
                 Created reusable frontend components and scalable UI features
