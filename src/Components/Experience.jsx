@@ -21,13 +21,10 @@ const Experience = () => {
             <p>June 2025 - Present</p>
             <ul className="ExperienceDesc">
               <li>
-                Leveraged AI tools to contribute to production projects while
-                building React-based interactive UIs for scalable applications.
+                Leveraged AI tools to accelerate development and ship production-ready features faster.
               </li>
               <li>
-                Built and optimized Next.js UI components for performance,
-                responsiveness, SSR and maintainability, with WebRTC streaming
-                and <br/> FFmpeg media processing integration.
+                Built and optimized React.js UI components for performance, responsiveness and maintainability. Delivered impactful frontend features that <br />improved user experience across the application.
               </li>
             </ul>
             <br />

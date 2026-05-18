@@ -194,7 +194,7 @@ const Skills = () => {
                 </div>
               </div>
             </div>
-            <div className="framework-container NextJS">
+            {/* <div className="framework-container NextJS">
               <img
                 className="NextJS-img"
                 src="/Images/nextjslogo.png"
@@ -217,7 +217,7 @@ const Skills = () => {
                   <span className="framework-progress-value">70%</span>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="framework-container UmiJS">
               <img
                 className="UmiJS-img"
