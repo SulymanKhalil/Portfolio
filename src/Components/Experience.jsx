@@ -20,26 +20,19 @@ const Experience = () => {
             <h2>Software Engineer (Full-Time)</h2>
             <p>June 2025 - Present</p>
             <ul className="ExperienceDesc">
-              <li>
-                Leveraged AI tools to accelerate development and ship production-ready features faster.
-              </li>
-              <li>
-                Built and optimized React.js UI components for performance, responsiveness and maintainability. Delivered impactful frontend features that <br />improved user experience across the application.
-              </li>
+              <li>Leveraged AI tools to gain 2x development speed and contributed to real-world, client-facing production projects.</li>
+              <li>Optimized reusable UI components for performance, responsiveness and cross-browser compatibility using React.js.</li>
+              <li>Delivered impactful, user-centric frontend features that measurably improved overall user experience.</li>
+              <li>Translated Figma designs into pixel-perfect, responsive interfaces with cross-team collaboration, cutting handoff friction.</li>
+              <li>Consumed dynamic admin dashboard APIs to render real-time, config-driven UI, ensuring live data changes reflected instantly across the interface.</li>
             </ul>
             <br />
             <h2>Software Engineer (Intern)</h2>
             <p>April 2025 - May 2025</p>
             <ul className="ExperienceDesc">
-              <li>
-                Created reusable frontend components and scalable UI features
-                using React, Umi.js, Ant Design, and Day.js with clean,
-                maintainable code.
-              </li>
-              <li>
-                Implemented i18n for multi-language support and integrated REST
-                APIs for dynamic data handling and smooth user experience.
-              </li>
+              <li>Implemented i18n (Internationalization) to support multi-language functionality, expanding app accessibility for global users.</li>
+              <li>Engineered role-based access control (RBAC) to manage user permissions across multiple dashboard modules.</li>
+              <li>Leveraged Day.js for precise date/time handling across time-sensitive frontend features.</li>
             </ul>
           </div>
         </div>

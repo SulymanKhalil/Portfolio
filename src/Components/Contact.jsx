@@ -36,7 +36,7 @@ const Contact = () => {
                     <div className="mediaIcon" data-aos="fade-right" data-aos-delay="300"><i class="fab fa-linkedin"></i></div>
                     <div className="mediaContent" data-aos="fade-right" data-aos-delay="300">
                         <h4>LinkedIn</h4>
-                        <a href="https://www.linkedin.com/in/sulyman-khalil-6269a6250/" target="_blank" rel="noopener noreferrer">linkedin.com/in/sulyman-khalil <i className="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.linkedin.com/in/sulyman-khalil-6269a6250/" target="_blank" rel="noopener noreferrer">linkedin.com/in/sulymankhalil <i className="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div className="socialMediaLinks">

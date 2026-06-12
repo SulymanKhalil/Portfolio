@@ -90,14 +90,6 @@ const projectsData = [
     isNew: false,
   },
   {
-    title: "Grocery App",
-    desc: "AI-powered grocery planner built with React and Tailwind CSS that generates grocery lists from selected recipes via API.",
-    img: "/Images/groceryapp.webp",
-    languages: ["AI ✦", "React", "Tailwind CSS"],
-    link: "https://glowing-chaja-c8d2bc.netlify.app/",
-    isNew: false,
-  },
-  {
     title: "Tech Rivals",
     desc: "AI-generated static webpage comparing Samsung vs Apple with products, innovations, lifestyle, and gallery.",
     img: "/Images/applesamsung.webp",
@@ -106,11 +98,19 @@ const projectsData = [
     isNew: false,
   },
   {
+    title: "Grocery App",
+    desc: "AI-powered grocery planner built with React and Tailwind CSS that generates grocery lists from selected recipes via API.",
+    img: "/Images/groceryapp.webp",
+    languages: ["AI ✦", "React", "Tailwind CSS"],
+    link: "https://grocerio.netlify.app/",
+    isNew: false,
+  },
+  {
     title: "TaskFlow",
     desc: "Advanced React Todo app with role-based access, i18n support, sorting, priorities, and detailed task status tracking.",
     img: "/Images/taskflow.webp",
     languages: ["React", "Umi.js", "antd", "+1"],
-    link: "https://delightful-gecko-12a764.netlify.app/",
+    link: "https://taskflow-page.netlify.app/",
     isNew: false,
   }
 ];
