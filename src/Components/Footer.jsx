@@ -7,7 +7,7 @@ const Footer = () => {
       <p className="copyright-line">
         Copyright © 2025 | Sulyman Khalil <br /> All rights reserved.
       </p>
-      <p className="last-updated">Last updated: 18 May, 2026</p>
+      <p className="last-updated">Last updated: 17 June, 2026</p>
     </div>
   );
 };
