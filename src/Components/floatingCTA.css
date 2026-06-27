@@ -1,0 +1,152 @@
+/* ==========================================================================
+   Premium Floating CTA Button Styles & Animations (Transparent Cyber Aesthetic)
+   ========================================================================== */
+
+.cta-wrapper {
+  position: absolute;
+  z-index: 10;
+  pointer-events: none; /* Let clicks pass through the wrapper container */
+  left: 20%;
+  top: 10px; /* Restored back inside the navbar header area */
+}
+
+/* Hide the CTA button completely when the screen is narrower than 1200px */
+@media (max-width: 1200px) {
+  .cta-wrapper {
+    display: none !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   The Laser Glowing Trail Effect (Attached to the top of the button)
+   -------------------------------------------------------------------------- */
+.cta-trail {
+  position: absolute;
+  bottom: 100%; /* Sits exactly on the top edge of the button */
+  left: 50%;
+  width: 2px;
+  height: 100vh; /* Reaches the top of the viewport */
+  background: linear-gradient(to bottom, transparent 10%, rgba(0, 198, 255, 0.4) 50%, #00c6ff 80%, #0072ff 100%);
+  box-shadow: 
+    0 0 8px rgba(0, 198, 255, 0.7), 
+    0 0 18px rgba(0, 114, 255, 0.5);
+  transform: translateX(-50%);
+  transform-origin: bottom;
+  pointer-events: none;
+  opacity: 0.8; /* Retain trail line visibility after landing */
+  transition: opacity 0.4s ease;
+}
+
+/* --------------------------------------------------------------------------
+   Animation Triggers
+   -------------------------------------------------------------------------- */
+.cta-wrapper.active .cta-button {
+  animation: 
+    buttonDropEntry 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards,
+    buttonBreathingFloat 3.6s ease-in-out infinite 1.4s;
+}
+
+/* --------------------------------------------------------------------------
+   The Button Structure & Themes (No Background, Sharp Rectangular Shape, Spacious Sizing)
+   -------------------------------------------------------------------------- */
+.cta-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #00c6ff !important; /* Premium glowing sky-blue text */
+  text-decoration: none;
+  background: transparent !important; /* Remove background color completely */
+  border-radius: 0px !important; /* Zero border radius - sharp rectangular shape */
+  border: 1px.5 solid rgba(0, 198, 255, 0.5);
+  border: 1.5px solid rgba(0, 198, 255, 0.5); /* Glowing sky-blue borders */
+  box-shadow: 
+    0 4px 12px rgba(0, 198, 255, 0.15), 
+    inset 0 0 4px rgba(0, 198, 255, 0.1);
+  transition: 
+    transform 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+    box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+    border-color 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  overflow: visible; /* Crucial: Allows the trail to extend outside the button borders */
+  cursor: pointer;
+  outline: none;
+  pointer-events: auto; /* Enable hover/clicks on the button itself */
+  backface-visibility: hidden;
+  
+  /* Large Spacious Sizing preserved as requested */
+  padding: 14px 30px;
+  font-size: 0.8rem;
+  letter-spacing: 1.2px;
+}
+
+.cta-icon {
+  font-size: 0.9rem;
+  margin-right: 8px;
+  color: #00c6ff;
+}
+
+/* Disable shine & glow overlays completely */
+.cta-glow-bg,
+.cta-shine {
+  display: none !important;
+}
+
+.cta-text {
+  text-shadow: 0 0 4px rgba(0, 198, 255, 0.4);
+  font-family: "Poppins", "Montserrat", "Raleway", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* --------------------------------------------------------------------------
+   Interactive States (Hover, Active, Focus) - Hover Effects Disabled
+   -------------------------------------------------------------------------- */
+.cta-button:hover {
+  /* No scale up, no background color changes, no shine transitions */
+  border-color: rgba(0, 198, 255, 0.8); /* Subtle glow increase on border only */
+}
+
+/* Click/Active State */
+.cta-button:active {
+  transform: scale(0.96);
+  transition: transform 0.1s ease;
+}
+
+/* --------------------------------------------------------------------------
+   Keyframe Definitions (Hardware-Accelerated via transform/opacity)
+   -------------------------------------------------------------------------- */
+
+/* Button Drop Down Animation with Subtle Bounce Elasticity */
+@keyframes buttonDropEntry {
+  0% {
+    transform: translateY(-100vh) scale(0.6);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(12px) scale(1.04);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(-4px) scale(0.98);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Subtle Floating/Breathing Animation (Active after landing) */
+@keyframes buttonBreathingFloat {
+  0%, 100% {
+    transform: translateY(0);
+    box-shadow: 
+      0 4px 12px rgba(0, 198, 255, 0.15), 
+      inset 0 0 4px rgba(0, 198, 255, 0.1);
+  }
+  50% {
+    transform: translateY(-6px);
+    box-shadow: 
+      0 8px 18px rgba(0, 198, 255, 0.25), 
+      inset 0 0 6px rgba(0, 198, 255, 0.2);
+  }
+}

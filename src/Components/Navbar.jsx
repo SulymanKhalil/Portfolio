@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+import FloatingCTA from "./FloatingCTA";
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,6 +26,7 @@ const Navbar = () => {
     return (
         <div className="header">
             <Link className="text-decoration-none" to="/"><h1 className="heading1 ms-3" data-aos="fade-down">Sulyman<span>live</span></h1></Link>
+            <FloatingCTA />
             <nav className="navbar navbar-expand">
                 <div>
                     <ul className="nav-item-list" data-aos="fade-up">
